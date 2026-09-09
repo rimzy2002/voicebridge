@@ -1,0 +1,1695 @@
+For **Day 6**, the system should focus on **pronunciation for clarity**, not accent removal. The goal is to help learners sound easier to understand, more confident, and more natural.
+
+# Day 6 — Speak Clearly: Pronunciation, Stress and Rhythm
+
+**Main objective:** Improve clarity by training sentence stress, word stress, rhythm, pausing, intonation, and a small number of high-impact pronunciation issues.
+
+**Target outcome:** By the end of Day 6, the learner should be able to deliver a **2-minute response with clearer stress, better pacing, fewer pronunciation breakdowns, and more natural intonation**.
+
+**Recommended duration:** 35–45 minutes
+**Quick version:** 12–15 minutes
+
+Core lesson:
+
+> **You do not need a different accent. You need speech that is easy to understand.**
+
+---
+
+# 1. Day 6 Home Screen
+
+Show:
+
+## DAY 6 OF 30
+
+### Speak Clearly and Confidently
+
+🔥 Streak: 6 days
+⏱ Today: approximately 40 minutes
+
+### Yesterday:
+
+* Upgraded vocabulary
+* Learned collocations
+* Practiced paraphrasing
+* Activated stronger expressions
+
+### Today:
+
+* Improve pronunciation clarity
+* Learn word stress
+* Learn sentence stress
+* Improve rhythm
+* Use pauses effectively
+* Practice natural intonation
+
+Button:
+
+**START DAY 6**
+
+---
+
+# 2. Pronunciation Confidence Check — 1 minute
+
+Ask:
+
+### What is your biggest pronunciation difficulty?
+
+Allow multiple answers:
+
+* People sometimes ask me to repeat myself
+* I speak too quickly
+* I speak too slowly
+* My pronunciation changes when I'm nervous
+* I don't know which syllable to stress
+* My sentences sound flat
+* I struggle with certain sounds
+* I pronounce every word separately
+* I don't know where to pause
+* I'm comfortable with my pronunciation
+
+Then:
+
+### How confident are you that people can understand your English?
+
+**1–10**
+
+Save this.
+
+---
+
+# 3. Day 5 Recall — 2 minutes
+
+Quick review.
+
+Ask:
+
+### Which is better?
+
+> do a decision
+
+or
+
+> make a decision
+
+Correct:
+
+**make a decision**
+
+Then:
+
+🎙️ 30-second speaking prompt:
+
+> Tell me about one goal you want to achieve.
+
+Requirement:
+
+Use one Day 5 collocation.
+
+For example:
+
+> achieve a goal
+> make progress
+> gain experience
+
+This keeps previous vocabulary active.
+
+---
+
+# 4. Day 6 Baseline Recording — 2 minutes
+
+Before teaching pronunciation, record a sample.
+
+Give this short paragraph:
+
+> Effective communication is important in both professional and personal life. When we speak clearly, other people can understand our ideas more easily. Good communication also helps us build stronger relationships and avoid misunderstandings.
+
+Learner:
+
+🎙️ Reads it aloud once.
+
+Then ask:
+
+> Now explain the same idea in your own words for 30 seconds.
+
+Save both:
+
+**Reading Baseline**
+
+**Natural Speaking Baseline**
+
+Our system can analyze:
+
+* Speech rate
+* Long pauses
+* Word stress
+* Sentence stress
+* Clarity
+* Repeated pronunciation issues
+* Intonation
+* Chunking
+
+---
+
+# 5. Establish the Day 6 Principle
+
+Show:
+
+## Pronunciation ≠ Accent
+
+A learner can have a strong accent and still be very easy to understand.
+
+The goals are:
+
+**Clear sounds**
+
+*
+
+**Correct stress**
+
+*
+
+**Good rhythm**
+
+*
+
+**Useful pauses**
+
+*
+
+**Natural intonation**
+
+=
+
+### Easy-to-understand English
+
+This should be part of our product philosophy.
+
+---
+
+# 6. Word Stress Lesson — 4 minutes
+
+Teach learners that English words often have one stronger syllable.
+
+Examples:
+
+**COM-mu-ni-cate**
+
+**com-mu-ni-CA-tion**
+
+**PRE-sent** — noun
+
+**pre-SENT** — verb
+
+**PRO-ject** — noun
+
+Explain:
+
+Putting stress on the wrong syllable can make a familiar word harder to understand.
+
+Use visual emphasis:
+
+com-mu-ni-**CA**-tion
+
+op-por-**TU**-ni-ty
+
+pro-**FES**-sion-al
+
+ex-**PE**-ri-ence
+
+im-**POR**-tant
+
+---
+
+# 7. Word Stress Listening Game — 3 minutes
+
+System plays:
+
+**communication**
+
+Ask:
+
+Which syllable sounds strongest?
+
+Options:
+
+COM
+MU
+CA ✅
+TION
+
+Next:
+
+**experience**
+
+Then:
+
+**professional**
+
+Then:
+
+**development**
+
+Then:
+
+**responsibility**
+
+Score:
+
+**Stress accuracy: 4/5**
+
+---
+
+# 8. Word Stress Repeat Challenge — 3 minutes
+
+Learner listens and repeats:
+
+* communication
+* professional
+* opportunity
+* development
+* responsibility
+* experience
+* successful
+* improvement
+
+For each:
+
+🎧 Listen
+
+↓
+
+🎙️ Repeat
+
+↓
+
+System gives simple feedback:
+
+**Stress clear ✅**
+
+or
+
+**Try stressing “TU” more.**
+
+Avoid giving highly technical phonetic explanations unless the learner wants them.
+
+---
+
+# 9. Word Family Stress Awareness — 3 minutes
+
+Connect Day 5 word families with pronunciation.
+
+Example:
+
+**PHOtograph**
+
+**phoTOGraphy**
+
+**photoGRAPHic**
+
+Another:
+
+**PREsent**
+
+**preSENtation**
+
+Teach:
+
+> Stress can move when the word changes form.
+
+Give 3 small families.
+
+---
+
+# 10. Sentence Stress Lesson — 4 minutes
+
+Now teach that not every word receives equal emphasis.
+
+Example:
+
+> I **NEED** to finish the **REPORT** by **FRIDAY**.
+
+The important information receives more stress.
+
+Less important grammar words are usually lighter.
+
+Compare robotic:
+
+> I. NEED. TO. FINISH. THE. REPORT. BY. FRIDAY.
+
+Natural:
+
+> I **NEED** to finish the **REPORT** by **FRIDAY**.
+
+Explain:
+
+### Stress the meaning words
+
+Usually:
+
+* Important nouns
+* Main verbs
+* Adjectives
+* Adverbs
+* Important numbers/names
+
+---
+
+# 11. Find the Important Words — 3 minutes
+
+Sentence:
+
+> We need to complete the project before Friday afternoon.
+
+Ask learner to select the most important words.
+
+Possible:
+
+**complete**
+
+**project**
+
+**Friday afternoon**
+
+Then:
+
+🎙️ Say it aloud.
+
+Next:
+
+> The client requested several changes to the final presentation.
+
+Likely stress:
+
+**client**
+
+**changes**
+
+**final presentation**
+
+This trains thought-level speaking.
+
+---
+
+# 12. Meaning Changes With Stress — 3 minutes
+
+Show:
+
+> **I** didn't say he cancelled the meeting.
+
+Meaning: someone else said it.
+
+> I didn't **SAY** he cancelled the meeting.
+
+Meaning: perhaps I implied it.
+
+> I didn't say he cancelled the **MEETING**.
+
+Meaning: maybe he cancelled something else.
+
+Teach:
+
+> Stress can change what the listener understands as important.
+
+This is useful for advanced communication.
+
+---
+
+# 13. Rhythm Training — 4 minutes
+
+Teach learners not to give every word equal timing.
+
+Example:
+
+> I **WANT** to **TALK** about the **PROJECT**.
+
+Instead of:
+
+> I / want / to / talk / about / the / project.
+
+Explain:
+
+English often moves from one stressed beat to another.
+
+Practice:
+
+> We **NEED** to **MAKE** a **DECISION**.
+
+> I'll **SEND** you the **REPORT** tomorrow.
+
+> She **FINISHED** the **PRESENTATION** yesterday.
+
+Learner:
+
+🎧 Listen
+
+↓
+
+👏 Optional tap the stressed beats
+
+↓
+
+🎙️ Repeat
+
+This could be a fun visual exercise.
+
+---
+
+# 14. Rhythm Game — “Follow the Beats”
+
+Show:
+
+**NEED** — **FINISH** — **REPORT** — **FRIDAY**
+
+Then full sentence:
+
+> We need to finish the report by Friday.
+
+The learner speaks while keeping those beats prominent.
+
+Score:
+
+### Rhythm match
+
+**76/100**
+
+This can become a reusable system feature.
+
+---
+
+# 15. Chunking Lesson — 3 minutes
+
+Teach learners to speak in meaningful groups.
+
+Poor:
+
+> Yesterday I went to the office and after that I met my manager and then we discussed the project...
+
+Better:
+
+> Yesterday / I went to the office / and after that / I met my manager / to discuss the project.
+
+Introduce:
+
+# Thought Chunks
+
+Instead of reading word by word, group meaning together.
+
+---
+
+# 16. Chunking Activity — 3 minutes
+
+Give:
+
+> Last week I gave a presentation about our new marketing strategy.
+
+Learner marks pauses:
+
+> Last week / I gave a presentation / about our new marketing strategy.
+
+Then:
+
+🎙️ Read naturally.
+
+Another:
+
+> After discussing the issue with my manager, we decided to change the schedule.
+
+Suggested:
+
+> After discussing the issue with my manager / we decided / to change the schedule.
+
+---
+
+# 17. Pause Training — 3 minutes
+
+Connect to previous days.
+
+Teach three kinds of useful pauses:
+
+### 1. Thinking pause
+
+> From my perspective... communication is essential.
+
+### 2. Structure pause
+
+> There are three main reasons... First...
+
+### 3. Emphasis pause
+
+> The biggest problem was... nobody had checked the data.
+
+Explain:
+
+A pause can make speech sound confident.
+
+Too many fillers make it sound less controlled.
+
+---
+
+# 18. Pause Instead of Filler Challenge — 3 minutes
+
+Prompt:
+
+> What is one important skill everyone should learn?
+
+Speak for:
+
+**60 seconds**
+
+System tracks:
+
+**umm:** 7
+
+**ah:** 3
+
+**you know:** 2
+
+Then learner retries with instruction:
+
+> Use a silent pause whenever you need time.
+
+Second attempt:
+
+**Fillers: 5**
+
+Show:
+
+### Filler reduction: 58% ↓
+
+---
+
+# 19. Intonation Lesson — 4 minutes
+
+Teach basic communication intonation.
+
+### Statements
+
+Usually falling:
+
+> I finished the report. ↘
+
+### Yes/no questions
+
+Often rising:
+
+> Did you finish the report? ↗
+
+### Wh-questions
+
+Often falling:
+
+> When did you finish it? ↘
+
+### Surprise
+
+> Really? ↗
+
+### Interest
+
+> That's interesting! ↗↘
+
+Don't overcomplicate this.
+
+The goal is to stop learners sounding completely flat.
+
+---
+
+# 20. Intonation Matching Game — 3 minutes
+
+System plays a sentence.
+
+> Really?
+
+Learner selects:
+
+* Bored
+* Interested
+* Angry
+* Confused
+
+Then repeats with the intended emotion.
+
+Other phrases:
+
+> That's great!
+
+> Are you sure?
+
+> What happened?
+
+> I understand.
+
+> That's surprising.
+
+---
+
+# 21. Same Sentence, Different Meaning — 3 minutes
+
+Sentence:
+
+> That's interesting.
+
+Ask learner to say it as:
+
+1. Genuine interest
+2. Surprise
+3. Doubt
+4. Polite neutrality
+
+This teaches that communication involves tone, not only vocabulary.
+
+---
+
+# 22. Emotion + Intonation Game — 3 minutes
+
+Give:
+
+### Emotion: Excited
+
+Sentence:
+
+> I got the job.
+
+Learner says it naturally.
+
+Next:
+
+### Emotion: Concerned
+
+> We may miss the deadline.
+
+Next:
+
+### Emotion: Relieved
+
+> Everything worked out in the end.
+
+The AI evaluates whether tone roughly matches meaning.
+
+---
+
+# 23. High-Impact Sound Personalization
+
+Now handle individual pronunciation difficulties.
+
+Important design principle:
+
+> Don't make every learner study every English sound.
+
+Use Day 6 baseline to identify **1–3 high-impact issues**.
+
+Possible examples:
+
+* /v/ vs /w/
+* /s/ vs /z/
+* /r/ vs /l/
+* final consonants
+* “th”
+* consonant clusters
+* vowel length
+* ending sounds
+
+The system chooses only relevant practice.
+
+---
+
+# 24. Personalized Sound Drill — 4 minutes
+
+Example if learner struggles with **v / w**:
+
+### Listen
+
+**vine / wine**
+
+**vest / west**
+
+**very / wary**
+
+Then short sentences:
+
+> We visited the village.
+
+> It was very warm.
+
+Learner repeats.
+
+But we should emphasize:
+
+> Correct the sound only if it affects understanding.
+
+Don't chase accent perfection.
+
+---
+
+# 25. Final Sound Awareness
+
+A common clarity issue is dropping word endings.
+
+Examples:
+
+> work / worked
+
+> ask / asked
+
+> need / needs
+
+> project / projects
+
+Teach:
+
+Final sounds can carry grammar and meaning.
+
+Compare:
+
+> He work every day. ❌
+
+> He works every day. ✅
+
+Learner practices a few words in sentences.
+
+---
+
+# 26. Final Consonant Challenge — 3 minutes
+
+Read:
+
+> She works with international clients.
+
+> We finished the project last week.
+
+> He asked several questions.
+
+> The company needs better systems.
+
+System listens especially for endings.
+
+Feedback:
+
+> Make the final /s/ in “clients” slightly clearer.
+
+---
+
+# 27. Connected Speech Awareness — 3 minutes
+
+At intermediate level, learners may struggle because spoken English does not sound exactly like textbook word-by-word English.
+
+Teach basic connections.
+
+Example:
+
+> turn_off
+
+> take_it
+
+> work_on
+
+> an_important
+
+Explain:
+
+Words often connect in natural speech.
+
+We should teach **understanding and smoothness**, not force learners into exaggerated contractions.
+
+---
+
+# 28. Connect the Words Game — 3 minutes
+
+Show:
+
+> Can I ask you a question?
+
+Natural speech flows across the phrase.
+
+Learner:
+
+🎧 Listen
+
+↓
+
+🎙️ Repeat slowly
+
+↓
+
+🎙️ Repeat naturally
+
+Other phrases:
+
+> I'll send it tomorrow.
+
+> We need to talk about it.
+
+> Can you help me with this?
+
+> What do you think about it?
+
+---
+
+# 29. Don't Speak Too Fast Lesson — 2 minutes
+
+Teach:
+
+Fast ≠ Fluent.
+
+Compare:
+
+**Fast + unclear**
+
+versus
+
+**Moderate + clear + confident**
+
+Explain that learners often speed up when nervous.
+
+Give recommended focus:
+
+> Finish words.
+
+> Stress key ideas.
+
+> Pause between thoughts.
+
+> Don't race through sentences.
+
+---
+
+# 30. Speech Speed Test — 2 minutes
+
+Give a 45-second speaking challenge:
+
+> Describe what makes someone a good communicator.
+
+System estimates speech rate.
+
+Instead of labeling a specific speed as universally “correct,” display:
+
+### Your pacing
+
+**Slow / Comfortable / Fast**
+
+Then:
+
+> Your pace is understandable, but slowing slightly around key points may improve clarity.
+
+---
+
+# 31. Shadowing Activity — 4 minutes
+
+Shadowing should be central to pronunciation development.
+
+System provides a natural 20–30 second model.
+
+Example:
+
+> From my perspective, clear communication is not about speaking quickly. It's about organizing your ideas, stressing the important words, and giving the listener enough time to follow what you're saying.
+
+### Round 1
+
+🎧 Listen only.
+
+### Round 2
+
+🎧 Listen + read.
+
+### Round 3
+
+🎧 Speak together.
+
+### Round 4
+
+🎙️ Repeat without audio.
+
+Score:
+
+* Rhythm
+* Stress
+* Pausing
+* Intonation
+* Overall clarity
+
+---
+
+# 32. Record-and-Compare Feature
+
+Display:
+
+### Model
+
+▶ Listen
+
+### Your Attempt 1
+
+▶ Listen
+
+### Your Attempt 2
+
+▶ Listen
+
+Ask:
+
+> Which one sounds clearer?
+
+Let learner self-evaluate before AI feedback.
+
+This develops pronunciation awareness.
+
+---
+
+# 33. Today's Five Speaking Phrases
+
+Instead of vocabulary-only expressions, use phrases that are excellent for stress/intonation practice.
+
+### 1. The main point is...
+
+### 2. What I mean is...
+
+### 3. Let me give you an example.
+
+### 4. That's a really good question.
+
+### 5. The most important thing is...
+
+Learners practice emphasizing:
+
+> The **MAIN POINT** is...
+
+> Let me give you an **EXAMPLE**.
+
+These also help future speaking.
+
+---
+
+# 34. Emphasis Challenge — 3 minutes
+
+Ask:
+
+> What is the most important communication skill?
+
+Learner speaks for **60 seconds**.
+
+Requirement:
+
+Use 2 Day 6 phrases and deliberately stress the key words.
+
+Example:
+
+> The **MOST IMPORTANT** skill, from my perspective, is **LISTENING**.
+
+System detects/emphasizes stress where possible.
+
+---
+
+# 35. Listening for Stress — 3 minutes
+
+Play:
+
+> We need to finish the REPORT by THURSDAY.
+
+Ask:
+
+### What are the two most important pieces of information?
+
+Correct:
+
+**Report**
+
+**Thursday**
+
+Then another:
+
+> The CLIENT wants THREE changes to the final proposal.
+
+Answer:
+
+**Client**
+
+**Three changes**
+
+This improves both listening and speaking.
+
+---
+
+# 36. Professional Track
+
+For professional learners:
+
+## Clear Project Update
+
+Scenario:
+
+> Give your manager a 90-second update.
+
+Cover:
+
+* What has been completed
+* Current issue
+* Next step
+* Deadline
+
+Pronunciation requirements:
+
+☐ Stress key information
+
+☐ Pause between sections
+
+☐ Avoid speaking too quickly
+
+☐ Use clear final sounds
+
+Example structure:
+
+> We've **COMPLETED** the first stage. / The main issue right now / is the **CLIENT FEEDBACK**. / We're planning to make the changes tomorrow / and finish everything by **FRIDAY**.
+
+---
+
+# 37. Student Track
+
+## Presentation Opening
+
+Learner gives a 90-second presentation introduction.
+
+Topic:
+
+> How technology affects education.
+
+Requirements:
+
+* Clear opening
+* Stress important terms
+* Pause between ideas
+* Natural intonation
+* Avoid reading word by word
+
+This prepares learners for future presentation days.
+
+---
+
+# 38. General English Track
+
+Scenario:
+
+> Recommend a place, movie, activity, or hobby to a friend.
+
+Speak for 90 seconds.
+
+Focus:
+
+* Friendly intonation
+* Clear emphasis
+* Natural pacing
+* Enthusiasm where appropriate
+
+---
+
+# 39. Main Day 6 Challenge
+
+# 2-Minute Clear Communication Challenge
+
+Prompt:
+
+> What makes someone an effective communicator?
+
+Preparation:
+
+**20 seconds**
+
+Speaking:
+
+**2 minutes**
+
+Requirements:
+
+☐ Use clear sentence stress
+
+☐ Break ideas into chunks
+
+☐ Use meaningful pauses
+
+☐ Reduce filler words
+
+☐ Speak at a comfortable speed
+
+☐ Use natural intonation
+
+☐ Clearly pronounce important ending sounds
+
+☐ Use 2 Day 6 speaking phrases
+
+Press:
+
+🎙️ **START**
+
+---
+
+# 40. Day 6 Pronunciation Scorecard
+
+After speaking:
+
+## Clarity Analysis
+
+Example:
+
+**Overall clarity:** 76/100
+
+**Word stress:** 71
+
+**Sentence stress:** 78
+
+**Rhythm:** 72
+
+**Chunking:** 81
+
+**Intonation:** 69
+
+**Pacing:** 78
+
+**Ending clarity:** 74
+
+**Filler control:** 76
+
+### Speech rate
+
+Comfortable
+
+### Fillers
+
+6
+
+### Long pauses
+
+3
+
+### Key words emphasized
+
+8/11
+
+The score should be presented as developmental feedback, not a judgment of accent.
+
+---
+
+# 41. AI Coach Feedback
+
+Give no more than 3 priority improvements.
+
+### ✅ What worked
+
+> Your pacing was comfortable, and your main ideas were easy to understand.
+
+### 🎯 Priority 1
+
+> Stress important nouns more strongly. “Communication” and “listening” were key ideas but sounded similar to surrounding words.
+
+### 🎯 Priority 2
+
+> Some sentence endings became very quiet. Finish words such as “skills” and “projects” more clearly.
+
+### 🎯 Priority 3
+
+> Use a short pause before examples rather than filling the space with “umm.”
+
+Then give:
+
+### One sentence to practice
+
+> The **MOST IMPORTANT** communication skill / is **ACTIVE LISTENING**.
+
+---
+
+# 42. Focused Retry — 2 minutes
+
+Do not repeat every lesson.
+
+Give the same speaking topic for **60–90 seconds**.
+
+This time show only:
+
+### Your focus
+
+**STRESS key words**
+
+**PAUSE between ideas**
+
+**FINISH word endings**
+
+Then compare.
+
+### Attempt 1
+
+Clarity: 76
+
+### Attempt 2
+
+Clarity: 83 ↑
+
+**+7 clarity**
+
+---
+
+# 43. Day 6 Before vs After
+
+Compare baseline reading from Activity 4 with a final reading of the same passage.
+
+Show:
+
+| Area            | Before | After |
+| --------------- | -----: | ----: |
+| Stress          |     62 |    76 |
+| Rhythm          |     60 |    74 |
+| Pausing         |     66 |    80 |
+| Intonation      |     61 |    71 |
+| Overall clarity |     65 |    78 |
+
+This is an excellent Day 6 “proof of improvement” moment.
+
+---
+
+# 44. Real-World Mission
+
+# Day 6 Mission — Be Easy to Understand
+
+Have a **3-minute English conversation** today.
+
+Your focus is not advanced vocabulary.
+
+Focus on:
+
+☐ Speak slightly slower than usual
+
+☐ Stress important words
+
+☐ Pause between ideas
+
+☐ Finish your words clearly
+
+☐ Use natural reactions
+
+At the end, if appropriate, ask:
+
+> Was I easy to understand?
+
+The partner can be:
+
+* Friend
+* Coworker
+* Classmate
+* Language partner
+* AI coach
+
+---
+
+# 45. Pronunciation Micro-Habit
+
+Give learners a habit they can continue every day.
+
+## The 5-Minute Clear Speech Habit
+
+### 1 minute
+
+Listen to natural English.
+
+### 1 minute
+
+Repeat the speaker.
+
+### 1 minute
+
+Record yourself.
+
+### 1 minute
+
+Compare.
+
+### 1 minute
+
+Repeat one more time.
+
+This can become an optional daily feature from Day 6 onward.
+
+---
+
+# 46. Daily Reflection
+
+Ask:
+
+### 1. What improved most today?
+
+* Word stress
+* Sentence stress
+* Rhythm
+* Pausing
+* Intonation
+* Individual sounds
+* Speaking speed
+
+### 2. What still feels difficult?
+
+Same options.
+
+### 3. Did you feel more understandable after the retry?
+
+* Yes, clearly
+* A little
+* Not yet
+
+### 4. Pronunciation confidence now
+
+**1–10**
+
+### 5. One pronunciation habit I will use tomorrow:
+
+Short answer.
+
+---
+
+# 47. Day 6 Results Screen
+
+# Day 6 Complete 🎉
+
+🎙️ **Speaking practice:** 16 min
+
+🎧 **Listening/shadowing:** 7 min
+
+🔊 **Stress exercises:** 12
+
+⏸️ **Pause exercises:** 5
+
+🗣️ **Personal sound focus:** 1–3 areas
+
+📈 **Clarity improvement:** +7
+
+🌍 **Real-world mission:** Complete / Pending
+
+🔥 **Streak:** 6 days
+
+⭐ **XP earned:** +160
+
+Badge:
+
+## 🏅 Clear Speaker
+
+---
+
+# 48. What Our System Stores on Day 6
+
+| Metric                    | Purpose                 |
+| ------------------------- | ----------------------- |
+| Pronunciation clarity     | Overall intelligibility |
+| Word stress accuracy      | Pronunciation           |
+| Sentence stress           | Natural emphasis        |
+| Intonation                | Expressiveness          |
+| Rhythm                    | Natural speaking        |
+| Speech rate               | Pacing                  |
+| Chunking                  | Clarity                 |
+| Pause placement           | Communication structure |
+| Filler count              | Fluency                 |
+| Long pauses               | Hesitation              |
+| Final sound clarity       | Intelligibility         |
+| Personalized sound issues | Future lessons          |
+| Shadowing performance     | Pronunciation growth    |
+| Before/after scores       | Progress evidence       |
+| Confidence                | Learner progress        |
+
+---
+
+# 49. Important New System Feature — Personal Pronunciation Profile
+
+From Day 6 onward, create:
+
+## MY PRONUNCIATION PROFILE
+
+Example:
+
+### Strong areas 🟢
+
+* Comfortable pacing
+* Clear vowels
+* Good overall intelligibility
+
+### Developing 🟡
+
+* Sentence stress
+* Question intonation
+
+### Priority practice 🔴
+
+* Final consonants
+* /v/ and /w/
+
+Then future lessons can automatically include 1–2 personalized pronunciation exercises.
+
+This is much better than giving everyone the same pronunciation course.
+
+---
+
+# 50. Important New Feature — “Clarity, Not Accent” Score
+
+Avoid labels such as:
+
+**Native pronunciation: 54%**
+
+That sends the wrong message.
+
+Instead measure:
+
+### Listener Clarity
+
+**Can the listener understand the words?**
+
+### Stress Clarity
+
+**Are important ideas emphasized?**
+
+### Rhythm
+
+**Does speech flow comfortably?**
+
+### Communication Tone
+
+**Does intonation fit the meaning?**
+
+This makes the system more respectful and useful.
+
+---
+
+# 51. Smart Pronunciation Feedback Rules
+
+Our AI should avoid overwhelming users.
+
+If the learner makes 20 pronunciation differences, don't display 20.
+
+Prioritize:
+
+**1. Problems affecting understanding**
+
+**2. Repeated problems**
+
+**3. Problems connected to today's lesson**
+
+Ignore harmless accent differences.
+
+Feedback should be:
+
+> “Make the final /s/ in ‘clients’ clearer.”
+
+Not:
+
+> “Your pronunciation is wrong.”
+
+---
+
+# 52. Quick Day 6 — 12–15 Minutes
+
+For busy learners:
+
+**1 min** — Day 5 recall
+
+**1 min** — baseline recording
+
+**2 min** — word + sentence stress
+
+**2 min** — rhythm/chunking
+
+**2 min** — intonation
+
+**2 min** — shadowing
+
+**3 min** — main speaking challenge
+
+**1 min** — AI feedback
+
+**1 min** — reflection
+
+Streak maintained.
+
+---
+
+# Complete Day 6 System Journey
+
+**Open App**
+
+↓
+
+🔥 Day 6 / Streak
+
+↓
+
+🙂 Pronunciation confidence
+
+↓
+
+🔄 Day 5 vocabulary recall
+
+↓
+
+🎙️ Baseline reading + speaking
+
+↓
+
+📚 Clarity vs accent lesson
+
+↓
+
+🔊 Word stress
+
+↓
+
+🎧 Stress listening game
+
+↓
+
+🎙️ Word stress repetition
+
+↓
+
+📚 Sentence stress
+
+↓
+
+🎯 Identify important words
+
+↓
+
+🥁 Rhythm training
+
+↓
+
+🎮 Follow the Beats
+
+↓
+
+✂️ Chunking
+
+↓
+
+⏸️ Pause training
+
+↓
+
+🚫 Reduce fillers
+
+↓
+
+↗️↘️ Intonation lesson
+
+↓
+
+🎭 Emotion + intonation game
+
+↓
+
+🎯 Personalized sound training
+
+↓
+
+🔚 Final consonant clarity
+
+↓
+
+🔗 Connected speech awareness
+
+↓
+
+🐢 Comfortable speech speed
+
+↓
+
+🎧 Shadowing
+
+↓
+
+🎙️ Record and compare
+
+↓
+
+💼 / 🎓 / 🌍 Personalized speaking scenario
+
+↓
+
+🏆 **2-minute clarity challenge**
+
+↓
+
+📊 Pronunciation scorecard
+
+↓
+
+🤖 Focused AI feedback
+
+↓
+
+🔁 Retry
+
+↓
+
+📈 Before/after comparison
+
+↓
+
+🌍 Real-world clarity mission
+
+↓
+
+📝 Reflection
+
+↓
+
+📊 Pronunciation profile update
+
+↓
+
+🏅 Clear Speaker badge
+
+↓
+
+🔥 **6-Day Streak**
+
+---
+
+## What Day 6 should achieve
+
+By the end of Day 6, the learner should feel:
+
+**1. “I don't need to lose my accent to communicate well.”**
+
+**2. “I know which words in a sentence should receive emphasis.”**
+
+**3. “I can divide long sentences into meaningful chunks.”**
+
+**4. “I can pause instead of filling silence with ‘umm’.”**
+
+**5. “My speech doesn't need to be fast to sound fluent.”**
+
+**6. “I can use intonation to sound interested, confident, surprised, or concerned.”**
+
+**7. “I know my personal pronunciation priorities.”**
+
+The curriculum now has a balanced progression:
+
+**Day 1 — Structure thoughts**
+**Day 2 — Think faster**
+**Day 3 — Maintain conversations**
+**Day 4 — Tell stories**
+**Day 5 — Upgrade vocabulary**
+**Day 6 — Improve clarity and pronunciation**
+
+For **Day 7**, I would make the first major **Weekly Communication Challenge + Review Day**. Instead of introducing many new concepts, Day 7 can test everything from Days 1–6 through a realistic conversation, story, listening task, vocabulary test, pronunciation challenge, and a personalized **Week 1 Progress Report**.

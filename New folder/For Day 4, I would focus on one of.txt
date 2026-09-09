@@ -1,0 +1,1565 @@
+For **Day 4**, I would focus on one of the most important real-world communication abilities: **telling stories and explaining past experiences clearly**.
+
+Day 1: Structure your thoughts
+Day 2: Think faster and reduce hesitation
+Day 3: Build longer conversations
+Day 4: **Tell stories people can easily follow**
+
+# Day 4 — Tell Better Stories and Explain Past Experiences
+
+**Main objective:** Help learners talk naturally about things that happened in the past, organize events in sequence, add useful details, and make stories interesting rather than confusing.
+
+**Target outcome:** By the end of Day 4, the learner should be able to tell a clear **2–3 minute story** and explain a past experience using a beginning, middle, and ending.
+
+**Recommended duration:** 35–45 minutes
+**Quick version:** 12–15 minutes
+
+The core lesson is:
+
+> **A good story is not about using difficult English. It is about helping the listener understand what happened, why it mattered, and how you felt.**
+
+---
+
+# 1. Day 4 Home Screen
+
+When the learner opens the system:
+
+## DAY 4 OF 30
+
+### Tell Stories People Remember
+
+🔥 Streak: 4 days
+⏱ Today: approximately 40 minutes
+
+### Yesterday you practiced:
+
+* Longer answers
+* Follow-up questions
+* Natural reactions
+* Keeping conversations alive
+
+### Today you will practice:
+
+* Talking about past events
+* Organizing stories
+* Using sequencing words
+* Adding useful details
+* Expressing emotions
+* Ending stories naturally
+
+Button:
+
+**START DAY 4**
+
+---
+
+# 2. Confidence Check — 1 minute
+
+Ask:
+
+### How confident are you when telling a story in English?
+
+**1–10**
+
+Then:
+
+### What usually happens when you talk about something that happened in the past?
+
+* I forget past tense
+* I lose the order of events
+* I don't know enough vocabulary
+* My story becomes too short
+* My story becomes confusing
+* I repeat the same words
+* I forget what I wanted to say
+* I'm comfortable telling stories
+
+Save this.
+
+This helps personalize later exercises.
+
+---
+
+# 3. Day 3 Recall Challenge — 2 minutes
+
+Ask:
+
+### What does LARA help you do?
+
+Expected:
+
+**Listen → Acknowledge → Respond → Ask**
+
+Then give a quick challenge.
+
+AI says:
+
+> I had a very stressful day yesterday.
+
+Learner should respond naturally.
+
+Good:
+
+> That sounds difficult. What happened?
+
+This creates the bridge into today's lesson.
+
+---
+
+# 4. Day 4 Baseline Story — 2 minutes
+
+Before teaching storytelling, capture the learner's current ability.
+
+Prompt:
+
+> Tell me about something interesting that happened to you recently.
+
+Preparation:
+
+**10 seconds**
+
+Speaking:
+
+**60–90 seconds**
+
+Do not show structure yet.
+
+System records:
+
+**Day 4 Story — Before Training**
+
+Track:
+
+* Story length
+* Past tense use
+* Sequence
+* Pauses
+* Repetition
+* Details
+* Ending
+* Vocabulary
+
+We will compare this to the final story.
+
+---
+
+# 5. Show the Problem
+
+Present two versions.
+
+### Version A
+
+> Yesterday I went outside. I met my friend. Then we ate. Then we went somewhere. It was good. Then I came home.
+
+Ask:
+
+### Is this understandable?
+
+Yes.
+
+### Is it interesting?
+
+Not really.
+
+Now show:
+
+### Version B
+
+> Yesterday evening, I met an old friend whom I hadn't seen for almost a year. We originally planned to have a quick coffee, but we ended up talking for nearly three hours. The funniest part was realizing that we had both recently started working on very similar projects.
+
+Explain:
+
+Both stories communicate the event.
+
+The second story gives the listener:
+
+**Context + sequence + detail + emotion + outcome**
+
+---
+
+# 6. Teach the STORY Framework
+
+Introduce Day 4's main framework:
+
+# STORY
+
+### S — Set the scene
+
+Where were you?
+When did it happen?
+Who was there?
+
+### T — Tell what happened
+
+What started the event?
+
+### O — Obstacles / interesting moment
+
+What unexpected, difficult, funny, or important thing happened?
+
+### R — Result
+
+What happened in the end?
+
+### Y — Your reaction
+
+How did you feel?
+What did you learn?
+
+This framework can be reused throughout the entire 30-day program.
+
+---
+
+# 7. STORY Example
+
+Prompt:
+
+> Tell me about a difficult day at work.
+
+### S — Set the scene
+
+> Last month, I was preparing an important presentation for a client.
+
+### T — Tell what happened
+
+> About an hour before the meeting, my laptop suddenly stopped working.
+
+### O — Obstacle
+
+> The problem was that my presentation and notes were all saved on that laptop.
+
+### R — Result
+
+> Fortunately, one of my colleagues helped me recover the files, and we joined the meeting only a few minutes late.
+
+### Y — Your reaction
+
+> I was extremely stressed at the time, but the experience taught me to keep important files backed up.
+
+Now ask learner:
+
+> Which part makes the story interesting?
+
+The obstacle.
+
+---
+
+# 8. Story Builder Activity — 4 minutes
+
+Give a simple event:
+
+> I missed the bus.
+
+Build it step by step.
+
+### Step 1 — Set the scene
+
+> When did this happen?
+
+Learner speaks.
+
+### Step 2 — Tell what happened
+
+> Why did you miss it?
+
+### Step 3 — Add the problem
+
+> What happened because you missed it?
+
+### Step 4 — Result
+
+> What did you do?
+
+### Step 5 — Reaction
+
+> How did you feel?
+
+The system combines the sections into one story.
+
+---
+
+# 9. Story Order Game — 3 minutes
+
+Show events in the wrong order.
+
+Example:
+
+A. I finally reached the airport.
+
+B. I realized I had left my passport at home.
+
+C. Last year, I was traveling to Singapore.
+
+D. My brother brought the passport to me.
+
+E. I was extremely relieved.
+
+Ask learner to arrange:
+
+**C → B → D → A → E**
+
+This teaches sequence before grammar.
+
+---
+
+# 10. Sequencing Words Lesson — 4 minutes
+
+Teach useful storytelling connectors.
+
+### Beginning
+
+* Last week...
+* A few months ago...
+* One day...
+* Recently...
+* When I was...
+
+### Continuing
+
+* First...
+* Then...
+* After that...
+* A little later...
+* Meanwhile...
+
+### Unexpected event
+
+* Suddenly...
+* Surprisingly...
+* Unfortunately...
+* To my surprise...
+
+### Ending
+
+* Eventually...
+* In the end...
+* Finally...
+* Fortunately...
+
+Avoid giving 30 expressions.
+
+Start with 8–10 high-value ones.
+
+---
+
+# 11. Sequence Challenge — 3 minutes
+
+Give learner five events:
+
+> woke up late
+> missed the bus
+> called a taxi
+> arrived at work
+> manager was waiting
+
+Ask them to tell the story using at least four sequencing expressions.
+
+Example:
+
+> Yesterday, I woke up late. First, I rushed to get ready, but unfortunately I missed my bus. After that, I called a taxi. Eventually, I arrived at work, but my manager was already waiting for me.
+
+System detects sequencing language.
+
+---
+
+# 12. Past-Tense Micro Lesson — 4 minutes
+
+Day 4 can include grammar, but only grammar that directly improves communication.
+
+Focus on:
+
+## Simple Past
+
+> I went.
+> I called.
+> I realized.
+> I forgot.
+
+## Past Continuous
+
+Used for background actions:
+
+> I was driving home when my phone rang.
+
+## Past Perfect — optional advanced layer
+
+Used when one past event happened before another:
+
+> I realized that I had forgotten my wallet.
+
+Do not turn this into a long grammar lesson.
+
+Teach through stories.
+
+---
+
+# 13. Choose the Right Past Form — 3 minutes
+
+Example:
+
+> I ___ home when I saw an accident.
+
+Options:
+
+* drove
+* was driving ✅
+* have driven
+
+Then:
+
+> When I arrived, the meeting ___ already ___.
+
+Answer:
+
+> had already started
+
+Then immediately make the learner speak.
+
+Prompt:
+
+> Tell me what you were doing yesterday at 7 p.m.
+
+This activates grammar.
+
+---
+
+# 14. “What Happened Next?” Game — 3 minutes
+
+AI starts:
+
+> Yesterday evening, I was walking home when I noticed something strange near the road...
+
+Learner continues the story.
+
+After 20–30 seconds, AI says:
+
+> What happened next?
+
+Learner continues.
+
+Then:
+
+> And then?
+
+Continue for approximately 90 seconds.
+
+Purpose:
+
+Teach spontaneous storytelling without planning every sentence.
+
+---
+
+# 15. Add Useful Details — 3 minutes
+
+Teach:
+
+Stories need details, but **not every detail**.
+
+Bad:
+
+> It was Monday. I woke up at 6:42. I brushed my teeth. I used the blue toothbrush...
+
+Too much.
+
+Better details answer:
+
+* Where?
+* Who?
+* What was unusual?
+* What mattered?
+* How did you feel?
+
+Give learner:
+
+> I had an interview.
+
+Ask them to add **3 useful details**.
+
+For example:
+
+> It was my first interview for an international company. There were three interviewers, and the interview lasted nearly an hour.
+
+---
+
+# 16. Detail Detector Game
+
+Show:
+
+> Last weekend I went somewhere with someone and we did something. It was nice.
+
+Ask:
+
+### What's missing?
+
+* Place
+* Person
+* Activity
+* Emotion
+* Interesting moment
+
+Learner improves the story.
+
+Possible:
+
+> Last weekend, I went hiking with two friends in the mountains. We started early in the morning, and halfway through the hike it suddenly began raining. We were completely unprepared, but we ended up laughing about it.
+
+---
+
+# 17. Emotion Vocabulary — 4 minutes
+
+Instead of always:
+
+> I was happy.
+
+> I was sad.
+
+Teach more useful emotional vocabulary.
+
+### Happy
+
+* excited
+* delighted
+* relieved
+* proud
+* grateful
+
+### Negative
+
+* nervous
+* frustrated
+* embarrassed
+* disappointed
+* overwhelmed
+
+### Surprise
+
+* surprised
+* shocked
+* confused
+* amazed
+
+Teach differences briefly.
+
+For example:
+
+**Nervous:** worried before something happens.
+
+**Relieved:** happy because a problem is over.
+
+---
+
+# 18. Emotion Upgrade Game — 2 minutes
+
+Replace:
+
+> I was very happy.
+
+Possible:
+
+> I was delighted.
+
+Replace:
+
+> I was very worried.
+
+Possible:
+
+> I was extremely nervous.
+
+Replace:
+
+> I was happy because the problem ended.
+
+Better:
+
+> I was relieved.
+
+Then make learner use two emotions in their own story.
+
+---
+
+# 19. Show, Don't Only Tell — 3 minutes
+
+Teach the difference.
+
+Basic:
+
+> I was nervous.
+
+Better:
+
+> I was so nervous that I checked my presentation three times before the meeting.
+
+Basic:
+
+> I was tired.
+
+Better:
+
+> By the time I got home, I could barely keep my eyes open.
+
+Don't require literary storytelling.
+
+Just make descriptions more natural.
+
+---
+
+# 20. Today's Five Power Expressions
+
+Choose storytelling phrases.
+
+### 1. It all started when...
+
+> It all started when I received an unexpected phone call.
+
+### 2. The funny thing was...
+
+> The funny thing was that neither of us knew where we were going.
+
+### 3. To my surprise...
+
+> To my surprise, they offered me the job.
+
+### 4. At that point...
+
+> At that point, I realized I had made a mistake.
+
+### 5. In the end...
+
+> In the end, everything worked out well.
+
+These become part of active vocabulary.
+
+---
+
+# 21. Expression Activation — 3 minutes
+
+Prompt:
+
+> Tell me about a time when something unexpected happened.
+
+Requirement:
+
+Use at least **3/5 expressions**.
+
+Live checklist:
+
+☐ It all started when
+☐ The funny thing was
+☐ To my surprise
+☐ At that point
+☐ In the end
+
+---
+
+# 22. Picture Story Activity — 4 minutes
+
+If our system includes images, show a sequence of 4–5 simple illustrations.
+
+Example sequence:
+
+1. Person wakes up late.
+2. Runs toward bus.
+3. Bus leaves.
+4. Calls a taxi.
+5. Arrives at interview.
+
+Ask learner:
+
+> Tell the complete story.
+
+Requirements:
+
+* Beginning
+* Sequencing words
+* Problem
+* Outcome
+* Emotion
+
+This is excellent for students and professionals because the learner doesn't need personal knowledge.
+
+---
+
+# 23. Story From Keywords — 3 minutes
+
+Give only:
+
+**airport — passport — taxi — phone call — relieved**
+
+Learner creates a story.
+
+There is no single correct answer.
+
+This trains imagination + spontaneous English.
+
+Another:
+
+**presentation — laptop — client — problem — success**
+
+Professional version.
+
+---
+
+# 24. Listening Activity — 4 minutes
+
+Play a 45–60 second story.
+
+Then ask:
+
+### Who was involved?
+
+### Where did it happen?
+
+### What was the problem?
+
+### What happened in the end?
+
+### How did the speaker feel?
+
+Then:
+
+> Retell the story in your own words.
+
+This is important.
+
+Learners should not repeat exactly.
+
+They should **reconstruct meaning**.
+
+---
+
+# 25. Retelling Challenge — 3 minutes
+
+After listening, hide the transcript.
+
+Show only five keywords.
+
+For example:
+
+**train — interview — delay — phone call — successful**
+
+Learner retells.
+
+System measures:
+
+* Main information retained
+* Sequence
+* Paraphrasing
+* Fluency
+
+This trains both listening and speaking.
+
+---
+
+# 26. Pronunciation Focus — Sentence Chunking
+
+Teach learners not to speak as one long stream.
+
+Example:
+
+> Last Friday / I was driving home from work / when suddenly / my car started making a strange noise.
+
+Explain:
+
+Native/natural speech is organized into **thought groups**.
+
+Practice:
+
+> A few weeks ago / I had an interview / for a job I really wanted.
+
+> To my surprise / the interview was much more relaxed / than I expected.
+
+Learner repeats.
+
+---
+
+# 27. Pause for Effect
+
+Day 2 taught:
+
+**Pause instead of “umm.”**
+
+Day 4 expands this.
+
+Good storyteller:
+
+> When I opened the email... **pause** ...I couldn't believe what I was reading.
+
+Teach intentional pause.
+
+Not:
+
+> ummmmmmmmm...
+
+But:
+
+> At that point... I realized I'd forgotten my passport.
+
+This improves naturalness.
+
+---
+
+# 28. Story Repair Skill
+
+Learners sometimes make mistakes while telling stories.
+
+Teach natural recovery phrases:
+
+* Sorry, what I mean is...
+* Let me correct that...
+* Actually, it happened on Friday, not Thursday.
+* I should say...
+* Let me put that another way...
+
+The goal:
+
+**Correct quickly and continue.**
+
+Do not restart the entire story.
+
+---
+
+# 29. Story Repair Challenge — 2 minutes
+
+Ask learner to tell a short story.
+
+During it, AI can simulate:
+
+> Sorry, did you mean Monday or Tuesday?
+
+Learner clarifies:
+
+> Sorry, I meant Tuesday.
+
+Then continues.
+
+This trains real conversation resilience.
+
+---
+
+# 30. Professional Track — STAR Storytelling
+
+For professionals, introduce a useful variation:
+
+# STAR
+
+**S — Situation**
+
+**T — Task**
+
+**A — Action**
+
+**R — Result**
+
+This is useful for interviews.
+
+Question:
+
+> Tell me about a time you solved a difficult problem.
+
+Example structure:
+
+### Situation
+
+> Our team was preparing a report for an important client.
+
+### Task
+
+> I was responsible for analyzing the final data.
+
+### Action
+
+> I discovered an error, checked the source, and worked with another team to correct it.
+
+### Result
+
+> We submitted the report on time and avoided sending incorrect information to the client.
+
+This can become a major recurring framework.
+
+---
+
+# 31. Professional STAR Practice — 4 minutes
+
+Choose:
+
+> Tell me about a time you handled a difficult situation.
+
+Preparation:
+
+**30 seconds**
+
+Speaking:
+
+**2 minutes**
+
+System checks:
+
+☐ Situation
+☐ Task
+☐ Action
+☐ Result
+
+This is extremely valuable for workplace learners.
+
+---
+
+# 32. Student Track
+
+Prompt:
+
+> Tell me about a time you had to complete a difficult assignment or project.
+
+Use:
+
+**Situation → Problem → Action → Result**
+
+The learner explains:
+
+* What the assignment was
+* Why it was difficult
+* What they did
+* What happened
+* What they learned
+
+---
+
+# 33. General English Track
+
+Prompt:
+
+> Tell me about a memorable trip, celebration, mistake, surprise, or funny experience.
+
+Focus on:
+
+**STORY**, not STAR.
+
+---
+
+# 34. Main Day 4 Challenge — 3-Minute Story
+
+This is today's big challenge.
+
+Choose one:
+
+### Option A
+
+A time something went wrong.
+
+### Option B
+
+A memorable trip.
+
+### Option C
+
+A difficult situation you solved.
+
+### Option D
+
+A funny experience.
+
+### Option E
+
+A moment you were proud of.
+
+Preparation:
+
+**30 seconds**
+
+Show optional planning board:
+
+**Setting**
+
+**What happened**
+
+**Problem/interesting moment**
+
+**Result**
+
+**Reaction**
+
+Then:
+
+🎙️ **Speak for 3 minutes**
+
+Requirements:
+
+☐ Use a clear beginning
+
+☐ Use 3 sequencing expressions
+
+☐ Include at least one important detail
+
+☐ Explain the main problem/event
+
+☐ Use 2 emotion words
+
+☐ Finish with the outcome
+
+☐ Do not restart
+
+---
+
+# 35. Story Scorecard
+
+Afterward, provide:
+
+## Day 4 Story Analysis
+
+Example:
+
+**Story structure:** 78/100
+
+**Sequence clarity:** 82/100
+
+**Past-tense accuracy:** 69/100
+
+**Useful details:** 74/100
+
+**Vocabulary:** 71/100
+
+**Emotional expression:** 67/100
+
+**Fluency:** 73/100
+
+**Ending quality:** 76/100
+
+### Overall storytelling score
+
+**74/100**
+
+Also:
+
+**Speaking time:** 2:46
+
+**Long pauses:** 4
+
+**Sequence expressions:** 5
+
+**Emotion words:** 3
+
+**Repeated words:** 8
+
+---
+
+# 36. AI Coach Feedback
+
+Feedback could be:
+
+### ✅ Strongest part
+
+> Your story had a clear problem and result, so it was easy to follow.
+
+### 🎯 Main improvement
+
+> The beginning contained too many details before the important event started.
+
+### 🔧 Grammar correction
+
+You said:
+
+> “When I was reach the office...”
+
+Better:
+
+> “When I reached the office...”
+
+### ✨ Vocabulary upgrade
+
+Instead of:
+
+> “I was very worried.”
+
+Try:
+
+> “I was extremely anxious.”
+
+### 🚀 Next attempt goal
+
+> Use “at that point” and make your ending clearer.
+
+---
+
+# 37. Before vs After Comparison
+
+Now compare the baseline story from Activity 4 with the final story.
+
+### Before Training
+
+Story duration: **1:07**
+
+Clear sequence: **5/10**
+
+Useful detail: **4/10**
+
+Story ending: **4/10**
+
+### After Training
+
+Story duration: **2:46 ↑**
+
+Clear sequence: **8/10 ↑**
+
+Useful detail: **7/10 ↑**
+
+Story ending: **8/10 ↑**
+
+Show:
+
+# Your Storytelling Improved Today 📈
+
+This is a powerful motivational moment.
+
+---
+
+# 38. Two-Minute Retry
+
+Give the learner another chance.
+
+Same topic or a similar topic.
+
+Focus only on:
+
+**Sequence + Details + Ending**
+
+Keep the retry shorter than the main challenge.
+
+Then compare:
+
+**Attempt 1 → Attempt 2**
+
+---
+
+# 39. Real-World Mission
+
+# Day 4 Real-Life Mission
+
+Tell someone a **real story in English for at least 3 minutes**.
+
+Suggested topics:
+
+* Something funny that happened
+* A mistake you made
+* A recent trip
+* A difficult day
+* A successful moment
+* Something surprising
+
+Mission requirements:
+
+☐ Set the scene
+
+☐ Explain what happened
+
+☐ Use at least 3 sequence words
+
+☐ Explain how you felt
+
+☐ Finish clearly
+
+Then ask the listener:
+
+> Has anything similar ever happened to you?
+
+This connects Day 4 with Day 3's follow-up-question skill.
+
+---
+
+# 40. Reflection
+
+Ask:
+
+### 1. Was it easier to tell a story after using STORY?
+
+* Much easier
+* Slightly easier
+* Same
+* Harder
+
+### 2. What was hardest?
+
+* Remembering past tense
+* Organizing events
+* Finding vocabulary
+* Adding details
+* Expressing emotion
+* Ending the story
+* Speaking continuously
+
+### 3. Did you restart after making mistakes?
+
+* Often
+* Sometimes
+* Rarely
+* Never
+
+### 4. Storytelling confidence
+
+**Before:** saved from beginning
+
+**Now:** 1–10
+
+### 5. Finish:
+
+> Next time I tell a story, I will...
+
+---
+
+# 41. Day 4 Results Screen
+
+# Day 4 Complete 🎉
+
+🎙️ **Total speaking:** 17 min
+
+📖 **Stories told:** 6
+
+⏱️ **Longest story:** 3 min
+
+🔗 **Sequencing expressions:** 8 practiced
+
+😊 **Emotion words:** 8 practiced
+
+🧠 **Framework learned:** STORY
+
+💼 **Professional framework:** STAR, if applicable
+
+🎧 **Story listening:** Complete
+
+🔁 **Retry:** Complete
+
+🌍 **Real-world mission:** Complete / Pending
+
+🔥 **Streak:** 4 days
+
+⭐ **XP earned:** +150
+
+Badge:
+
+## 🏅 Storyteller
+
+---
+
+# 42. What the System Stores on Day 4
+
+| Metric                    | Purpose                    |
+| ------------------------- | -------------------------- |
+| Story duration            | Measure speaking endurance |
+| Story structure           | Organization               |
+| Event sequence            | Clarity                    |
+| Past tense accuracy       | Grammar                    |
+| Sequencing expressions    | Active vocabulary          |
+| Detail usage              | Communication richness     |
+| Emotion vocabulary        | Expressiveness             |
+| Long pauses               | Fluency                    |
+| Filler words              | Fluency                    |
+| Repeated vocabulary       | Vocabulary range           |
+| Clear ending              | Story quality              |
+| Self-correction           | Communication recovery     |
+| Listening/retelling score | Comprehension              |
+| Before/after difference   | Demonstrate improvement    |
+| Confidence                | Progress                   |
+| Real-world mission        | Practical use              |
+
+---
+
+# 43. New Product Features Introduced on Day 4
+
+This day gives us several reusable system components.
+
+### 1. Story Builder
+
+Learners construct:
+
+**Setting → Event → Problem → Result → Reaction**
+
+We can reuse this throughout the course.
+
+### 2. Story Structure Detector
+
+AI detects whether the learner included:
+
+* Context
+* Main event
+* Challenge
+* Result
+* Reflection
+
+### 3. Sequence Detector
+
+Detect:
+
+* First
+* Then
+* After that
+* Suddenly
+* Eventually
+* Finally
+
+### 4. Tense Analysis
+
+Identify major spoken tense problems without correcting every sentence.
+
+### 5. Emotion Vocabulary Coach
+
+Suggest richer emotional language based on what the learner says.
+
+### 6. Story Retelling Engine
+
+Play short content and require learners to retell it.
+
+### 7. Before/After Story Comparison
+
+Compare the first story with the trained attempt.
+
+### 8. STAR Interview Mode
+
+Reuse later for:
+
+* Job interviews
+* Performance reviews
+* Leadership conversations
+* Behavioral questions
+
+These features provide value beyond Day 4.
+
+---
+
+# 44. Gamification
+
+Possible XP:
+
+**Day 3 recall:** +10
+
+**Baseline story:** +10
+
+**STORY framework:** +20
+
+**Sequence challenge:** +15
+
+**Vocabulary activity:** +15
+
+**Story games:** +20
+
+**Listening/retelling:** +20
+
+**Main challenge:** +30
+
+**Retry:** +10
+
+**Real-world mission:** +20
+
+Possible total:
+
+# +170 XP
+
+Badge:
+
+🏅 **Storyteller**
+
+Additional badge if they complete the story without restarting:
+
+🏅 **Keep Going**
+
+---
+
+# 45. Quick Day 4 — 12–15 Minutes
+
+For busy learners:
+
+**1 min** — Confidence + Day 3 recall
+
+**2 min** — Baseline story
+
+**2 min** — Learn STORY
+
+**2 min** — Learn sequence words
+
+**2 min** — Story Builder
+
+**3 min** — Final story challenge
+
+**1 min** — AI feedback
+
+**1 min** — Reflection
+
+Real-world mission can happen later during the day.
+
+This still maintains the streak.
+
+---
+
+# Complete Day 4 System Flow
+
+**Open App**
+
+↓
+
+🔥 Day 4 / Streak
+
+↓
+
+🙂 Storytelling confidence
+
+↓
+
+🔄 Day 3 recall
+
+↓
+
+🎙️ Baseline story
+
+↓
+
+👀 Weak vs strong story comparison
+
+↓
+
+📚 Learn STORY
+
+↓
+
+🧱 Story Builder
+
+↓
+
+🔀 Story Order Game
+
+↓
+
+🔗 Learn sequencing expressions
+
+↓
+
+🎙️ Sequence speaking challenge
+
+↓
+
+📚 Past-tense micro lesson
+
+↓
+
+🎮 What Happened Next game
+
+↓
+
+➕ Add useful details
+
+↓
+
+😊 Emotion vocabulary
+
+↓
+
+✨ Show, Don't Only Tell
+
+↓
+
+📚 5 Power Expressions
+
+↓
+
+🎙️ Expression activation
+
+↓
+
+🖼️ Picture Story
+
+↓
+
+🎲 Story From Keywords
+
+↓
+
+🎧 Listen to a story
+
+↓
+
+🗣️ Retell it
+
+↓
+
+🔊 Pronunciation + chunking
+
+↓
+
+⏸️ Intentional pauses
+
+↓
+
+🛠️ Story repair skill
+
+↓
+
+💼 STAR / 🎓 Student / 🌍 General track
+
+↓
+
+🏆 **3-minute main story challenge**
+
+↓
+
+📊 Story scorecard
+
+↓
+
+🤖 AI feedback
+
+↓
+
+📈 Before vs After
+
+↓
+
+🔁 2-minute retry
+
+↓
+
+🌍 Real-world storytelling mission
+
+↓
+
+📝 Reflection
+
+↓
+
+📊 Dashboard update
+
+↓
+
+🏅 Storyteller Badge
+
+↓
+
+🔥 **4-Day Streak**
+
+---
+
+# What Day 4 should achieve
+
+At the end of the day, learners should feel:
+
+**1. “I know how to organize a story before I speak.”**
+
+**2. “I can explain past events without getting completely lost.”**
+
+**3. “I can use sequencing phrases instead of repeating ‘then... then... then...’.”**
+
+**4. “I can add useful details without adding unnecessary information.”**
+
+**5. “I can explain how I felt more naturally.”**
+
+**6. “If I make a mistake, I can correct myself and continue.”**
+
+**7. “I can speak for around 2–3 minutes about a past experience.”**
+
+The curriculum now develops naturally:
+
+**Day 1 — Structure your thoughts**
+
+**Day 2 — Think faster and reduce hesitation**
+
+**Day 3 — Build longer conversations**
+
+**Day 4 — Tell clear and engaging stories**
+
+For **Day 5**, I would move into **vocabulary activation and upgrading basic English into more natural, intermediate-to-advanced English**—for example transforming “very good,” “very difficult,” “I think,” “I want,” and repetitive vocabulary into stronger communication without making learners sound unnatural.
