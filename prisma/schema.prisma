@@ -42,6 +42,7 @@ model User {
   skillSnapshots     SkillSnapshot[]
   weeklyDiagnostics  WeeklyDiagnostic[]
   aiRecommendations  AIRecommendation[]
+  week2FluencyMetrics Week2FluencyMetrics[]
   programEnrollment  ProgramEnrollment?
 }
 
@@ -293,6 +294,56 @@ model SkillSnapshot {
   evidenceJson    String?  // JSON - detailed evidence
   scoringVersion  String?  // version of scoring algorithm
   createdAt       DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, dayNumber])
+}
+
+model Week2FluencyMetrics {
+  id                          String   @id @default(cuid())
+  userId                      String
+  dayNumber                   Int
+  attemptId                   String?
+
+  // Day 8: Opinion & Disagreement
+  opinionPositionClarity      Float?
+  supportingReasonsCount      Int?
+  examplesEvidenceScore       Float?
+  counterargumentResponseScore Float?
+  agreementStyle              String?
+
+  // Day 9: Connectors & Structure
+  connectorDiversity          Float?
+  connectorAppropriateness    Float?
+  paraphraseAttempts          Int?
+  cleftSentencesUsed          Int?
+  parallelStructureScore      Float?
+
+  // Day 10: Listening & Retelling
+  summaryAccuracy             Float?
+  keyDetailRetention          Float?
+  discourseMarkerRecognition  Float?
+  dictoglossAccuracy          Float?
+
+  // Day 11: Spontaneous Speaking
+  impromptuStartDelay         Float?
+  ideaContinuity              Float?
+  pauseCount                  Int?
+  fillerRate                  Float?
+
+  // Day 12: Difficult Situations
+  conditionalStructureScore   Float?
+  consequenceClarity          Float?
+  politenessDiplomacy         Float?
+
+  // Day 13: Presentations
+  presentationOrganization    Float?
+  signpostingScore            Float?
+  audienceAdaptationScore     Float?
+  questionHandlingScore       Float?
+
+  createdAt                   DateTime @default(now())
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 

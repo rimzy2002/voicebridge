@@ -47,7 +47,31 @@ export type ActivityType =
   | 'weekly_challenge'
   | 'baseline_comparison'
   | 'weekly_report'
-  | 'information_display';
+  | 'information_display'
+  // Week 2 Activities
+  | 'opinion_builder'
+  | 'agreement_disagreement'
+  | 'counterargument'
+  | 'devil_advocate'
+  | 'connector_activation'
+  | 'lexical_chunk_activation'
+  | 'structural_expansion'
+  | 'sentence_surgery'
+  | 'paraphrase_multi_round'
+  | 'summary_reconstruction'
+  | 'retelling_321'
+  | 'dictogloss'
+  | 'discourse_marker_detection'
+  | 'listening_speed_adaptation'
+  | 'impromptu_prompt'
+  | 'five_second_prompt'
+  | 'story_cube'
+  | 'rubber_duck'
+  | 'conditional_scenario'
+  | 'consequence_builder'
+  | 'elevator_pitch_rotation'
+  | 'mini_presentation'
+  | 'weekly_diagnostic_v2';
 
 // --- Activity Definition (Curriculum Data) ---
 export interface ActivityDefinition {
@@ -434,4 +458,77 @@ export type AnalyticsEvent =
   | 'streak_updated'
   | 'badge_awarded'
   | 'week_completed'
-  | 'week2_unlocked';
+  | 'week2_unlocked'
+  | 'week3_unlocked';
+
+// ============================================================
+// Week 2 Fluency Metrics & Queryable Data
+// ============================================================
+
+export interface Week2FluencyMetrics {
+  id?: string;
+  attemptId?: string;
+  userId?: string;
+  dayNumber: number;
+
+  // Opinion & Disagreement (Day 8)
+  opinionPositionClarity?: number;     // 1-10
+  supportingReasonsCount?: number;     // count
+  examplesEvidenceScore?: number;      // 1-10
+  counterargumentResponseScore?: number; // 1-10
+  agreementStyle?: 'strong' | 'moderate' | 'partial' | 'qualified' | 'disagree' | 'none';
+
+  // Connectors & Structure (Day 9)
+  connectorDiversity?: number;         // ratio of unique connectors used
+  connectorAppropriateness?: number;   // 1-10
+  paraphraseAttempts?: number;         // count
+  cleftSentencesUsed?: number;         // count
+  parallelStructureScore?: number;     // 1-10
+
+  // Listening & Retelling (Day 10)
+  summaryAccuracy?: number;            // 1-10
+  keyDetailRetention?: number;         // percentage 0-100
+  discourseMarkerRecognition?: number; // percentage 0-100
+  dictoglossAccuracy?: number;         // percentage 0-100
+
+  // Spontaneous Speaking (Day 11)
+  impromptuStartDelay?: number;        // seconds
+  ideaContinuity?: number;             // 1-10
+  pauseCount?: number;                 // count
+  fillerRate?: number;                 // count / min
+
+  // Difficult Situations (Day 12)
+  conditionalStructureScore?: number;  // 1-10
+  consequenceClarity?: number;         // 1-10
+  politenessDiplomacy?: number;        // 1-10
+
+  // Presentations (Day 13)
+  presentationOrganization?: number;   // 1-10
+  signpostingScore?: number;           // 1-10
+  audienceAdaptationScore?: number;    // 1-10
+  questionHandlingScore?: number;      // 1-10
+
+  createdAt?: string;
+}
+
+export interface PriorityItem {
+  id: string;
+  title: string;
+  description: string;
+  focusArea: string;
+  recommendedAction: string;
+  status: 'active' | 'improving' | 'resolved';
+}
+
+export interface PitchRound {
+  targetSeconds: number;
+  label: string;
+  guidance: string;
+}
+
+export interface StoryCubeOption {
+  word: string;
+  category: 'object' | 'person' | 'place' | 'concept';
+  icon?: string;
+}
+

@@ -1,5 +1,23 @@
 import { DayDefinition } from '@/types';
 import day1 from './day1';
+import day8 from './day8';
+import day9 from './day9';
+import day10 from './day10';
+import day11 from './day11';
+import day12 from './day12';
+import day13 from './day13';
+import day14 from './day14';
+
+const dedicatedDays: Record<number, DayDefinition> = {
+  1: day1,
+  8: day8,
+  9: day9,
+  10: day10,
+  11: day11,
+  12: day12,
+  13: day13,
+  14: day14,
+};
 
 const dayMeta: Record<number, { title: string; subtitle: string; objective: string; coreMessage: string }> = {
   1: {
@@ -47,8 +65,8 @@ const dayMeta: Record<number, { title: string; subtitle: string; objective: stri
 };
 
 export function getDay(dayNumber: number): DayDefinition {
-  if (dayNumber === 1) {
-    return day1;
+  if (dedicatedDays[dayNumber]) {
+    return dedicatedDays[dayNumber];
   }
 
   const meta = dayMeta[dayNumber] || {

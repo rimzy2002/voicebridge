@@ -16,6 +16,11 @@ import ReflectionActivity from '@/components/activity/ReflectionActivity';
 import MissionActivity from '@/components/activity/MissionActivity';
 import ScorecardActivity from '@/components/activity/ScorecardActivity';
 import InformationDisplayActivity from '@/components/activity/InformationDisplayActivity';
+import OpinionBuilderActivity from '@/components/activity/OpinionBuilderActivity';
+import ConnectorActivationActivity from '@/components/activity/ConnectorActivationActivity';
+import ListeningInteractiveActivity from '@/components/activity/ListeningInteractiveActivity';
+import WeeklyDiagnosticV2Activity from '@/components/activity/WeeklyDiagnosticV2Activity';
+import { getPersonalizedFocusBanner } from '@/lib/curriculum/diagnostic';
 
 import type { DayDefinition } from '@/types';
 
@@ -152,7 +157,33 @@ export default function ActivityShell({
       case 'recording':
       case 'timed_speaking':
       case 'think_in_english':
+      case 'impromptu_prompt':
+      case 'five_second_prompt':
+      case 'story_cube':
+      case 'rubber_duck':
+      case 'devil_advocate':
+      case 'elevator_pitch_rotation':
+      case 'mini_presentation':
+      case 'retelling_321':
+      case 'conditional_scenario':
+      case 'consequence_builder':
+      case 'paraphrase_multi_round':
         return <RecordingActivity {...commonProps} />;
+      case 'opinion_builder':
+      case 'agreement_disagreement':
+      case 'counterargument':
+        return <OpinionBuilderActivity {...commonProps} />;
+      case 'connector_activation':
+      case 'lexical_chunk_activation':
+      case 'structural_expansion':
+      case 'sentence_surgery':
+        return <ConnectorActivationActivity {...commonProps} />;
+      case 'dictogloss':
+      case 'listening_speed_adaptation':
+      case 'summary_reconstruction':
+      case 'discourse_marker_detection':
+      case 'listening_response':
+        return <ListeningInteractiveActivity {...commonProps} />;
       case 'framework_lesson':
         return <FrameworkLessonActivity {...commonProps} />;
       case 'vocabulary_activation':
@@ -162,6 +193,15 @@ export default function ActivityShell({
         return <ReflectionActivity {...commonProps} />;
       case 'mission':
         return <MissionActivity {...commonProps} />;
+      case 'weekly_diagnostic_v2':
+      case 'weekly_challenge':
+        return (
+          <WeeklyDiagnosticV2Activity
+            {...commonProps}
+            earnedXp={earnedXp + totalXp}
+            streak={currentStreak}
+          />
+        );
       case 'scorecard':
         return (
           <ScorecardActivity
@@ -176,7 +216,8 @@ export default function ActivityShell({
         );
       case 'information_display':
       case 'pronunciation_lesson':
-        return <InformationDisplayActivity {...commonProps} />;
+      case 'weekly_review':
+      case 'weekly_report':
       default:
         return <InformationDisplayActivity {...commonProps} />;
     }
@@ -216,6 +257,27 @@ export default function ActivityShell({
       <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', marginTop: 'var(--space-2)', textAlign: 'right' }}>
         {completedIds.size}/{activities.length} activities • {progress}%
       </p>
+
+      {/* Week 2 Personalized Priority Focus Banner */}
+      {day.dayNumber >= 8 && day.dayNumber <= 14 && (
+        <div style={{
+          background: 'rgba(99, 102, 241, 0.08)',
+          border: '1px solid rgba(99, 102, 241, 0.25)',
+          borderRadius: 'var(--radius-lg)',
+          padding: 'var(--space-3) var(--space-4)',
+          margin: 'var(--space-3) 0',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 'var(--space-3)',
+          fontSize: 'var(--text-xs)',
+          color: 'var(--text-primary)',
+        }}>
+          <span style={{ fontSize: 'var(--text-base)' }}>🎯</span>
+          <div>
+            <strong>Personalized Focus:</strong> {getPersonalizedFocusBanner(day.dayNumber, track)}
+          </div>
+        </div>
+      )}
 
       {/* Activity counter */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin: 'var(--space-4) 0' }}>
