@@ -91,6 +91,16 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
     }
   }, []);
 
+  const stopRecording = useCallback(() => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+      mediaRecorderRef.current.stop();
+    }
+  }, []);
+
   const startRecording = useCallback(async () => {
     chunksRef.current = [];
 
@@ -186,17 +196,34 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
     } else {
       startActualRecording();
     }
-  }, [requestMicPermission, maxDuration, onRecordingComplete, countdownSeconds, cleanup]);
+  }, [requestMicPermission, maxDuration, onRecordingComplete, countdownSeconds, cleanup, stopRecording]);
 
-  const stopRecording = useCallback(() => {
-    if (timerRef.current) {
-      clearInterval(timerRef.current);
-      timerRef.current = null;
-    }
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
-      mediaRecorderRef.current.stop();
+  const pauseRecording = useCallback(() => {
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
+      mediaRecorderRef.current.pause();
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+      setState(prev => ({ ...prev, status: 'paused' }));
     }
   }, []);
+
+  const resumeRecording = useCallback(() => {
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'paused') {
+      mediaRecorderRef.current.resume();
+      startTimeRef.current = Date.now() - state.duration * 1000;
+      timerRef.current = setInterval(() => {
+        const elapsed = (Date.now() - startTimeRef.current) / 1000;
+        setState(prev => ({ ...prev, duration: elapsed }));
+
+        if (maxDuration && elapsed >= maxDuration) {
+          stopRecording();
+        }
+      }, 100);
+      setState(prev => ({ ...prev, status: 'recording' }));
+    }
+  }, [state.duration, maxDuration, stopRecording]);
 
   const discardRecording = useCallback(() => {
     if (state.audioUrl) {
@@ -233,8 +260,12 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
 
   return {
     ...state,
+    isRecording: state.status === 'recording',
+    isPaused: state.status === 'paused',
     startRecording,
     stopRecording,
+    pauseRecording,
+    resumeRecording,
     discardRecording,
     resetRecorder,
   };

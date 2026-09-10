@@ -131,7 +131,7 @@ export function saveLearnerPriorities(priorities: {
 }
 
 /**
- * Generates an executive personalized banner text for Days 8-14
+ * Generates an executive personalized banner text for Days 8-21
  */
 export function getPersonalizedFocusBanner(dayNumber: number, track: LearnerTrack = 'general'): string {
   const { primary } = getLearnerPriorities(track);
@@ -151,8 +151,91 @@ export function getPersonalizedFocusBanner(dayNumber: number, track: LearnerTrac
       return `Presentation delivery focus: master ${primary.title.toLowerCase()} across signposts.`;
     case 14:
       return `Week 2 Fluency Milestone: validating measurable growth on ${primary.title}.`;
+    case 15:
+      return `Professional Reset focus: natural elevator pitch and networking presence without corporate rigidity.`;
+    case 16:
+      return `Meeting participation target: contribute at least one concise update or idea using STATUS/PROGRESS.`;
+    case 17:
+      return `Interview structure focus: anchor claims in STAR evidence rather than vague adjectives.`;
+    case 18:
+      return `Presentation delivery target: signpost transitions cleanly and separate fact from inference.`;
+    case 19:
+      return `High-stakes communication focus: Situation-Behavior-Impact (SBI) feedback and composed accountability.`;
+    case 20:
+      return `Action extraction focus: convert dense written messages into spoken action and negotiate trade-offs.`;
+    case 21:
+      return `Week 3 Professional Challenge: unassisted end-to-end professional performance synthesis.`;
     default:
       return `Target focus: ${primary.title}.`;
+  }
+}
+
+/**
+ * Week 3 high-impact diagnostic priorities for Week 4 recommendation
+ */
+export const WEEK3_PRIORITIES: Record<string, PriorityItem> = {
+  meeting_presence: {
+    id: 'meeting_presence',
+    title: 'Executive Presence in Fast-Moving Meetings',
+    description: 'Contributing concisely without hesitation and managing polite interruptions cleanly.',
+    focusArea: 'Meeting Dynamics',
+    recommendedAction: 'Use the 4-part update framework (STATUS → PROGRESS → ISSUE → NEXT) within 45 seconds.',
+    status: 'active',
+  },
+  star_evidence: {
+    id: 'star_evidence',
+    title: 'Evidence-Based STAR Storytelling',
+    description: 'Replacing general claims with specific metrics, actions, and concrete results.',
+    focusArea: 'Interview & Persuasion',
+    recommendedAction: 'Always quantify the Result (e.g., "saved 4 hours/week", "resolved 10 days early").',
+    status: 'active',
+  },
+  data_storytelling: {
+    id: 'data_storytelling',
+    title: 'Data Narration & Fact-Inference Distinction',
+    description: 'Signposting complex metrics while explicitly flagging subjective interpretations.',
+    focusArea: 'Presentations',
+    recommendedAction: 'Use signal phrases: "The data shows..." for facts vs "This suggests..." for inferences.',
+    status: 'active',
+  },
+  sbi_diplomacy: {
+    id: 'sbi_diplomacy',
+    title: 'Constructive Disagreement & SBI Feedback',
+    description: 'Addressing underperformance or conflict without personal attacks or defensive reactions.',
+    focusArea: 'High-Stakes Interpersonal',
+    recommendedAction: 'Anchor feedback strictly in observable behavior and concrete operational impact.',
+    status: 'active',
+  },
+  negotiation_tradeoffs: {
+    id: 'negotiation_tradeoffs',
+    title: 'Trade-Off & Scope Negotiation',
+    description: 'Proposing alternatives rather than outright refusal when facing impossible deadlines.',
+    focusArea: 'Strategic Negotiation',
+    recommendedAction: 'Use the "If we keep X, we must adjust Y" formula to protect delivery standards.',
+    status: 'active',
+  },
+};
+
+export function getWeek3Priorities(track: LearnerTrack = 'general'): {
+  primary: PriorityItem;
+  secondary: PriorityItem;
+} {
+  switch (track) {
+    case 'professional':
+      return {
+        primary: WEEK3_PRIORITIES.meeting_presence,
+        secondary: WEEK3_PRIORITIES.negotiation_tradeoffs,
+      };
+    case 'student':
+      return {
+        primary: WEEK3_PRIORITIES.star_evidence,
+        secondary: WEEK3_PRIORITIES.data_storytelling,
+      };
+    default:
+      return {
+        primary: WEEK3_PRIORITIES.sbi_diplomacy,
+        secondary: WEEK3_PRIORITIES.meeting_presence,
+      };
   }
 }
 

@@ -77,6 +77,55 @@ export const BADGES: BadgeDefinition[] = [
     icon: '🎯',
     category: 'special',
   },
+  // --- Week 3 Professional Badges ---
+  {
+    slug: 'meeting-contributor',
+    name: 'Meeting Contributor',
+    description: 'Actively contributed concise updates, ideas, and polite interruptions in meetings',
+    icon: '👥',
+    category: 'skill',
+    dayRequired: 16,
+  },
+  {
+    slug: 'interview-ready',
+    name: 'Interview Ready',
+    description: 'Structured compelling behavioral interview answers using the STAR framework',
+    icon: '🎯',
+    category: 'skill',
+    dayRequired: 17,
+  },
+  {
+    slug: 'data-narrator',
+    name: 'Data Narrator',
+    description: 'Described data trends accurately and clearly distinguished facts from inferences',
+    icon: '📊',
+    category: 'skill',
+    dayRequired: 18,
+  },
+  {
+    slug: 'feedback-master',
+    name: 'Feedback Master',
+    description: 'Delivered constructive SBI feedback and handled difficult conversations with composure',
+    icon: '⚖️',
+    category: 'skill',
+    dayRequired: 19,
+  },
+  {
+    slug: 'negotiator',
+    name: 'Strategic Negotiator',
+    description: 'Negotiated trade-offs effectively and confirmed actionable agreements under constraints',
+    icon: '🤝',
+    category: 'skill',
+    dayRequired: 20,
+  },
+  {
+    slug: 'professional-communicator',
+    name: 'Professional Communicator',
+    description: 'Completed Week 3 and demonstrated end-to-end professional communication mastery',
+    icon: '💼',
+    category: 'milestone',
+    dayRequired: 21,
+  },
 ];
 
 /**

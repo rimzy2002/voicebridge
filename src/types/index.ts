@@ -71,7 +71,28 @@ export type ActivityType =
   | 'consequence_builder'
   | 'elevator_pitch_rotation'
   | 'mini_presentation'
-  | 'weekly_diagnostic_v2';
+  | 'weekly_diagnostic_v2'
+  // Week 3 Activities — Professional Communication
+  | 'professional_small_talk'
+  | 'networking_roleplay'
+  | 'meeting_simulation'
+  | 'meeting_contribution'
+  | 'polite_interruption'
+  | 'interview_simulation'
+  | 'star_response'
+  | 'elevator_pitch_pro'
+  | 'presentation_qa'
+  | 'data_narration'
+  | 'constructive_feedback'
+  | 'sbi_feedback'
+  | 'difficult_conversation'
+  | 'apology_explanation'
+  | 'negotiation_roleplay'
+  | 'email_to_voice'
+  | 'register_switch'
+  | 'hostile_question'
+  | 'professional_weekly_diagnostic'
+  | 'midpoint_confidence_snapshot';
 
 // --- Activity Definition (Curriculum Data) ---
 export interface ActivityDefinition {
@@ -96,6 +117,7 @@ export interface ActivityDefinition {
 
 // --- Activity Config (type-specific) ---
 export interface ActivityConfig {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
   // Welcome / Information Display
   content?: string;
@@ -124,7 +146,8 @@ export interface ActivityConfig {
 
   // Timed Speaking
   responseTimeSeconds?: number;
-  questions?: SpeakingPrompt[];
+  questions?: (SpeakingPrompt | string)[];
+  prompts?: string[];
   startDelaySeconds?: number;
 
   // Framework Lesson
@@ -232,6 +255,7 @@ export interface FrameworkStep {
   title?: string;
   description: string;
   example?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
 
@@ -401,6 +425,14 @@ export interface SkillProfile {
   listening: number | null;
   confidence: number | null;
   storytelling: number | null;
+  // Week 3 Professional Dimensions
+  professionalClarity: number | null;
+  meetingParticipation: number | null;
+  interviewStructure: number | null;
+  dataExplanation: number | null;
+  feedbackDelivery: number | null;
+  negotiation: number | null;
+  registerAdaptation: number | null;
 }
 
 // --- Day Progress Summary ---
@@ -459,7 +491,8 @@ export type AnalyticsEvent =
   | 'badge_awarded'
   | 'week_completed'
   | 'week2_unlocked'
-  | 'week3_unlocked';
+  | 'week3_unlocked'
+  | 'week4_unlocked';
 
 // ============================================================
 // Week 2 Fluency Metrics & Queryable Data
@@ -530,5 +563,162 @@ export interface StoryCubeOption {
   word: string;
   category: 'object' | 'person' | 'place' | 'concept';
   icon?: string;
+}
+
+// ============================================================
+// Week 3 Professional Communication Types
+// ============================================================
+
+export type RoleplayDifficulty = 'supportive' | 'realistic' | 'challenging';
+
+export type RoleplayRole =
+  | 'manager'
+  | 'interviewer'
+  | 'client'
+  | 'coworker'
+  | 'professor'
+  | 'classmate'
+  | 'customer'
+  | 'event_participant'
+  | 'stakeholder';
+
+export interface RoleplayConfig {
+  role: RoleplayRole;
+  learnerTrack: LearnerTrack;
+  scenario: string;
+  objective: string;
+  hiddenAIGoals?: string[];
+  difficulty: RoleplayDifficulty;
+  tone: 'formal' | 'neutral' | 'casual';
+  requiredEvents?: string[];
+  maxChallenge?: number;
+  successCriteria?: string[];
+  allowedHints?: number;
+  scoringRubric?: string[];
+  followUpStrategy?: 'adaptive' | 'sequential' | 'random';
+  maxDurationSeconds?: number;
+}
+
+export interface MeetingScorecard {
+  participation: number | null;
+  conciseUpdates: number | null;
+  usefulQuestions: number | null;
+  agreement: number | null;
+  disagreement: number | null;
+  interruptionAppropriateness: number | null;
+  clarification: number | null;
+  actionSummary: number | null;
+  conversationBalance: number | null;
+  clarity: number | null;
+}
+
+export interface InterviewScorecard {
+  relevance: number | null;
+  structure: number | null;
+  evidence: number | null;
+  concision: number | null;
+  starCompleteness: number | null;
+  vocabulary: number | null;
+  clarity: number | null;
+  recovery: number | null;
+  confidenceBehavior: number | null;
+}
+
+export interface PresentationScorecard {
+  structure: number | null;
+  signposting: number | null;
+  dataAccuracy: number | null;
+  vocabulary: number | null;
+  factInferenceDistinction: number | null;
+  audienceAdaptation: number | null;
+  delivery: number | null;
+  qaHandling: number | null;
+}
+
+export interface NegotiationState {
+  proposals: string[];
+  counterProposals: string[];
+  compromises: string[];
+  finalAgreement: string | null;
+  alternativesExplored: number;
+  tradeOffsIdentified: number;
+  languageScore: number | null;
+}
+
+export interface EmailScenario {
+  id: string;
+  subject: string;
+  from: string;
+  body: string;
+  context: string;
+  expectedAction: string;
+  register: 'formal' | 'neutral' | 'casual';
+  track: LearnerTrack;
+  hasAmbiguity?: boolean;
+  missingInfo?: string[];
+}
+
+export interface Week3ProfessionalMetrics {
+  id?: string;
+  userId?: string;
+  dayNumber: number;
+
+  // Networking (Day 15)
+  professionalIntroduction?: number;         // 1-10
+  elevatorPitchClarity?: number;             // 1-10
+  smallTalkOpening?: number;                 // 1-10
+  followUpRelevance?: number;                // 1-10
+  conversationClosing?: number;              // 1-10
+
+  // Meetings (Day 16)
+  meetingContributionCount?: number;         // count
+  updateClarity?: number;                    // 1-10
+  politeInterruption?: number;               // 1-10
+  clarificationSkill?: number;               // 1-10
+  actionItemSummary?: number;                // 1-10
+
+  // Interviews (Day 17)
+  interviewRelevance?: number;               // 1-10
+  starCompleteness?: number;                 // 1-10
+  evidenceSpecificity?: number;              // 1-10
+
+  // Presentations (Day 18)
+  presentationOrganization?: number;         // 1-10
+  dataDescriptionAccuracy?: number;          // 1-10
+  factInferenceDistinction?: number;         // 1-10
+  qaHandling?: number;                       // 1-10
+
+  // Feedback & Difficult Conversations (Day 19)
+  feedbackSpecificity?: number;              // 1-10
+  sbiComponents?: number;                    // 0-3 (S, B, I)
+  apologyAccountability?: number;            // 1-10
+  requestClarity?: number;                   // 1-10
+
+  // Email-to-Voice & Negotiation (Day 20)
+  registerAdaptation?: number;               // 1-10
+  messageSummary?: number;                   // 1-10
+  actionExtraction?: number;                 // 1-10
+  negotiationAlternatives?: number;          // count
+  compromiseSkill?: number;                  // 1-10
+  agreementSummary?: number;                 // 1-10
+
+  // Overall (Day 21)
+  professionalConfidence?: number;           // 1-10
+
+  createdAt?: string;
+}
+
+export interface DataPoint {
+  label: string;
+  value: number;
+  unit?: string;
+}
+
+export interface ChartData {
+  title: string;
+  type: 'bar' | 'line' | 'comparison';
+  dataPoints: DataPoint[];
+  xAxisLabel?: string;
+  yAxisLabel?: string;
 }
 

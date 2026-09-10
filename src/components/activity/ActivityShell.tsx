@@ -20,6 +20,14 @@ import OpinionBuilderActivity from '@/components/activity/OpinionBuilderActivity
 import ConnectorActivationActivity from '@/components/activity/ConnectorActivationActivity';
 import ListeningInteractiveActivity from '@/components/activity/ListeningInteractiveActivity';
 import WeeklyDiagnosticV2Activity from '@/components/activity/WeeklyDiagnosticV2Activity';
+import MeetingSimulationActivity from '@/components/activity/MeetingSimulationActivity';
+import InterviewSimulationActivity from '@/components/activity/InterviewSimulationActivity';
+import NetworkingRoleplayActivity from '@/components/activity/NetworkingRoleplayActivity';
+import DataNarrationActivity from '@/components/activity/DataNarrationActivity';
+import FeedbackActivity from '@/components/activity/FeedbackActivity';
+import EmailToVoiceActivity from '@/components/activity/EmailToVoiceActivity';
+import NegotiationActivity from '@/components/activity/NegotiationActivity';
+import ProfessionalDiagnosticActivity from '@/components/activity/ProfessionalDiagnosticActivity';
 import { getPersonalizedFocusBanner } from '@/lib/curriculum/diagnostic';
 
 import type { DayDefinition } from '@/types';
@@ -103,15 +111,18 @@ export default function ActivityShell({
     }
   }, [day.dayNumber, activities.length]);
 
-  const handleActivityComplete = useCallback((activityId: string, data: Record<string, unknown>) => {
+  // Handle activity completion
+  const handleActivityComplete = useCallback((activityId: string, responseData: Record<string, unknown>) => {
     setCompletedIds(prev => new Set([...prev, activityId]));
-    setResponses(prev => ({ ...prev, [activityId]: data }));
+    setResponses(prev => ({
+      ...prev,
+      [activityId]: responseData,
+    }));
 
     // Award XP
     const activity = activities.find(a => a.id === activityId);
-    if (activity?.xpReward) {
-      setEarnedXp(prev => prev + activity.xpReward!);
-    }
+    const xp = activity?.xpReward || 10;
+    setEarnedXp(prev => prev + xp);
   }, [activities]);
 
   const handleNext = useCallback(() => {
@@ -153,6 +164,7 @@ export default function ActivityShell({
       case 'goal_selection':
         return <GoalSelectionActivity {...commonProps} />;
       case 'confidence_check':
+      case 'midpoint_confidence_snapshot':
         return <ConfidenceCheckActivity {...commonProps} />;
       case 'recording':
       case 'timed_speaking':
@@ -193,6 +205,40 @@ export default function ActivityShell({
         return <ReflectionActivity {...commonProps} />;
       case 'mission':
         return <MissionActivity {...commonProps} />;
+      case 'meeting_simulation':
+      case 'meeting_contribution':
+      case 'polite_interruption':
+        return <MeetingSimulationActivity {...commonProps} />;
+      case 'interview_simulation':
+      case 'star_response':
+        return <InterviewSimulationActivity {...commonProps} />;
+      case 'networking_roleplay':
+      case 'professional_small_talk':
+      case 'elevator_pitch_pro':
+        return <NetworkingRoleplayActivity {...commonProps} />;
+      case 'data_narration':
+      case 'presentation_qa':
+        return <DataNarrationActivity {...commonProps} />;
+      case 'constructive_feedback':
+      case 'sbi_feedback':
+      case 'difficult_conversation':
+      case 'apology_explanation':
+      case 'hostile_question':
+        return <FeedbackActivity {...commonProps} />;
+      case 'email_to_voice':
+      case 'register_switch':
+        return <EmailToVoiceActivity {...commonProps} />;
+      case 'negotiation_roleplay':
+        return <NegotiationActivity {...commonProps} />;
+      case 'professional_weekly_diagnostic':
+        return (
+          <ProfessionalDiagnosticActivity
+            {...commonProps}
+            earnedXp={earnedXp + totalXp}
+            streak={currentStreak}
+            allResponses={responses}
+          />
+        );
       case 'weekly_diagnostic_v2':
       case 'weekly_challenge':
         return (
@@ -258,8 +304,8 @@ export default function ActivityShell({
         {completedIds.size}/{activities.length} activities • {progress}%
       </p>
 
-      {/* Week 2 Personalized Priority Focus Banner */}
-      {day.dayNumber >= 8 && day.dayNumber <= 14 && (
+      {/* Week 2 & Week 3 Personalized Priority Focus Banner */}
+      {day.dayNumber >= 8 && day.dayNumber <= 21 && (
         <div style={{
           background: 'rgba(99, 102, 241, 0.08)',
           border: '1px solid rgba(99, 102, 241, 0.25)',

@@ -7,6 +7,13 @@ import day11 from './day11';
 import day12 from './day12';
 import day13 from './day13';
 import day14 from './day14';
+import day15 from './day15';
+import day16 from './day16';
+import day17 from './day17';
+import day18 from './day18';
+import day19 from './day19';
+import day20 from './day20';
+import day21 from './day21';
 
 const dedicatedDays: Record<number, DayDefinition> = {
   1: day1,
@@ -17,6 +24,13 @@ const dedicatedDays: Record<number, DayDefinition> = {
   12: day12,
   13: day13,
   14: day14,
+  15: day15,
+  16: day16,
+  17: day17,
+  18: day18,
+  19: day19,
+  20: day20,
+  21: day21,
 };
 
 const dayMeta: Record<number, { title: string; subtitle: string; objective: string; coreMessage: string }> = {
@@ -61,6 +75,48 @@ const dayMeta: Record<number, { title: string; subtitle: string; objective: stri
     subtitle: 'Day 7 of 30',
     objective: 'Synthesize Week 1 techniques and measure initial progression against Day 1 benchmark.',
     coreMessage: 'Seven days of consistent application rewires your neurological speaking pathways.',
+  },
+  15: {
+    title: 'Communicate Professionally Without Sounding Robotic',
+    subtitle: 'Day 15 of 30 • Week 3',
+    objective: 'Reset professional communication: natural networking, elevator pitches, and small talk.',
+    coreMessage: 'Professional communication is not about corporate jargon — it is about clarity, respect, and purpose.',
+  },
+  16: {
+    title: 'Speak Up in Meetings',
+    subtitle: 'Day 16 of 30 • Week 3',
+    objective: 'Participate actively in meetings: updates, idea contribution, disagreement, and action summaries.',
+    coreMessage: 'A meeting where you stay silent is a meeting where you are invisible. Contributing even one concise idea establishes value.',
+  },
+  17: {
+    title: 'Answer Interview Questions with Structure and Evidence',
+    subtitle: 'Day 17 of 30 • Week 3',
+    objective: 'Structure interview answers using evidence, not adjectives: TMAY and STAR frameworks.',
+    coreMessage: 'Great interview answers use concrete evidence over adjectives. Structure builds credibility.',
+  },
+  18: {
+    title: 'Present Information and Explain Data Clearly',
+    subtitle: 'Day 18 of 30 • Week 3',
+    objective: 'Signpost presentations clearly, describe data trends accurately, and distinguish fact from inference.',
+    coreMessage: 'Good presentation is helping your audience understand effortlessly. Structure beats vocabulary complexity.',
+  },
+  19: {
+    title: 'Handle Difficult Conversations Professionally',
+    subtitle: 'Day 19 of 30 • Week 3',
+    objective: 'Deliver constructive SBI feedback, admit mistakes with accountability, and navigate conflict.',
+    coreMessage: 'Difficult conversations solve problems collaboratively while protecting relationships and trust.',
+  },
+  20: {
+    title: 'Turn Written Messages into Clear Spoken Action',
+    subtitle: 'Day 20 of 30 • Week 3',
+    objective: 'Extract actions from dense writing, shift registers, and negotiate trade-offs smoothly.',
+    coreMessage: 'Never read written text verbatim — translate complexity into purposeful spoken action.',
+  },
+  21: {
+    title: 'Week 3 Professional Communication Challenge',
+    subtitle: 'Day 21 of 30 • Week 3 Milestone',
+    objective: 'Synthesize Week 3 competencies in an unassisted professional simulation and review 21-day progress.',
+    coreMessage: 'Professional mastery is bringing clarity, composure, and emotional intelligence to every conversation.',
   },
 };
 
