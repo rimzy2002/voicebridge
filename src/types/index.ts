@@ -92,7 +92,107 @@ export type ActivityType =
   | 'register_switch'
   | 'hostile_question'
   | 'professional_weekly_diagnostic'
-  | 'midpoint_confidence_snapshot';
+  | 'midpoint_confidence_snapshot'
+  // Week 4 Activities — Advanced Communication (Days 22–30)
+  // Day 22: Explain Complex Ideas Simply
+  | 'complexity_reduction'
+  | 'jargon_detector'
+  | 'audience_adaptation'
+  | 'analogy_builder'
+  | 'circumlocution_recycle'
+  | 'listener_check'
+  | 'ai_confusion_simulation'
+  | 'explanation_scorecard'
+  // Day 23: Persuade with Reasons, Evidence and Respect
+  | 'persuasion_structure'
+  | 'evidence_vs_opinion'
+  | 'objection_handling'
+  | 'persuasion_calibration'
+  | 'compare_options'
+  | 'persuasive_pitch_rotation'
+  | 'persuasion_simulation'
+  | 'persuasion_scorecard'
+  // Day 24: Leadership Communication
+  | 'leadership_framework'
+  | 'delegation_drill'
+  | 'decision_explanation'
+  | 'direction_uncertainty'
+  | 'practical_motivation'
+  | 'listening_leadership'
+  | 'decision_meeting'
+  | 'leadership_simulation'
+  | 'leadership_scorecard'
+  // Day 25: Nuance, Hedging and Diplomacy
+  | 'certainty_scale'
+  | 'hedging_drill'
+  | 'diplomatic_disagreement'
+  | 'understatement_awareness'
+  | 'tone_detection'
+  | 'sarcasm_awareness'
+  | 'rewrite_direct_message'
+  | 'nuance_roleplay'
+  | 'nuance_scorecard'
+  // Day 26: Debate and Defend Ideas
+  | 'argument_structure'
+  | 'steelman_activity'
+  | 'evidence_challenge'
+  | 'logical_connection'
+  | 'debate_language'
+  | 'timed_argument'
+  | 'debate_simulation'
+  | 'debate_scorecard'
+  // Day 27: Handle Tough Questions and Pressure
+  | 'thinking_pause'
+  | 'clarify_question'
+  | 'answer_what_you_know'
+  | 'hostile_conversion'
+  | 'multipart_question'
+  | 'redirect_avoiding'
+  | 'rapid_qa'
+  | 'high_pressure_simulation'
+  | 'tough_question_scorecard'
+  // Day 28: Advanced Listening and Reactive Communication
+  | 'discourse_markers'
+  | 'tone_cues'
+  | 'prediction_pause'
+  | 'global_english'
+  | 'fast_listening'
+  | 'listen_summarize_react'
+  | 'meeting_listening'
+  | 'advanced_listening_challenge'
+  | 'listening_scorecard'
+  // Day 29: Final Rehearsal: Independent Communication (No Hints)
+  | 'independent_priority_warmup'
+  | 'independent_impromptu'
+  | 'independent_story'
+  | 'independent_listening'
+  | 'independent_persuasion'
+  | 'independent_difficult_convo'
+  | 'independent_presentation'
+  | 'communication_rescue'
+  | 'personalized_error_review'
+  | 'pronunciation_priority_review'
+  | 'active_vocab_spontaneous'
+  // Day 30: Final Communication Transformation Assessment
+  | 'final_confidence_assessment'
+  | 'baseline_repeat'
+  | 'side_by_side_comparison'
+  | 'objective_metrics_comparison'
+  | 'final_fluency_challenge'
+  | 'final_structured_opinion'
+  | 'final_story_experience'
+  | 'final_listening'
+  | 'final_vocab_activation'
+  | 'final_pronunciation_clarity'
+  | 'final_track_challenge'
+  | 'final_persuasion'
+  | 'final_tough_question'
+  | 'final_integrated_simulation'
+  | 'final_communication_scorecard'
+  | 'final_transformation_report'
+  | 'personal_phrasebook'
+  | 'post_program_plan'
+  | 'final_mission';
 
 // --- Activity Definition (Curriculum Data) ---
 export interface ActivityDefinition {
@@ -721,4 +821,275 @@ export interface ChartData {
   xAxisLabel?: string;
   yAxisLabel?: string;
 }
+
+// ============================================================
+// Week 4 Advanced Communication & Day 30 Models
+// ============================================================
+
+export interface PersuasionMetrics {
+  recommendationClarity: number;             // 1-10
+  supportingReasons: number;                 // count / quality
+  evidenceUse: number;                       // 1-10
+  limitationAcknowledgement: number;         // 1-10
+  objectionHandling: number;                 // 1-10
+  qualification: number;                     // 1-10
+  actionRequest: number;                     // 1-10
+  calibratedTone: number;                    // 1-10
+}
+
+export interface LeadershipMetrics {
+  priorityClarity: number;                   // 1-10
+  delegation: number;                        // 1-10
+  decisionExplanation: number;               // 1-10
+  listening: number;                         // 1-10
+  accountability: number;                    // 1-10
+  summary: number;                           // 1-10
+  directionUnderUncertainty: number;         // 1-10
+  practicalMotivation: number;               // 1-10
+}
+
+export interface NuanceMetrics {
+  hedgingAppropriateness: number;            // 1-10
+  certaintyCalibration: number;              // 1-10
+  qualifiedAgreement: number;                // 1-10
+  diplomaticDisagreement: number;            // 1-10
+  understatementAwareness: number;           // 1-10
+}
+
+export interface DebateMetrics {
+  argumentClarity: number;                   // 1-10
+  relevance: number;                         // 1-10
+  evidenceQuality: number;                   // 1-10
+  listeningAndSteelman: number;              // 1-10
+  counterargumentHandling: number;           // 1-10
+  respectfulTone: number;                    // 1-10
+  logicalCoherence: number;                  // 1-10
+  conclusionImpact: number;                  // 1-10
+}
+
+export interface ToughQuestionMetrics {
+  responseStartDelay: number;                // seconds
+  composureBehavior: number;                 // 1-10
+  questionComprehension: number;             // 1-10
+  clarificationSkill: number;                // 1-10
+  honestyAboutUncertainty: number;           // 1-10
+  multipartHandling: number;                 // 1-10
+  redirectionWithoutEvasion: number;         // 1-10
+  fillerControl: number;                     // 1-10
+}
+
+export interface AdvancedListeningMetrics {
+  mainIdeaExtraction: number;                // 1-10
+  speakerStanceIdentification: number;       // 1-10
+  detailAccuracy: number;                    // 1-10
+  actionItemExtraction: number;              // 1-10
+  toneInference: number;                     // 1-10
+  spokenSummaryClarity: number;              // 1-10
+  responseRelevance: number;                 // 1-10
+}
+
+export interface IndependentMetrics {
+  hintDependency: number;                    // 0 = completely independent, 1+ = hints used
+  spontaneousFluency: number;                // 1-10
+  structuralContinuity: number;              // 1-10
+  recoveryFromDistraction: number;           // 1-10
+}
+
+export interface AdvancedCommunicationAttempt {
+  id?: string;
+  userId?: string;
+  activityType: ActivityType;
+  scenarioId?: string;
+  learnerTrack: LearnerTrack;
+  difficulty?: 'standard' | 'advanced' | 'unassisted';
+  speakingDuration: number;
+  startDelay: number;
+  interruptions?: number;
+  hintCount: number;
+  independentCompletion: boolean;
+  communicationMetrics?: Record<string, number | string | boolean>;
+  feedback?: Record<string, unknown>;
+  retryAttemptId?: string;
+  createdAt?: string;
+}
+
+export interface SideBySideComparisonData {
+  day1AudioUrl?: string;
+  day30AudioUrl?: string;
+  day1Transcript?: string;
+  day30Transcript?: string;
+  metrics: {
+    speakingDuration: { day1: number; day30: number; unit: string };
+    responseStartDelay: { day1: number; day30: number; unit: string };
+    longPausesCount: { day1: number; day30: number; unit: string };
+    fillerRatePerMin: { day1: number; day30: number; unit: string };
+    structureScore: { day1: number; day30: number; unit: string };
+    vocabularyRange: { day1: number; day30: number; unit: string };
+    activeExpressionsUsed: { day1: number; day30: number; unit: string };
+    pronunciationClarity: { day1: number; day30: number; unit: string };
+    confidenceRating: { day1: number; day30: number; unit: string };
+  };
+  selfAssessment?: {
+    strongerRecording: 'day1' | 'day30' | 'similar';
+    selectedChanges: string[];
+    learnerNotes?: string;
+  };
+  honestContextNotes?: string[];
+}
+
+export interface PersonalErrorPortfolioItem {
+  id: string;
+  category: 'grammar' | 'preposition' | 'collocation' | 'filler' | 'structure';
+  recurringPattern: string;
+  exampleFromSpeech: string;
+  betterVersion: string;
+  practiceSuggestion: string;
+}
+
+export interface PersonalPronunciationProfile {
+  strong: string[];
+  developing: string[];
+  priority: string[];
+  intelligibilityScore: number;              // 1-10
+  rhythmAndChunking: number;                 // 1-10
+  pausePlacement: number;                    // 1-10
+}
+
+export interface PersonalVocabularyReport {
+  expressionsDiscovered: number;
+  practicingCount: number;
+  activeCount: number;
+  mostUsedExpressions: string[];
+  needingRecycling: string[];
+}
+
+export type PhrasebookFunction =
+  | 'Opinions'
+  | 'Explanations'
+  | 'Examples'
+  | 'Agreement'
+  | 'Disagreement'
+  | 'Clarification'
+  | 'Meetings'
+  | 'Presentations'
+  | 'Interviews'
+  | 'Difficult Conversations'
+  | 'Negotiation'
+  | 'Conclusions';
+
+export interface PhrasebookItem {
+  id: string;
+  phrase: string;
+  functionCategory: PhrasebookFunction;
+  context: string;
+  originalDay: number;
+  exampleInContext: string;
+  mastered: boolean;
+}
+
+export interface PersonalPhrasebook {
+  totalItems: number;
+  categories: Record<PhrasebookFunction, PhrasebookItem[]>;
+}
+
+export interface PostProgramPlan {
+  learnerId?: string;
+  primaryGoal: string;
+  secondaryGoal?: string;
+  recommendedWeeklySchedule: {
+    speakingSessionsPerWeek: number;
+    listeningSessionsPerWeek: number;
+    trackSimulationsPerWeek: number;
+    vocabularyRecyclingPerWeek: number;
+    checkpointsPerWeek: number;
+  };
+  phase1_Next30Days: string[];
+  phase2_Days31To60: string[];
+  phase3_Days61To90: string[];
+  realWorldContinuationGoal: string;
+  nextReviewDate: string;
+}
+
+export interface FinalAssessmentSnapshot {
+  dayNumber: 1 | 7 | 14 | 21 | 30;
+  fluency: number;
+  ideaStructure: number;
+  conversation: number;
+  storytelling: number;
+  vocabulary: number;
+  grammarWhileSpeaking: number;
+  pronunciationClarity: number;
+  listening: number;
+  spontaneousSpeaking: number;
+  trackCommunication: number;
+  persuasion: number;
+  communicationRecovery: number;
+  independentPerformance: number;
+  confidenceBehavior: number;
+  overallScore: number;
+}
+
+export interface FinalAssessment {
+  id?: string;
+  learnerId?: string;
+  baselineRecordingId?: string;
+  finalRecordingId?: string;
+  snapshots: {
+    day1: FinalAssessmentSnapshot;
+    day7: FinalAssessmentSnapshot;
+    day14: FinalAssessmentSnapshot;
+    day21: FinalAssessmentSnapshot;
+    day30: FinalAssessmentSnapshot;
+  };
+  sideBySideComparison: SideBySideComparisonData;
+  strongestImprovement: {
+    dimension: string;
+    evidence: string;
+    baselineValue: number | string;
+    finalValue: number | string;
+  };
+  secondaryImprovements: string[];
+  mainContinuingPriority: {
+    area: string;
+    evidence: string;
+    recommendedAction: string;
+  };
+  overallProgramScore: number;               // 1-100 progress score
+  completedAt: string;
+}
+
+export interface FinalReportData {
+  learnerName?: string;
+  track: LearnerTrack;
+  completedDays: number;
+  speakingDays: number;
+  totalSpeakingMinutes: number;
+  recordingsCompleted: number;
+  conversationsHeld: number;
+  presentationsGiven: number;
+  storiesTold: number;
+  simulationsCompleted: number;
+  listeningActivitiesCompleted: number;
+  realWorldMissionsCompleted: number;
+  vocabularyActivatedCount: number;
+  longestResponseSeconds: number;
+  streakDays: number;
+  earnedXp: number;
+  assessment: FinalAssessment;
+  phrasebook: PersonalPhrasebook;
+  errorPortfolio: PersonalErrorPortfolioItem[];
+  pronunciationProfile: PersonalPronunciationProfile;
+  vocabularyReport: PersonalVocabularyReport;
+  continuationPlan: PostProgramPlan;
+  finalReflection: {
+    whatChangedMost: string;
+    mostHelpfulActivity: string;
+    hardestProblem: string;
+    newCapability: string;
+    outsideUsage: string;
+    futureFocus: string;
+    finalConfidenceRating: number;
+  };
+}
+
 

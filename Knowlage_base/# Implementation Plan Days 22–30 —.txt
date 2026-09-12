@@ -1,0 +1,173 @@
+# Implementation Plan: Days 22–30 — Advanced Communication (Final Phase)
+
+This plan details the full implementation of **Phase 4: Advanced Communication (Days 22–30)** of the 30-Day Communication Transformation Platform. It completes the entire 30-day curriculum, preserving all existing architecture from Days 1–21 (auth, profiles, tracks, gamification, retry engine, recording, transcription, accessibility, security) while introducing advanced engines, activities, capstone assessment, and long-term continuation tools.
+
+---
+
+## User Review Required
+
+> [!IMPORTANT]
+> **Key Principles for Week 4 & Day 30:**
+> 1. **No "Fluent Now" Claims:** Day 30 evaluates genuine, measurable growth across 14 dimensions and never claims official CEFR/IELTS/TOEFL scores.
+> 2. **Credible, Honest Comparison:** Day 1 vs Day 30 compares equivalent metrics (same 90s baseline prompt, identical confidence questions, compatible fluency measures). If a metric like fillers increased during a longer response, we report it honestly with context.
+> 3. **Strict Independence on Day 29:** Day 29 removes scaffolding (no PREP/STAR labels, connector menus, or vocab prompts) and measures "hint dependency".
+> 4. **Privacy & Security:** Personal recordings and sensitive scores are never leaked in public share cards or analytics logs.
+> 5. **Adult-Appropriate Gamification:** Badges and XP for Week 4 culminate in the `confident-communicator` badge on Day 30.
+
+---
+
+## Proposed Changes
+
+### Component 1: Type System & Data Models
+
+Extend `src/types/index.ts` and `prisma/schema.prisma` to support Week 4 activity types, metrics, diagnostics, side-by-side comparison, phrasebook, and final reports.
+
+#### [MODIFY] [src/types/index.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/types/index.ts)
+- Add new `ActivityType` unions:
+  - Day 22: `complexity_reduction`, `jargon_detector`, `audience_adaptation`, `analogy_builder`, `circumlocution_recycle`, `listener_check`, `ai_confusion_simulation`, `explanation_scorecard`
+  - Day 23: `persuasion_structure`, `evidence_vs_opinion`, `objection_handling`, `persuasion_calibration`, `compare_options`, `persuasive_pitch_rotation`, `persuasion_simulation`, `persuasion_scorecard`
+  - Day 24: `leadership_framework`, `delegation_drill`, `decision_explanation`, `direction_uncertainty`, `practical_motivation`, `listening_leadership`, `decision_meeting`, `leadership_simulation`, `leadership_scorecard`
+  - Day 25: `certainty_scale`, `hedging_drill`, `diplomatic_disagreement`, `understatement_awareness`, `tone_detection`, `sarcasm_awareness`, `rewrite_direct_message`, `nuance_roleplay`, `nuance_scorecard`
+  - Day 26: `argument_structure`, `steelman_activity`, `evidence_challenge`, `logical_connection`, `debate_language`, `timed_argument`, `debate_simulation`, `debate_scorecard`
+  - Day 27: `thinking_pause`, `clarify_question`, `answer_what_you_know`, `hostile_conversion`, `multipart_question`, `redirect_avoiding`, `rapid_qa`, `high_pressure_simulation`, `tough_question_scorecard`
+  - Day 28: `discourse_markers`, `tone_cues`, `prediction_pause`, `global_english`, `fast_listening`, `listen_summarize_react`, `meeting_listening`, `advanced_listening_challenge`, `listening_scorecard`
+  - Day 29: `independent_priority_warmup`, `independent_impromptu`, `independent_story`, `independent_listening`, `independent_persuasion`, `independent_difficult_convo`, `independent_presentation`, `communication_rescue`, `personalized_error_review`, `pronunciation_priority_review`, `active_vocab_spontaneous`
+  - Day 30: `final_confidence_assessment`, `baseline_repeat`, `side_by_side_comparison`, `objective_metrics_comparison`, `final_fluency_challenge`, `final_structured_opinion`, `final_story_experience`, `final_listening`, `final_vocab_activation`, `final_pronunciation_clarity`, `final_track_challenge`, `final_persuasion`, `final_tough_question`, `final_integrated_simulation`, `final_communication_scorecard`, `final_transformation_report`, `personal_phrasebook`, `post_program_plan`, `final_mission`
+- Add metric interfaces: `PersuasionMetrics`, `LeadershipMetrics`, `NuanceMetrics`, `DebateMetrics`, `ToughQuestionMetrics`, `AdvancedListeningMetrics`, `IndependentMetrics`, `SideBySideComparisonData`, `PersonalErrorPortfolioItem`, `PersonalPronunciationProfile`, `PersonalVocabularyReport`, `PhrasebookItem`, `PersonalPhrasebook`, `PostProgramPlan`, `FinalReportData`, `AdvancedCommunicationAttempt`.
+
+#### [MODIFY] [prisma/schema.prisma](file:///d:/Mern-stack/DevTools/project/Communication_App/prisma/schema.prisma)
+- Add models: `AdvancedCommunicationAttempt`, `FinalAssessment`, `PostProgramPlan`, `PersonalPhrasebookEntry`.
+
+---
+
+### Component 2: Week 4 AI & Business Engines
+
+Implement reusable engines in `src/lib/ai/week4.ts` and `src/lib/ai/finalAssessment.ts`.
+
+#### [NEW] [src/lib/ai/week4.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/ai/week4.ts)
+- `ComplexExplanationEngine`: Evaluates WHAT-WHY-HOW-EXAMPLE-BOTTOM LINE, detects unnecessary jargon vs necessary terminology, scores audience adaptation across Beginner, Peer, and Executive.
+- `PersuasionEngine`: Evaluates Recommendation, Reasons, Benefits, Evidence, Limitations, Objections, Tone, and Action request. Calibrates claims against exaggeration.
+- `LeadershipSimulationEngine`: Evaluates SITUATION-PRIORITY-ACTION-RESPONSIBILITY-REASON-CHECK, respectful delegation, decision explanation under uncertainty, and active listening.
+- `NuanceAndHedgingEngine`: Analyzes certainty scale (strong certainty, moderate, possibility, caution, limited evidence), checks diplomatic disagreement, understatement, and tone detection.
+- `DebateEngine` & `SteelmanEngine`: Evaluates fair summary of opposing position before responding, argument structure (Claim, Reason, Evidence, Counter, Response, Conclusion), and logical coherence.
+- `ToughQuestionEngine`: Evaluates Pause-Understand-Structure-Respond, clarification questions, honest uncertainty ("I don't have that info right now"), multipart dissection, and calm redirection.
+- `AdvancedListeningEngine`: Analyzes listening summaries, speaker stance detection, prediction pauses, and action extraction.
+- `IndependentPerformanceEngine`: Analyzes unassisted speech on Day 29 & 30, tracks `hintDependency: 0`, and detects implicit structure without UI cues.
+
+#### [NEW] [src/lib/ai/finalAssessment.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/ai/finalAssessment.ts)
+- `LongitudinalComparisonEngine`: Compares Day 1, 7, 14, 21, 30 with strictly compatible metrics (speaking duration, response delay, pause count, filler rate, structure score, vocab range, clarity, self-ratings). Delivers honest comparisons without fabricated improvements.
+- `PersonalPhrasebookEngine`: Aggregates the ~100 high-value chunks practiced throughout the 30 days, organized into 12 functional categories: Opinions, Explanations, Examples, Agreement, Disagreement, Clarification, Meetings, Presentations, Interviews, Difficult Conversations, Negotiation, Conclusions.
+- `PostProgramPlanEngine`: Generates the personalized 30-90 day continuation plan based on Day 30 continuing priorities, learner track, and selected post-program goal (workplace meetings, interviews, presentations, etc.).
+- `FinalReportEngine`: Generates the 30-Day Comprehensive Communication Report data structure for printing, exporting, and viewing.
+
+---
+
+### Component 3: Week 4 Activity UI Components
+
+Create rich, accessible, responsive components in `src/components/activity/`:
+
+#### [NEW] [src/components/activity/ComplexExplanationActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/ComplexExplanationActivity.tsx)
+- Day 22 interactive activity: Audience adaptation (Beginner, Peer, Manager), Jargon detector with simplification challenges, Analogy builder, Listener check phrases, AI confusion simulation, and 10-point scorecard.
+
+#### [NEW] [src/components/activity/PersuasionActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/PersuasionActivity.tsx)
+- Day 23 interactive activity: 7-part Persuasion framework, Evidence vs Opinion classification drill, Calibrated claims, Objection handling simulation, Tiered elevator pitch (30s, 60s, 120s), and AI stakeholder conversation.
+
+#### [NEW] [src/components/activity/LeadershipSimulationActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/LeadershipSimulationActivity.tsx)
+- Day 24 interactive activity: Leadership message framework, Respectful delegation drill, Decision explanation with trade-offs, Direction under uncertainty, Practical motivation, Multi-party decision meeting simulation, and 10-point scorecard.
+
+#### [NEW] [src/components/activity/NuanceDiplomacyActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/NuanceDiplomacyActivity.tsx)
+- Day 25 interactive activity: Certainty scale interactive slider, Blunt-to-diplomatic message transformer, Understatement awareness, Tone detection, Diplomatic disagreement, and Nuance roleplay.
+
+#### [NEW] [src/components/activity/DebateSimulationActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/DebateSimulationActivity.tsx)
+- Day 26 interactive activity: Steelman drill (summarize opposing view fairly before disagreeing), Argument structure builder, Timed 60s/45s/30s debate rounds, AI debate challenge focusing on logic rather than identity.
+
+#### [NEW] [src/components/activity/ToughQuestionsActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/ToughQuestionsActivity.tsx)
+- Day 27 interactive activity: "Pause → Understand → Structure → Respond" timer, Clarification phrases, Professional uncertainty ("Answer only what you know"), Multipart question dissecting, Rapid Q&A (5 questions), and High-pressure simulation.
+
+#### [NEW] [src/components/activity/AdvancedListeningActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/AdvancedListeningActivity.tsx)
+- Day 28 interactive activity: Realistic multi-speaker audio / text input, Discourse marker detection, Speaker tone cues, Prediction pause challenge, and Main challenge (2-minute listening input -> transcript hides -> 90s summary + 60s reaction).
+
+#### [NEW] [src/components/activity/IndependentRehearsalActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/IndependentRehearsalActivity.tsx)
+- Day 29 interactive activity: STRICT "NO HINTS" rule (hides PREP/STAR labels, connector menus, vocabulary suggestions). Tracks hint dependency (0 is target). Multi-drill flow: priority warm-up, impromptu, story, persuasion, rescue drills, error review, and vocabulary activation.
+
+#### [NEW] [src/components/activity/FinalTransformationActivity.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/FinalTransformationActivity.tsx)
+- Day 30 Capstone Activity:
+  - 1. Final confidence snapshot (Day 1 vs 15 vs 30)
+  - 2. Repeat Day 1 baseline ("Introduce Yourself" 90s)
+  - 3. Side-by-side audio playback of Day 1 and Day 30 recordings with self-assessment questions
+  - 4. Objective metrics comparison with honest contextual feedback
+  - 5. Unassisted challenges (fluency, structured opinion, story, listening, vocab, pronunciation, track challenge, persuasion, tough question, 10-12m integrated simulation)
+  - 6. 14-dimension scorecard & progress timeline (Day 1 -> 7 -> 14 -> 21 -> 30)
+  - 7. Strongest improvement + 1 continuing priority
+  - 8. Personal error portfolio & pronunciation profile
+  - 9. Personal phrasebook (categorized by function, ~100 items)
+  - 10. 30-day program statistics
+  - 11. Personal 30–90 day continuation plan
+  - 12. 15-minute final real-world mission
+  - 13. Final reflection (7 questions + 1-10 confidence)
+  - 14. 30-Day Comprehensive Report (exportable, printable, shareable card without sensitive data leaks)
+  - 15. Awarding the "Confident Communicator" (`confident-communicator`) completion badge!
+
+---
+
+### Component 4: Curriculum Day Files (Days 22–30)
+
+Implement individual day files matching the specification:
+
+#### [NEW] [src/lib/curriculum/days/day22.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day22.ts)
+- Day 22: Make Complex Ideas Easy to Understand (13 activities, Full ~40m, Express ~12m)
+#### [NEW] [src/lib/curriculum/days/day23.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day23.ts)
+- Day 23: Persuade with Reasons, Evidence and Respect (11 activities, Full ~38m, Express ~12m)
+#### [NEW] [src/lib/curriculum/days/day24.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day24.ts)
+- Day 24: Communicate Like a Leader (11 activities, Full ~40m, Express ~14m)
+#### [NEW] [src/lib/curriculum/days/day25.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day25.ts)
+- Day 25: Sound Nuanced, Not Absolute (11 activities, Full ~36m, Express ~12m)
+#### [NEW] [src/lib/curriculum/days/day26.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day26.ts)
+- Day 26: Debate Ideas Without Losing the Conversation (11 activities, Full ~40m, Express ~14m)
+#### [NEW] [src/lib/curriculum/days/day27.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day27.ts)
+- Day 27: Stay Clear When Questions Get Difficult (11 activities, Full ~38m, Express ~12m)
+#### [NEW] [src/lib/curriculum/days/day28.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day28.ts)
+- Day 28: Listen for Meaning, Tone and What Happens Next (11 activities, Full ~40m, Express ~14m)
+#### [NEW] [src/lib/curriculum/days/day29.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day29.ts)
+- Day 29: Final Rehearsal: Independent Communication (13 activities, Full ~42m, Express ~15m, No Hints)
+#### [NEW] [src/lib/curriculum/days/day30.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/day30.ts)
+- Day 30: Your Final Communication Challenge (33 sections / activities, Full ~50m, Express ~20m)
+
+#### [MODIFY] [src/lib/curriculum/days/index.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/days/index.ts)
+- Register `day22` through `day30` into `dedicatedDays` and `dayMeta`.
+
+---
+
+### Component 5: Integration, Shell & Personalization
+
+#### [MODIFY] [src/components/activity/ActivityShell.tsx](file:///d:/Mern-stack/DevTools/project/Communication_App/src/components/activity/ActivityShell.tsx)
+- Import new components and wire the switch statements for all Week 4 activity types.
+- Ensure Day 29 suppresses hint displays (PREP/STAR tags, connector menus) to enforce independent rehearsal.
+- Wire Day 30 capstone data into `FinalTransformationActivity`.
+
+#### [MODIFY] [src/lib/curriculum/diagnostic.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/curriculum/diagnostic.ts)
+- Add Week 4 priority catalog and focus banners for Days 22–30:
+  - Strongest Skill + Priority 1 + Priority 2 determination from previous days (Day 1, 7, 14, 21).
+  - Dynamic focus messages for Days 22 to 30.
+
+#### [MODIFY] [src/lib/gamification/index.ts](file:///d:/Mern-stack/DevTools/project/Communication_App/src/lib/gamification/index.ts)
+- Add Week 4 badges: `complex-explainer`, `persuasion-master`, `leadership-communicator`, `diplomatic-speaker`, `debate-champion`, `calm-under-pressure`, `advanced-listener`, `independent-performer`, `confident-communicator`.
+
+---
+
+## Verification Plan
+
+### Automated Build & Typecheck
+1. Run `npx tsc --noEmit` to verify type safety across all 30 days, activity components, and engines.
+2. Run `npm run build` to verify Next.js production build and page generation.
+
+### End-to-End & Playwright Verification
+1. Launch app with `npm start` on `http://localhost:3000`.
+2. Use Playwright MCP tools to navigate through:
+   - Day 22: Explanation simplification & audience adaptation.
+   - Day 25: Nuance & diplomatic hedging.
+   - Day 27: Tough questions & composure under pressure.
+   - Day 29: Independent rehearsal (verify zero hints displayed).
+   - Day 30: Capstone assessment, side-by-side comparison, phrasebook display, 30-90 day plan, report generation, and `confident-communicator` badge award.
+3. Test both Full and Express modes.
+4. Verify accessibility (focus, labels, keyboard support) and privacy (no private recordings leaked on share cards).

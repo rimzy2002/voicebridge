@@ -44,6 +44,10 @@ model User {
   aiRecommendations  AIRecommendation[]
   week2FluencyMetrics Week2FluencyMetrics[]
   programEnrollment  ProgramEnrollment?
+  advancedAttempts   AdvancedCommunicationAttempt[]
+  finalAssessments   FinalAssessment[]
+  postProgramPlans   PostProgramPlan[]
+  phrasebookEntries  PersonalPhrasebookEntry[]
 }
 
 model Account {
@@ -579,4 +583,84 @@ model FeatureFlag {
   enabled     Boolean @default(false)
   description String?
   metadata    String? // JSON - rollout percentage, user segments, etc.
+}
+
+// ============================================================
+// Week 4 & Day 30 Models
+// ============================================================
+
+model AdvancedCommunicationAttempt {
+  id                    String   @id @default(cuid())
+  userId                String
+  activityType          String   // e.g. complexity_reduction, persuasion_simulation, etc.
+  scenarioId            String?
+  learnerTrack          String   @default("general")
+  difficulty            String   @default("standard") // standard, advanced, unassisted
+  speakingDuration      Float    @default(0)
+  startDelay            Float    @default(0)
+  interruptions         Int      @default(0)
+  hintCount             Int      @default(0)
+  independentCompletion Boolean  @default(false)
+  communicationMetrics  String?  // JSON
+  feedback              String?  // JSON
+  retryAttemptId        String?
+  createdAt             DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, activityType])
+  @@index([createdAt])
+}
+
+model FinalAssessment {
+  id                   String   @id @default(cuid())
+  userId               String
+  baselineRecordingId  String?
+  finalRecordingId     String?
+  snapshots            String   // JSON - Day 1, 7, 14, 21, 30 snapshots
+  sideBySideComparison String   // JSON - Day 1 vs Day 30 metrics & self-assessment
+  strongestImprovement String   // JSON - area, evidence, values
+  secondaryImprovements String  // JSON array
+  mainContinuingPriority String // JSON - area, evidence, recommended action
+  overallProgramScore  Float    @default(0)
+  completedAt          DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model PostProgramPlan {
+  id                        String   @id @default(cuid())
+  userId                    String
+  primaryGoal               String
+  secondaryGoal             String?
+  recommendedWeeklySchedule String   // JSON
+  phase1_Next30Days         String   // JSON array
+  phase2_Days31To60         String   // JSON array
+  phase3_Days61To90         String   // JSON array
+  realWorldContinuationGoal String
+  nextReviewDate            DateTime
+  createdAt                 DateTime @default(now())
+  updatedAt                 DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model PersonalPhrasebookEntry {
+  id               String   @id @default(cuid())
+  userId           String
+  phrase           String
+  functionCategory String   // Opinions, Explanations, Examples, etc.
+  context          String
+  originalDay      Int
+  exampleInContext String
+  mastered         Boolean  @default(false)
+  createdAt        DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, functionCategory])
 }

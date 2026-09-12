@@ -1,0 +1,1881 @@
+# WEEK 2 — BUILD FLUENCY
+
+## DAYS 8–14 ENTERPRISE IMPLEMENTATION PROMPT
+
+Continue the existing 30-Day Communication Transformation Platform.
+
+Do NOT rebuild Days 1–7.
+
+Use the existing:
+
+* authentication;
+* learner profile;
+* curriculum engine;
+* activity engine;
+* recording system;
+* transcription pipeline;
+* AI coach;
+* Retry Comparison Engine;
+* vocabulary lifecycle;
+* pronunciation profile;
+* Personal Error Portfolio;
+* XP/streak system;
+* progress dashboard;
+* weekly diagnostic engine;
+* track personalization;
+* analytics;
+* security/privacy architecture.
+
+Week 2 must consume the learner's **Day 7 diagnostic results**.
+
+The system must automatically inject the learner's top one or two Week 1 priorities into relevant Week 2 activities.
+
+Examples:
+
+* tense accuracy;
+* vocabulary retrieval;
+* fillers;
+* final consonants;
+* listening speed;
+* response-start delay;
+* question formation;
+* story organization;
+* pronunciation clarity.
+
+Do not show ten weaknesses.
+
+Use the highest-value priorities.
+
+---
+
+# WEEK 2 PRODUCT GOAL
+
+Week 1 established communication foundations.
+
+Week 2 should increase:
+
+* fluency;
+* response complexity;
+* opinion development;
+* discussion ability;
+* paraphrasing;
+* summarization;
+* listening under realistic conditions;
+* structural range;
+* spontaneous speaking;
+* presentation ability;
+* communication flexibility.
+
+Do not introduce advanced grammar as isolated chapters.
+
+Grammar should solve a communication problem.
+
+The learner should increasingly handle:
+
+**Idea → Explanation → Evidence → Contrast → Qualification → Conclusion**
+
+Full daily mode:
+
+approximately 35–45 minutes.
+
+Express mode:
+
+approximately 10–15 minutes.
+
+Maintain:
+
+**20% instruction / 80% application.**
+
+---
+
+# WEEK 2 SHARED IMPLEMENTATION REQUIREMENTS
+
+Create or extend reusable activity types for:
+
+* opinion_builder;
+* agreement_disagreement;
+* counterargument;
+* connector_activation;
+* lexical_chunk_activation;
+* paraphrase_multi_round;
+* summary_reconstruction;
+* retelling_321;
+* dictogloss;
+* discourse_marker_detection;
+* listening_speed_adaptation;
+* conditional_scenario;
+* structural_expansion;
+* impromptu_prompt;
+* five_second_prompt;
+* story_cube;
+* devil_advocate;
+* elevator_pitch_rotation;
+* mini_presentation;
+* weekly_diagnostic_v2.
+
+Do not create one-off duplicated components when existing generic components can handle these.
+
+---
+
+# DAY 8 — EXPRESS OPINIONS AND DISAGREE NATURALLY
+
+## Title
+
+**Day 8 — Express Opinions and Disagree Naturally**
+
+## Objective
+
+Help the learner move from:
+
+“I think this is good.”
+
+to a structured opinion containing:
+
+* position;
+* reason;
+* evidence/example;
+* qualification;
+* alternative perspective;
+* conclusion.
+
+The learner should also learn to disagree without becoming aggressive or unnatural.
+
+## Target outcome
+
+By the end of Day 8, the learner should be able to maintain a 4–5 minute opinion discussion and respond to disagreement without freezing.
+
+---
+
+## 1. Day 8 Home
+
+Show:
+
+**DAY 8 OF 30**
+
+### Make Your Opinions Stronger
+
+Yesterday:
+
+Week 1 Challenge + Personal Diagnosis.
+
+Today:
+
+* express opinions clearly;
+* support ideas;
+* give evidence/examples;
+* agree naturally;
+* partially agree;
+* disagree respectfully;
+* respond to another viewpoint;
+* keep a discussion moving.
+
+Show learner's personal Week 2 priority.
+
+Example:
+
+**Your personal focus today: tense accuracy during longer answers.**
+
+---
+
+## 2. Confidence Check
+
+Ask:
+
+“How confident are you expressing an opinion when someone may disagree?”
+
+1–10.
+
+Ask:
+
+“What is hardest?”
+
+* finding reasons;
+* explaining examples;
+* disagreement;
+* vocabulary;
+* grammar;
+* speaking quickly;
+* sounding polite;
+* defending my point.
+
+Save.
+
+---
+
+## 3. Week 1 Recall
+
+Quick PREP response:
+
+“Is technology improving communication?”
+
+30–45 seconds.
+
+Then transition:
+
+PREP gives structure.
+
+Today we extend it into discussion.
+
+---
+
+## 4. Opinion Baseline
+
+Prompt:
+
+“Should employees/students be allowed to work or study remotely most of the time?”
+
+Adapt to learner track.
+
+Preparation:
+
+15 seconds.
+
+Speaking:
+
+90 seconds.
+
+Do not show opinion framework beforehand.
+
+Save:
+
+**Day 8 Opinion Baseline**
+
+Analyze:
+
+* clear position;
+* reasons;
+* examples;
+* connectors;
+* qualification;
+* conclusion;
+* repetition;
+* fillers.
+
+---
+
+## 5. Build an Opinion
+
+Teach:
+
+### POSITION
+
+What do you believe?
+
+### REASON
+
+Why?
+
+### EVIDENCE / EXAMPLE
+
+What supports the idea?
+
+### OTHER SIDE
+
+What might another person say?
+
+### RESPONSE
+
+How would you answer?
+
+### CONCLUSION
+
+Where do you finally stand?
+
+Do not create another unnecessary acronym unless the existing curriculum framework system benefits from one.
+
+---
+
+## 6. Opinion Expansion
+
+Start:
+
+“Social media has a positive effect.”
+
+Learner progressively adds:
+
+* reason
+
+* example
+
+* limitation
+
+* opposing view
+
+* conclusion.
+
+---
+
+## 7. Advanced Opinion Expressions
+
+Activate contextual chunks such as:
+
+* From my perspective...
+* I'd argue that...
+* One of the main reasons is...
+* A good example of this is...
+* That said...
+* On the other hand...
+* To some extent...
+* Overall, I'd say...
+
+Recycle Day 5 vocabulary lifecycle.
+
+---
+
+## 8. Agreement Spectrum
+
+Teach the difference between:
+
+### Strong agreement
+
+“I completely agree.”
+
+### Moderate agreement
+
+“I largely agree.”
+
+### Partial agreement
+
+“I agree to some extent.”
+
+### Qualified agreement
+
+“I agree with the general idea, although...”
+
+The objective is communication nuance.
+
+---
+
+## 9. Disagreement
+
+Teach respectful forms:
+
+* I see your point, but...
+* That's a fair point. However...
+* I'm not sure I completely agree.
+* I look at it slightly differently.
+* I can understand that argument, although...
+* My concern would be...
+
+Avoid teaching disagreement as memorized scripts only.
+
+Learner must use the expressions inside real responses.
+
+---
+
+## 10. Agreement/Disagreement Game
+
+AI gives 6 statements.
+
+Examples:
+
+* Remote work is better than office work.
+* University education should be free.
+* AI will improve most jobs.
+* Social media creates more problems than benefits.
+
+Learner chooses:
+
+Agree / Partially Agree / Disagree.
+
+Then explains for 30–45 seconds.
+
+---
+
+## 11. Counterargument Builder
+
+Learner states an opinion.
+
+AI presents a reasonable opposing argument.
+
+Learner must:
+
+1. acknowledge;
+2. respond;
+3. support response.
+
+Score ability to address the actual point.
+
+---
+
+## 12. Devil's Advocate
+
+Use the uploaded Devil's Advocate concept.
+
+Learner receives a mild position they normally support.
+
+Then:
+
+**Argue the opposite side for approximately 2–3 minutes.**
+
+Purpose:
+
+* language flexibility;
+* perspective-taking;
+* spontaneous reasoning;
+* vocabulary retrieval.
+
+Do not score ideological correctness.
+
+Score communication.
+
+---
+
+## 13. Listening to Two Viewpoints
+
+Play two short speakers with different opinions.
+
+Ask:
+
+* What does Speaker A believe?
+* What does Speaker B believe?
+* What reason does each provide?
+* Where do they agree?
+* Which argument was clearer?
+
+Then learner gives their own opinion.
+
+---
+
+## 14. Main Discussion
+
+AI roleplay:
+
+4–5 minute discussion.
+
+AI should occasionally disagree naturally.
+
+Learner should:
+
+* express position;
+* support ideas;
+* acknowledge other viewpoint;
+* ask one question;
+* disagree/qualify appropriately;
+* conclude clearly.
+
+Do not interrupt with corrections.
+
+---
+
+## 15. Discussion Scorecard
+
+Track:
+
+* position clarity;
+* reason development;
+* examples/evidence;
+* connectors;
+* counterargument handling;
+* appropriate agreement;
+* respectful disagreement;
+* vocabulary activation;
+* response length;
+* fillers;
+* pauses;
+* grammar patterns.
+
+---
+
+## 16. Feedback + Retry
+
+Focused feedback only.
+
+Retry approximately 90 seconds with one target.
+
+---
+
+## 17. Real-World Mission
+
+Have a 5-minute English discussion about one everyday, academic or professional issue.
+
+Requirement:
+
+Use:
+
+* one opinion phrase;
+* one contrast phrase;
+* one respectful disagreement/qualification.
+
+---
+
+## 18. Reflection + Completion
+
+Badge possibility:
+
+**Thought Builder**
+
+Update vocabulary, Week 2 diagnostic signals, XP and streak.
+
+---
+
+# DAY 9 — CONNECT IDEAS AND BUILD MORE COMPLEX ANSWERS
+
+## Title
+
+**Day 9 — Connect Ideas: Speak in More Complete Thoughts**
+
+## Objective
+
+Help learners connect ideas naturally instead of producing disconnected short sentences.
+
+Do not teach complexity for complexity's sake.
+
+The target is:
+
+**clearer, more flexible communication.**
+
+---
+
+## 1. Recall
+
+Day 8 opinion response.
+
+Require:
+
+position + reason + contrast.
+
+---
+
+## 2. Baseline
+
+Prompt:
+
+“Describe one major change that would improve your workplace, university or community.”
+
+Speak 90 seconds.
+
+Analyze:
+
+* sentence variety;
+* connectors;
+* repetitive sentence openings;
+* fragmented ideas;
+* overly long sentences.
+
+---
+
+## 3. Connector Families
+
+Teach by communication function.
+
+### Adding
+
+* in addition;
+* also;
+* furthermore where appropriate.
+
+### Contrast
+
+* however;
+* on the other hand;
+* although;
+* while.
+
+### Result
+
+* therefore;
+* as a result;
+* which means that...
+
+### Example
+
+* for example;
+* for instance;
+* such as.
+
+### Perspective
+
+* from my perspective;
+* in my experience.
+
+### Conclusion
+
+* overall;
+* ultimately;
+* in short.
+
+Focus on natural spoken use.
+
+---
+
+## 4. Connector Repair
+
+Show poor answers containing repetitive:
+
+“and... and... and... and...”
+
+Learner improves the flow.
+
+---
+
+## 5. Lexical Chunking
+
+Build on uploaded lexical-chunk concept.
+
+Teach useful chunks rather than isolated vocabulary.
+
+Examples:
+
+* I take the view that...
+* One of the key issues is...
+* There is a strong argument for...
+* The main concern I have is...
+* What matters most is...
+* The reason this matters is...
+
+Store as vocabulary chunks.
+
+---
+
+## 6. Relative-Clause Expansion
+
+Use the uploaded structural-complexity concept selectively.
+
+Start:
+
+“The project was successful.”
+
+Extend naturally:
+
+“The project, which involved three departments, was successful.”
+
+Do not reward unnecessarily dense sentences.
+
+Teach when additional information helps.
+
+---
+
+## 7. Cleft Sentences for Emphasis
+
+Use:
+
+“What matters most is...”
+
+“The reason I prefer this is...”
+
+“What I found difficult was...”
+
+“The thing that surprised me most was...”
+
+This should improve spoken emphasis.
+
+---
+
+## 8. Parallel Structure
+
+Use lists and presentations.
+
+Weak:
+
+“My role includes planning projects, communicating with clients and I analyze reports.”
+
+Improve structural consistency.
+
+Then speak the corrected version.
+
+---
+
+## 9. Personal Error Injection
+
+Use the learner's Week 1 top grammar pattern.
+
+Add a 2–3 minute personalized micro-drill.
+
+Immediately use the correction in speaking.
+
+---
+
+## 10. Sentence Surgery
+
+Provide simple sentences.
+
+Learner combines them while preserving clarity.
+
+Measure whether meaning remains understandable.
+
+---
+
+## 11. One Idea → Rich Answer
+
+Learner receives:
+
+“Teamwork is important.”
+
+Develop 90 seconds using:
+
+* detail;
+* example;
+* contrast;
+* result;
+* conclusion.
+
+---
+
+## 12. Listening for Connectors
+
+Play natural speech.
+
+Learner identifies discourse markers.
+
+Then explains what each marker was doing.
+
+---
+
+## 13. Main Challenge
+
+Three-minute explanation.
+
+Track-specific topic.
+
+Require:
+
+* organized sections;
+* at least four naturally used connectors;
+* at least one emphasis structure;
+* clear conclusion.
+
+---
+
+## 14. Feedback + Retry
+
+Do not reward a response merely because it contains many connectors.
+
+Penalize unnatural connector stuffing in qualitative feedback.
+
+---
+
+## 15. Mission
+
+Explain a complex idea to another person for 3–5 minutes.
+
+Focus:
+
+**connection and clarity.**
+
+---
+
+# DAY 10 — LISTEN, SUMMARIZE AND RETELL
+
+## Title
+
+**Day 10 — Listen Better and Explain the Main Idea**
+
+## Objective
+
+Connect listening directly to spoken communication.
+
+Learner should move beyond:
+
+“I understood some words.”
+
+toward:
+
+“I can identify the message and explain it in my own words.”
+
+---
+
+## 1. Recall
+
+30-second Day 9 structured response using two connectors.
+
+---
+
+## 2. Listening Confidence
+
+Ask what remains difficult:
+
+* speed;
+* accent;
+* vocabulary;
+* connected speech;
+* details;
+* main idea;
+* remembering information.
+
+Use Day 7 listening profile.
+
+---
+
+## 3. Listening Baseline
+
+Play approximately 60 seconds.
+
+No transcript initially.
+
+Ask learner to summarize verbally.
+
+Save baseline.
+
+---
+
+## 4. Listen for Meaning
+
+Teach:
+
+Do not try to memorize every word.
+
+Listen for:
+
+* topic;
+* speaker purpose;
+* main point;
+* key evidence/details;
+* conclusion.
+
+---
+
+## 5. Keyword Capture
+
+Play short audio.
+
+Learner records 5–8 keywords.
+
+Then reconstructs meaning.
+
+---
+
+## 6. Retelling
+
+Hide transcript.
+
+Provide only keywords.
+
+Learner retells.
+
+Measure:
+
+* key information retained;
+* sequence;
+* paraphrasing;
+* fluency.
+
+---
+
+## 7. 3–2–1 Retelling
+
+Use uploaded 3–2–1 concept.
+
+Learner reads/listens to short content.
+
+Retell:
+
+3 minutes.
+
+Then:
+
+2 minutes.
+
+Then:
+
+1 minute.
+
+Goal:
+
+preserve essential meaning while becoming more concise.
+
+Do not require word-for-word repetition.
+
+---
+
+## 8. Summarization Framework
+
+Teach:
+
+### Topic
+
+What is this about?
+
+### Main Point
+
+What is the speaker saying?
+
+### Key Support
+
+What are the most important details?
+
+### Bottom Line
+
+What should the listener remember?
+
+---
+
+## 9. Dictogloss
+
+Use a short 45–60 second segment.
+
+Learner takes notes.
+
+Reconstruct important content.
+
+Then compare with transcript.
+
+Explain missed information through:
+
+* vocabulary;
+* speed;
+* linking;
+* stress;
+* attention;
+
+where evidence supports it.
+
+---
+
+## 10. Discourse Marker Spotting
+
+Listen for:
+
+* however;
+* therefore;
+* for example;
+* in contrast;
+* as a result;
+* overall.
+
+Ask what changed after each marker.
+
+---
+
+## 11. Global Listening Exposure
+
+Architect the listening system so content can vary across multiple clear English varieties.
+
+Do not rank accents.
+
+Do not treat one accent as the correct target.
+
+Track comprehension by content, not nationality.
+
+---
+
+## 12. Faster Listening Option
+
+Where accessible controls support it:
+
+allow playback speed adjustment.
+
+Advanced learners may try faster playback.
+
+Always allow return to normal/slower playback.
+
+Accessibility overrides challenge settings.
+
+---
+
+## 13. Listen → Respond
+
+AI/audio provides an opinion or workplace/student situation.
+
+Learner must:
+
+1. summarize what was said;
+2. respond to it.
+
+This verifies actual understanding.
+
+---
+
+## 14. Main Challenge
+
+60–90 second unseen audio.
+
+Learner:
+
+* captures keywords;
+* gives 60-second summary;
+* gives personal reaction;
+* asks one relevant question.
+
+---
+
+## 15. Score
+
+Track:
+
+* main idea;
+* key detail retention;
+* sequence;
+* paraphrasing;
+* inference where appropriate;
+* spoken clarity;
+* relevant response.
+
+---
+
+## 16. Mission
+
+Listen to a short real-world English item and explain it to somebody in approximately two minutes.
+
+Allow user-supplied or platform-provided content according to security rules.
+
+---
+
+# DAY 11 — SPONTANEOUS SPEAKING UNDER PRESSURE
+
+## Title
+
+**Day 11 — Think Fast: Speak Without Preparation**
+
+## Objective
+
+Increase spontaneous communication without returning to mental translation or panic.
+
+---
+
+## 1. Recall
+
+Summarize yesterday's listening content in 30 seconds.
+
+No notes.
+
+---
+
+## 2. Spontaneity Baseline
+
+Give unexpected question.
+
+Five seconds.
+
+Then speak 60 seconds.
+
+Track:
+
+* start delay;
+* long pauses;
+* fillers;
+* answer structure;
+* duration.
+
+---
+
+## 3. Five-Second Rule
+
+Week 1 used a three-second rule for simple responses.
+
+For harder Week 2 prompts, provide approximately five seconds.
+
+This is not a contradiction.
+
+It is difficulty scaling.
+
+---
+
+## 4. Impromptu Prompt Engine
+
+Generate track-appropriate unexpected questions.
+
+Examples:
+
+* What invention has changed society most?
+* What rule would you change at work/university?
+* Is competition useful?
+* What makes a good leader?
+* What would you improve in your city?
+
+---
+
+## 5. Yes/And Continuation
+
+Use the uploaded “Yes/And” spontaneous-speaking concept as a continuation activity.
+
+Learner must keep the idea moving.
+
+Do not force a total restart for every small pause; preserve the platform's established “continue after mistakes” philosophy.
+
+Instead record interruption/pause behavior.
+
+---
+
+## 6. Story Cubes
+
+Generate three random nouns or concepts.
+
+Learner has approximately 15 seconds.
+
+Create a coherent 90-second story.
+
+Track:
+
+* coherence;
+* creativity only as secondary;
+* sequencing;
+* continuation;
+* recovery.
+
+---
+
+## 7. Explain a Complex Idea Simply
+
+Use the uploaded “Rubber Duck” concept.
+
+Learner explains:
+
+* their job;
+* a university topic;
+* a technical concept;
+* a process;
+* a personal interest
+
+as though speaking to someone unfamiliar with it.
+
+Score clarity, not complexity.
+
+---
+
+## 8. Describe Without Target Word
+
+Recycle circumlocution from Days 2 and 5.
+
+Use harder concepts.
+
+---
+
+## 9. Random Follow-Up Pressure
+
+During an AI conversation, AI introduces an unexpected question.
+
+Learner must adapt.
+
+---
+
+## 10. Self-Correction / Rewind
+
+Use uploaded Rewind principle:
+
+Identify one recurring error from the recording.
+
+Learner produces corrected form repeatedly, then uses it once in a fresh spoken sentence.
+
+Do not repeatedly replay sensitive recordings without explicit user control.
+
+---
+
+## 11. Main Impromptu Challenge
+
+Three rounds:
+
+### Round 1
+
+30 seconds.
+
+### Round 2
+
+60 seconds.
+
+### Round 3
+
+2 minutes.
+
+Increasing difficulty.
+
+---
+
+## 12. Fluency Score
+
+Track:
+
+* start delay;
+* speech duration;
+* fillers;
+* long pauses;
+* idea continuity;
+* recovery;
+* vocabulary;
+* structure;
+* clarity.
+
+Do not reward WPM growth if clarity decreases.
+
+---
+
+## 13. Mission
+
+Answer three unexpected English questions in a real conversation or AI session.
+
+---
+
+# DAY 12 — HANDLE DIFFICULT SITUATIONS WITH FLEXIBLE LANGUAGE
+
+## Title
+
+**Day 12 — Handle Difficult Situations**
+
+Do NOT call this:
+
+“Conditional Grammar Day.”
+
+The communication problem comes first.
+
+## Objective
+
+Help learners discuss:
+
+* possibilities;
+* consequences;
+* hypothetical situations;
+* alternatives;
+* past regrets/alternative outcomes
+
+inside practical communication.
+
+---
+
+## 1. Home
+
+Today:
+
+**What would you say when the situation is not simple?**
+
+---
+
+## 2. Baseline Scenario
+
+Examples by track:
+
+Professional:
+
+“Your manager asks you to finish an unrealistic amount of work by tomorrow. What would you say?”
+
+Student:
+
+“You have two major assignments due on the same day and need an extension.”
+
+General:
+
+“A friend asks you to make an expensive commitment you are unsure about.”
+
+Speak 90 seconds.
+
+---
+
+## 3. Communication Functions
+
+Teach language for:
+
+* likely future;
+* possibilities;
+* hypothetical alternatives;
+* consequences;
+* past alternatives.
+
+Keep explanation concise.
+
+---
+
+## 4. Conditional Ladder
+
+Use the uploaded Conditional Ladder as an optional structural exercise.
+
+Apply different conditional meanings to one real-world theme.
+
+Do not require grammar terminology if it does not help the learner.
+
+Focus on meaning.
+
+---
+
+## 5. If / Unless / As Long As
+
+Use decision scenarios.
+
+Learner negotiates conditions.
+
+---
+
+## 6. Consequence Builder
+
+System gives:
+
+“If we delay the project...”
+
+Learner creates:
+
+* likely consequence;
+* alternative;
+* recommendation.
+
+---
+
+## 7. What Would You Do?
+
+AI gives difficult situation.
+
+Learner responds for 60–90 seconds.
+
+---
+
+## 8. Past Alternative
+
+Use:
+
+“If I had...”
+
+“I would have...”
+
+for reflection on a past experience.
+
+Connect with Day 4 storytelling.
+
+---
+
+## 9. Gerund/Infinitive Meaning Contrast
+
+Only use uploaded gerund/infinitive switch where it affects meaning in useful situations.
+
+Examples such as:
+
+“stop doing”
+
+vs.
+
+“stop to do.”
+
+Keep it micro.
+
+---
+
+## 10. Passive Language for Objectivity
+
+Use uploaded passive/objectivity idea inside a professional or formal communication repair activity.
+
+Do not teach passive voice as a broad grammar lecture.
+
+---
+
+## 11. Difficult Situation Roleplay
+
+AI roleplays:
+
+* manager;
+* professor;
+* customer;
+* teammate;
+* friend.
+
+Learner must explain constraints and propose options.
+
+---
+
+## 12. Clarification + Negotiation Bridge
+
+Recycle Day 7:
+
+* Let me put that another way.
+* What I mean is...
+* Would it be possible to...?
+* One option might be...
+* If we..., then...
+
+This prepares Week 3 negotiation.
+
+---
+
+## 13. Main Challenge
+
+Three-minute difficult-situation simulation.
+
+Measure:
+
+* clarity;
+* alternatives;
+* condition/consequence language;
+* politeness;
+* structure;
+* recovery;
+* grammar patterns.
+
+---
+
+## 14. Personalized Grammar Micro-Drill
+
+Use learner's most relevant recurring structural issue.
+
+Immediate spoken retry.
+
+---
+
+## 15. Mission
+
+Use one conditional/problem-solving explanation in a real conversation.
+
+---
+
+# DAY 13 — PRESENT AN IDEA CLEARLY
+
+## Title
+
+**Day 13 — Explain and Present an Idea with Confidence**
+
+## Objective
+
+Transition from conversation into short presentation-style communication.
+
+Learner should adapt the same idea to different time limits.
+
+---
+
+## 1. Recall
+
+Explain yesterday's difficult scenario in 30 seconds.
+
+---
+
+## 2. Presentation Confidence
+
+1–10.
+
+Ask:
+
+* opening;
+* organization;
+* vocabulary;
+* forgetting ideas;
+* pronunciation;
+* nerves;
+* ending;
+* questions.
+
+---
+
+## 3. Baseline Mini-Presentation
+
+Topic adapted by track.
+
+Speak 2 minutes.
+
+No framework yet.
+
+---
+
+## 4. Presentation Structure
+
+Teach:
+
+### OPEN
+
+What are you discussing?
+
+### PURPOSE
+
+Why does it matter?
+
+### 2–3 KEY POINTS
+
+What should the listener understand?
+
+### EXAMPLE / EVIDENCE
+
+Make it concrete.
+
+### CLOSE
+
+What should the listener remember?
+
+---
+
+## 5. Signposting
+
+Teach useful spoken signposts:
+
+* Today I'd like to...
+* Let me start with...
+* The first point is...
+* Another important point is...
+* For example...
+* This brings me to...
+* To summarize...
+* The main takeaway is...
+
+---
+
+## 6. Elevator Pitch Rotation
+
+Use uploaded concept.
+
+Learner explains same project/idea in:
+
+30 seconds.
+
+60 seconds.
+
+2 minutes.
+
+Track whether information is appropriately compressed/expanded.
+
+---
+
+## 7. Audience Adaptation
+
+Explain the same idea to:
+
+* friend;
+* manager/professor;
+* new colleague/classmate;
+* customer/general audience.
+
+Adjust vocabulary and detail.
+
+---
+
+## 8. Public Speaking Delivery
+
+Recycle Day 6:
+
+* sentence stress;
+* chunking;
+* pauses;
+* pace;
+* intonation.
+
+Optional standing-mode practice if learner chooses.
+
+Do not make posture scoring a medical or biometric claim.
+
+---
+
+## 9. Slide-Free Explanation
+
+Learner presents without visual dependency.
+
+Then optionally use a simple visual/chart/topic card.
+
+---
+
+## 10. Questions After Presentation
+
+AI asks one easy and one challenging question.
+
+Learner responds without abandoning structure.
+
+---
+
+## 11. Main Three-Minute Presentation
+
+Track-specific:
+
+Professional:
+project, proposal or recommendation.
+
+Student:
+academic topic/project.
+
+General:
+idea, experience or recommendation.
+
+---
+
+## 12. Scorecard
+
+Track:
+
+* opening;
+* organization;
+* signposting;
+* explanation;
+* examples;
+* vocabulary;
+* clarity;
+* pacing;
+* conclusion;
+* question handling.
+
+---
+
+## 13. Retry
+
+Repeat only weakest section.
+
+Do not force complete re-recording unless learner chooses.
+
+---
+
+## 14. Mission
+
+Deliver a 2-minute English explanation/presentation to another person or AI.
+
+---
+
+# DAY 14 — WEEK 2 FLUENCY CHALLENGE
+
+## Title
+
+**Day 14 — Week 2 Fluency Challenge**
+
+This is a review/diagnostic day.
+
+Do not introduce major new content.
+
+## Main objective
+
+Measure Week 2 growth in:
+
+* opinion development;
+* discussions;
+* structural range;
+* connectors;
+* paraphrasing;
+* listening;
+* summarization;
+* spontaneous speaking;
+* difficult-situation communication;
+* presentations;
+* personalized Week 1 priorities.
+
+---
+
+## 1. Confidence Check
+
+Compare Day 7 and Day 14 silently.
+
+---
+
+## 2. Week 2 Memory Sprint
+
+Review:
+
+Day 8:
+opinion + disagreement.
+
+Day 9:
+connectors/chunks.
+
+Day 10:
+listen + summarize.
+
+Day 11:
+spontaneous speaking.
+
+Day 12:
+difficult situations / conditions.
+
+Day 13:
+presentation structure.
+
+---
+
+## 3. Opinion Challenge
+
+90 seconds.
+
+AI provides counterargument.
+
+Learner responds.
+
+---
+
+## 4. Connector Challenge
+
+Develop simple statement into structured answer.
+
+---
+
+## 5. Listening + Summary
+
+Unseen audio.
+
+Summary without transcript.
+
+---
+
+## 6. 3–2–1 Compression Test
+
+Retell content in shorter form while preserving meaning.
+
+---
+
+## 7. Impromptu Test
+
+Five seconds → two-minute response.
+
+No framework hints.
+
+---
+
+## 8. Difficult Situation
+
+AI gives track-specific scenario.
+
+Learner must:
+
+* explain;
+* propose alternatives;
+* handle pushback.
+
+---
+
+## 9. Presentation
+
+Three-minute mini-presentation.
+
+Followed by one unexpected question.
+
+---
+
+## 10. Personalized Priority Test
+
+Retest the learner's Week 1 Priority #1.
+
+Example:
+
+If past tense:
+story response.
+
+If vocabulary:
+unprompted vocabulary activation.
+
+If pronunciation:
+clarity recording.
+
+If listening:
+targeted listening segment.
+
+---
+
+## 11. Week 2 Integrated Challenge
+
+Approximately 8–10 minutes.
+
+Include:
+
+1. opinion;
+2. listening response;
+3. spontaneous question;
+4. problem-solving scenario;
+5. mini-presentation.
+
+---
+
+## 12. Week 2 Scorecard
+
+Compare against Day 7 where metrics are compatible.
+
+Dimensions:
+
+* fluency;
+* structure;
+* opinion development;
+* response flexibility;
+* vocabulary activation;
+* paraphrasing;
+* listening;
+* spontaneous response;
+* pronunciation clarity;
+* presentation;
+* confidence.
+
+Do not imply official proficiency certification.
+
+---
+
+## 13. Week 2 Diagnostic Engine
+
+Run:
+
+Collect
+
+→ Compare
+
+→ Detect progress
+
+→ Detect persistent weakness
+
+→ Update learner profile
+
+→ Update vocabulary recycling
+
+→ Update pronunciation focus
+
+→ Select Week 3 professional priorities.
+
+---
+
+## 14. Week 3 Readiness
+
+Display:
+
+### Next Week — Communicate Professionally
+
+Upcoming:
+
+* networking/small talk;
+* meetings;
+* interviews;
+* presentations/data;
+* feedback and difficult conversations;
+* professional messages;
+* negotiation;
+* Week 3 challenge.
+
+---
+
+# WEEK 2 DATA MODEL EXTENSIONS
+
+Add/verify queryable metrics for:
+
+* opinion position clarity;
+* supporting reasons;
+* examples/evidence;
+* counterargument response;
+* agreement/disagreement style;
+* connector diversity;
+* connector appropriateness;
+* paraphrase attempts;
+* summary accuracy;
+* key-detail retention;
+* discourse-marker recognition;
+* impromptu start delay;
+* idea continuity;
+* conditional/problem-solving structures;
+* presentation organization;
+* signposting;
+* audience adaptation;
+* question handling.
+
+Do not store every metric as an opaque AI JSON response only.
+
+---
+
+# WEEK 2 AI RULES
+
+AI must:
+
+* create reasonable counterarguments;
+* avoid political/ideological persuasion;
+* score communication quality rather than beliefs;
+* avoid penalizing learners for not using unnecessarily advanced structures;
+* prioritize natural language;
+* preserve learner intent during correction;
+* distinguish grammar errors from stylistic alternatives;
+* cite transcript evidence internally where possible for feedback generation.
+
+---
+
+# WEEK 2 TESTING
+
+For Days 8–14 verify:
+
+* counterargument conversation state;
+* opinion scoring;
+* vocabulary recycling from Days 1–7;
+* personalized Week 1 priority injection;
+* listening playback controls;
+* transcript-hidden states;
+* playback-speed controls;
+* retelling persistence;
+* impromptu timers;
+* random prompt safety;
+* difficult-scenario roleplays;
+* presentation recording;
+* partial-section retries;
+* Week 2 report;
+* Day 14 diagnostic;
+* Week 3 unlock;
+* Express Mode;
+* Student/Professional/General tracks.
+
+After implementation:
+
+run lint, typecheck, unit tests, integration tests, E2E and production build.
+
+Fix failures before marking Week 2 complete.

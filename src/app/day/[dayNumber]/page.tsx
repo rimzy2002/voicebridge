@@ -1,9 +1,11 @@
 'use client';
 
-import { use, useMemo } from 'react';
+import { use, useMemo, Suspense } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import ActivityShell from '@/components/activity/ActivityShell';
 import { getDay } from '@/lib/curriculum/days';
+import { LearnerTrack } from '@/types';
 
 interface DayPageProps {
   params: Promise<{
@@ -11,9 +13,12 @@ interface DayPageProps {
   }>;
 }
 
-export default function DayPage({ params }: DayPageProps) {
-  const resolvedParams = use(params);
-  const dayNum = parseInt(resolvedParams.dayNumber, 10) || 1;
+function DayContent({ dayNum }: { dayNum: number }) {
+  const searchParams = useSearchParams();
+  const activityParam = searchParams.get('activity');
+  const initialActivityIndex = activityParam ? parseInt(activityParam, 10) : 0;
+  const trackParam = (searchParams.get('track') as LearnerTrack) || 'general';
+  const modeParam = (searchParams.get('mode') as 'full' | 'express') || 'full';
 
   const day = useMemo(() => {
     return getDay(dayNum);
@@ -41,8 +46,24 @@ export default function DayPage({ params }: DayPageProps) {
             ← Back to All Days
           </Link>
         </div>
-        <ActivityShell day={day} />
+        <ActivityShell
+          day={day}
+          initialActivityIndex={initialActivityIndex}
+          track={trackParam}
+          mode={modeParam}
+        />
       </div>
     </main>
+  );
+}
+
+export default function DayPage({ params }: DayPageProps) {
+  const resolvedParams = use(params);
+  const dayNum = parseInt(resolvedParams.dayNumber, 10) || 1;
+
+  return (
+    <Suspense fallback={<div className="container container--content" style={{ padding: 'var(--space-12) 0' }}>Loading day...</div>}>
+      <DayContent dayNum={dayNum} />
+    </Suspense>
   );
 }

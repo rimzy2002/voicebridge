@@ -14,6 +14,15 @@ import day18 from './day18';
 import day19 from './day19';
 import day20 from './day20';
 import day21 from './day21';
+import day22 from './day22';
+import day23 from './day23';
+import day24 from './day24';
+import day25 from './day25';
+import day26 from './day26';
+import day27 from './day27';
+import day28 from './day28';
+import day29 from './day29';
+import day30 from './day30';
 
 const dedicatedDays: Record<number, DayDefinition> = {
   1: day1,
@@ -31,6 +40,15 @@ const dedicatedDays: Record<number, DayDefinition> = {
   19: day19,
   20: day20,
   21: day21,
+  22: day22,
+  23: day23,
+  24: day24,
+  25: day25,
+  26: day26,
+  27: day27,
+  28: day28,
+  29: day29,
+  30: day30,
 };
 
 const dayMeta: Record<number, { title: string; subtitle: string; objective: string; coreMessage: string }> = {
@@ -117,6 +135,60 @@ const dayMeta: Record<number, { title: string; subtitle: string; objective: stri
     subtitle: 'Day 21 of 30 • Week 3 Milestone',
     objective: 'Synthesize Week 3 competencies in an unassisted professional simulation and review 21-day progress.',
     coreMessage: 'Professional mastery is bringing clarity, composure, and emotional intelligence to every conversation.',
+  },
+  22: {
+    title: 'Make Complex Ideas Easy to Understand',
+    subtitle: 'Day 22 of 30 • Week 4',
+    objective: 'Explain difficult ideas simply without excessive jargon, and adapt to beginner, peer, and expert audiences.',
+    coreMessage: 'True mastery is making complex ideas effortlessly simple to understand.',
+  },
+  23: {
+    title: 'Persuade with Reasons, Evidence and Respect',
+    subtitle: 'Day 23 of 30 • Week 4',
+    objective: 'Persuade without manipulation: articulate benefits, acknowledge limitations, and propose concrete action.',
+    coreMessage: 'Persuasion is presenting reasons and evidence so clearly that agreement becomes the natural conclusion.',
+  },
+  24: {
+    title: 'Communicate Like a Leader',
+    subtitle: 'Day 24 of 30 • Week 4',
+    objective: 'Lead with clarity, directional focus, respectful delegation, and honest direction under uncertainty.',
+    coreMessage: 'Leadership communication creates clarity so people know where we are going and why their work matters.',
+  },
+  25: {
+    title: 'Sound Nuanced, Not Absolute',
+    subtitle: 'Day 25 of 30 • Week 4',
+    objective: 'Express uncertainty, probability, partial agreement, and soft disagreement with diplomatic hedging.',
+    coreMessage: 'Inexperienced speakers speak in absolutes. Master communicators use nuance to build collaboration and trust.',
+  },
+  26: {
+    title: 'Debate Ideas Without Losing the Conversation',
+    subtitle: 'Day 26 of 30 • Week 4',
+    objective: 'Steelman opposing viewpoints fairly, present evidence, and debate ideas without personal confrontation.',
+    coreMessage: 'A great debate is not about winning an argument — it is about clarifying reality through rigorous dialogue.',
+  },
+  27: {
+    title: 'Stay Clear When Questions Get Difficult',
+    subtitle: 'Day 27 of 30 • Week 4',
+    objective: 'Maintain composure through Pause → Understand → Structure → Respond during tough and hostile Q&A.',
+    coreMessage: 'Under pressure, silence is not weakness; it is the hallmark of composure and authority.',
+  },
+  28: {
+    title: 'Listen for Meaning, Tone and What Happens Next',
+    subtitle: 'Day 28 of 30 • Week 4',
+    objective: 'Decode speaker stance, discourse markers, tone cues, and implicit action items in international English.',
+    coreMessage: 'Advanced communication is about how deeply and accurately you listen before you speak.',
+  },
+  29: {
+    title: 'Perform Without Hints',
+    subtitle: 'Day 29 of 30 • The Final Rehearsal',
+    objective: 'Perform completely independently with zero on-screen hints, menus, or labels before Day 30.',
+    coreMessage: 'You no longer need training wheels. The frameworks and pauses are embedded in how you naturally think.',
+  },
+  30: {
+    title: 'Your Final Communication Challenge',
+    subtitle: 'Day 30 of 30 • Capstone Transformation',
+    objective: 'Repeat the Day 1 baseline, compare audio side-by-side, analyze your 14-dimension scorecard, and claim your plan.',
+    coreMessage: 'Transformation is the undeniable evidence of speaking with greater clarity, composure, and confidence than on Day 1.',
   },
 };
 

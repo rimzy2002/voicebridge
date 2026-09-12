@@ -1,0 +1,1859 @@
+# WEEK 3 — COMMUNICATE PROFESSIONALLY
+
+## DAYS 15–21 ENTERPRISE IMPLEMENTATION PROMPT
+
+Continue from Days 1–14.
+
+Do not create a separate “business English product.”
+
+Use the same curriculum engine with track-specific scenarios.
+
+Week 3 should increase real-world pressure while preserving the same core communication principles:
+
+* clear > complicated;
+* natural > memorized;
+* communication > perfection;
+* speak → feedback → retry;
+* evidence-based personalization;
+* intelligibility rather than accent removal.
+
+---
+
+# WEEK 3 OBJECTIVE
+
+By the end of Day 21, the learner should be able to function more confidently in realistic professional or professional-style situations involving:
+
+* networking;
+* small talk;
+* meetings;
+* interviews;
+* presentations;
+* explaining work;
+* data/trends;
+* requesting help;
+* giving feedback;
+* disagreement;
+* mistakes/apologies;
+* negotiation;
+* formal messages;
+* verbal summaries;
+* difficult questions.
+
+For Student and General tracks, preserve the communication skill but change the context.
+
+Example:
+
+Professional:
+team meeting.
+
+Student:
+group-project meeting.
+
+General:
+community/planning discussion.
+
+Do not deny non-professional learners Week 3 functionality.
+
+---
+
+# WEEK 3 SHARED ENGINE EXTENSIONS
+
+Create reusable activity types/services for:
+
+* professional_small_talk;
+* networking_roleplay;
+* meeting_simulation;
+* meeting_agenda;
+* meeting_contribution_analysis;
+* polite_interruption;
+* interview_simulation;
+* star_response;
+* elevator_pitch;
+* presentation_qa;
+* data_narration;
+* constructive_feedback;
+* sbi_feedback;
+* difficult_conversation;
+* apology_explanation;
+* negotiation;
+* email_to_voice;
+* message_action_summary;
+* register_switch;
+* hostile_question;
+* professional_weekly_diagnostic.
+
+Reuse existing conversation simulator rather than creating another AI chat architecture.
+
+---
+
+# DAY 15 — PROFESSIONAL COMMUNICATION RESET + NETWORKING
+
+## Title
+
+**Day 15 — Communicate Professionally Without Sounding Robotic**
+
+## Objective
+
+Transition from general fluency to professional communication while keeping language natural.
+
+Day 15 should also perform the planned mid-program confidence check.
+
+---
+
+## 1. Midpoint Confidence Snapshot
+
+Repeat core Day 1 confidence areas:
+
+* fluency;
+* vocabulary;
+* grammar while speaking;
+* pronunciation;
+* listening;
+* workplace/professional communication;
+* speaking without preparation;
+* overall confidence.
+
+Store:
+
+**Day 15 Confidence Snapshot**
+
+Do not replace Day 1 values.
+
+Compare later.
+
+---
+
+## 2. Week 2 Recall
+
+60-second summary:
+
+“What improved most during Week 2?”
+
+Require clear structure.
+
+---
+
+## 3. Professional Communication Baseline
+
+Prompt:
+
+“Explain what you do, study, or spend most of your time working on.”
+
+Speak 90 seconds.
+
+Evaluate:
+
+* clarity;
+* jargon;
+* organization;
+* professional vocabulary;
+* audience awareness;
+* excessive formality.
+
+---
+
+## 4. Formal ≠ Professional
+
+Teach:
+
+Professional communication should usually be:
+
+* clear;
+* concise;
+* respectful;
+* purposeful;
+* audience-aware.
+
+Do not encourage learners to replace every simple word with corporate jargon.
+
+---
+
+## 5. 30 / 60 / 120-Second Introduction
+
+Use elevator-pitch rotation.
+
+Learner introduces themselves/their work/studies in:
+
+30 sec.
+
+60 sec.
+
+2 min.
+
+System checks whether level of detail changes appropriately.
+
+---
+
+## 6. Networking Openers
+
+Teach context-specific opening language.
+
+Examples:
+
+* How do you know the organizer?
+* What kind of work are you involved in?
+* What brought you to this event?
+* How has your week been?
+* What are you working on at the moment?
+
+Do not teach invasive personal questions.
+
+---
+
+## 7. Small Talk
+
+Use uploaded small-talk concept.
+
+Focus on:
+
+* begin;
+* find common ground;
+* deepen appropriately;
+* transition;
+* exit politely.
+
+If implementing SPIN-inspired progression, adapt it naturally rather than forcing sales terminology into all conversations.
+
+---
+
+## 8. Professional Follow-Ups
+
+Recycle Day 3 questioning.
+
+Move from generic:
+
+“What do you do?”
+
+to relevant follow-ups.
+
+---
+
+## 9. Networking Roleplay
+
+AI simulates:
+
+* conference;
+* office event;
+* university event;
+* networking event;
+* social introduction.
+
+Conversation approximately 4–5 minutes.
+
+---
+
+## 10. Exit a Conversation
+
+Teach:
+
+* It was great speaking with you.
+* I won't keep you, but it was nice meeting you.
+* I'd be interested to hear more about that another time.
+* Enjoy the rest of the event.
+
+---
+
+## 11. Main Challenge
+
+5-minute networking simulation.
+
+Score:
+
+* opener;
+* answer development;
+* follow-ups;
+* balance;
+* natural reactions;
+* professional tone;
+* vocabulary;
+* closing.
+
+---
+
+## 12. Mission
+
+Start one English small-talk/networking interaction.
+
+AI alternative available.
+
+---
+
+# DAY 16 — PARTICIPATE IN MEETINGS
+
+## Title
+
+**Day 16 — Speak Up in Meetings**
+
+## Objective
+
+Teach learners to contribute rather than remain silent.
+
+Target skills:
+
+* opening;
+* giving update;
+* contributing idea;
+* agreeing;
+* disagreeing;
+* asking for clarification;
+* interrupting politely;
+* summarizing action.
+
+---
+
+## 1. Baseline Meeting
+
+AI immediately starts a short meeting.
+
+Learner participates for approximately three minutes.
+
+Save baseline.
+
+---
+
+## 2. Meeting Opener Scripts
+
+Use uploaded Meeting Opener concept.
+
+Support variations:
+
+### Formal
+
+### Informal
+
+### Virtual
+
+Teach purpose and tone.
+
+---
+
+## 3. Giving an Update
+
+Framework:
+
+### STATUS
+
+Where are we?
+
+### PROGRESS
+
+What has happened?
+
+### ISSUE
+
+What is blocking progress?
+
+### NEXT STEP
+
+What happens next?
+
+Keep concise.
+
+---
+
+## 4. Contributing an Idea
+
+Useful language:
+
+* One option might be...
+* Another possibility is...
+* I'd suggest...
+* One thing we could consider is...
+* From my perspective...
+
+---
+
+## 5. Agreement
+
+* I agree with that.
+* That makes sense.
+* I think that's a good approach.
+* I'd support that option.
+
+---
+
+## 6. Respectful Disagreement
+
+Recycle Day 8.
+
+Use meeting-specific language.
+
+---
+
+## 7. Polite Interruption
+
+Teach functional forms:
+
+* Sorry to interrupt, but...
+* Could I add something here?
+* Can I come in on that point?
+* Before we move on...
+
+Do not teach interruption as dominance.
+
+---
+
+## 8. Clarification
+
+Recycle:
+
+* Could you clarify what you mean by...?
+* Just to make sure I understand...
+* Are you saying that...?
+
+---
+
+## 9. Meeting Question Quality
+
+Distinguish:
+
+useful question vs question already answered.
+
+Use Day 3 relevance detector.
+
+---
+
+## 10. Virtual Meeting Challenges
+
+AI can simulate:
+
+* missed information;
+* audio issue;
+* interruption;
+* unclear action item.
+
+Learner repairs communication.
+
+---
+
+## 11. Action Summary
+
+At meeting end learner says:
+
+“So, just to summarize...”
+
+Then identifies:
+
+* decision;
+* owner;
+* next action;
+* deadline.
+
+---
+
+## 12. Main Meeting Simulation
+
+6–8 minutes.
+
+AI participants should have distinct roles.
+
+Scenario examples:
+
+Professional:
+delayed project.
+
+Student:
+group assignment.
+
+General:
+organizing an event/trip/community activity.
+
+---
+
+## 13. Meeting Scorecard
+
+Track:
+
+* participation;
+* concise updates;
+* useful questions;
+* agreement;
+* disagreement;
+* interruption appropriateness;
+* clarification;
+* action summary;
+* conversation balance;
+* clarity.
+
+---
+
+## 14. Mission
+
+Make one English contribution during a real/AI discussion.
+
+---
+
+# DAY 17 — JOB INTERVIEWS AND HIGH-STAKES QUESTIONS
+
+## Title
+
+**Day 17 — Answer Interview Questions with Structure and Evidence**
+
+## Objective
+
+Develop clear interview responses without memorized robotic scripts.
+
+---
+
+## 1. Interview Confidence
+
+1–10.
+
+Ask hardest area:
+
+* introduce myself;
+* experience;
+* strengths;
+* weaknesses;
+* examples;
+* unexpected questions;
+* vocabulary;
+* nervousness;
+* concise answers.
+
+---
+
+## 2. Interview Baseline
+
+Questions:
+
+“Tell me about yourself.”
+
+Then:
+
+“Tell me about a challenge you handled.”
+
+Record.
+
+---
+
+## 3. Tell Me About Yourself
+
+Teach compact structure:
+
+### PRESENT
+
+What do you do now?
+
+### RELEVANT PAST
+
+What experience brought you here?
+
+### VALUE / STRENGTH
+
+What are you good at?
+
+### DIRECTION
+
+What are you looking for?
+
+Avoid autobiography.
+
+---
+
+## 4. STAR
+
+Reuse existing STAR framework:
+
+Situation.
+
+Task.
+
+Action.
+
+Result.
+
+Do not recreate a second STAR implementation.
+
+---
+
+## 5. STAR Builder
+
+Use learner's real experience where they choose.
+
+Do not invent achievements for them.
+
+---
+
+## 6. Strong vs Weak Evidence
+
+Weak:
+
+“I am good at teamwork.”
+
+Better:
+
+brief evidence showing teamwork.
+
+Teach proof, not adjectives.
+
+---
+
+## 7. Strength Question
+
+Require:
+
+strength + evidence + relevance.
+
+---
+
+## 8. Weakness Question
+
+Avoid fake weaknesses.
+
+Teach:
+
+real manageable area + action taken + improvement.
+
+Do not coach deception.
+
+---
+
+## 9. Behavioral Questions
+
+Examples:
+
+* difficult problem;
+* disagreement;
+* deadline;
+* leadership;
+* mistake;
+* teamwork;
+* learning quickly;
+* customer/student challenge.
+
+---
+
+## 10. Unexpected Questions
+
+Use impromptu engine.
+
+Learner has a few seconds to organize.
+
+---
+
+## 11. Follow-Up Interviewing
+
+AI asks follow-ups based on learner's actual answer.
+
+Do not use static disconnected question list only.
+
+---
+
+## 12. Progressive Difficulty
+
+Round 1:
+supportive interviewer.
+
+Round 2:
+neutral interviewer.
+
+Round 3:
+challenging interviewer.
+
+---
+
+## 13. Main Interview Simulation
+
+Approximately 8–10 minutes.
+
+Score:
+
+* relevance;
+* structure;
+* evidence;
+* concision;
+* STAR;
+* vocabulary;
+* clarity;
+* recovery;
+* confidence behavior.
+
+---
+
+## 14. Retry
+
+Repeat one weak interview answer.
+
+Compare.
+
+---
+
+## 15. Mission
+
+Record a 2-minute professional self-introduction.
+
+---
+
+# DAY 18 — PRESENTATIONS AND DATA NARRATION
+
+## Title
+
+**Day 18 — Present Information and Explain Data Clearly**
+
+## Objective
+
+Extend Day 13 presentation ability into professional/academic reporting.
+
+---
+
+## 1. Recall
+
+60-second project/work/study update.
+
+---
+
+## 2. Presentation Opening
+
+Practice three openings:
+
+* formal;
+* neutral;
+* conversational.
+
+---
+
+## 3. Presentation Roadmap
+
+Teach concise signposting.
+
+---
+
+## 4. Data Narration
+
+Use uploaded Data Narration feature.
+
+Where chart support exists, display accessible chart plus equivalent data table/text.
+
+Teach vocabulary such as:
+
+* increase;
+* rise;
+* climb;
+* surge where truly strong;
+* decline;
+* fall;
+* drop;
+* fluctuate;
+* remain stable;
+* plateau;
+* peak;
+* reach a low;
+* gradually;
+* sharply;
+* slightly.
+
+Do not force learners to avoid ordinary “up/down” language if it is clearest.
+
+The source activity's richer vocabulary should be treated as expansion, not a prohibition.
+
+---
+
+## 5. Trend → Evidence → Meaning
+
+Teach:
+
+### WHAT?
+
+What happened?
+
+### EVIDENCE
+
+What numbers/details matter?
+
+### INTERPRETATION
+
+Why might it matter?
+
+Do not allow AI to invent causal explanations from a graph.
+
+Learner may say:
+
+“One possible explanation is...”
+
+when inference is not proven.
+
+---
+
+## 6. Graph Description
+
+Learner describes a chart for 60–90 seconds.
+
+---
+
+## 7. Compare Two Trends
+
+Use comparison language.
+
+---
+
+## 8. Explain Without Visual
+
+Hide chart after review.
+
+Learner explains key findings verbally.
+
+---
+
+## 9. Audience Adaptation
+
+Explain same data to:
+
+* manager/professor;
+* colleague/classmate;
+* general audience.
+
+---
+
+## 10. Presentation Delivery
+
+Recycle:
+
+stress;
+chunking;
+pauses;
+intonation;
+signposting.
+
+---
+
+## 11. Questions
+
+AI asks:
+
+* clarification;
+* reason;
+* challenge.
+
+Learner handles Q&A.
+
+---
+
+## 12. Difficult Question Buffer
+
+Introduce professional buffer phrases such as:
+
+* That's a fair question.
+* Let me clarify that.
+* Based on the information we have...
+* I don't have that figure with me, but...
+* That's something we'd need to examine further.
+
+Never encourage fabrication.
+
+If learner does not know:
+
+say so professionally.
+
+---
+
+## 13. Main Presentation
+
+3–5 minutes.
+
+Track-specific topic.
+
+Optional chart/data.
+
+---
+
+## 14. Score
+
+* structure;
+* signposting;
+* data accuracy;
+* vocabulary;
+* distinction between fact/inference;
+* audience adaptation;
+* delivery;
+* Q&A.
+
+---
+
+# DAY 19 — FEEDBACK, MISTAKES AND DIFFICULT CONVERSATIONS
+
+## Title
+
+**Day 19 — Handle Difficult Conversations Professionally**
+
+## Objective
+
+Practice:
+
+* feedback;
+* disagreement;
+* explaining mistakes;
+* requesting help;
+* apologizing;
+* responding to criticism.
+
+---
+
+## 1. Baseline
+
+Scenario:
+
+A teammate repeatedly misses an agreed task.
+
+What would you say?
+
+Record 90 seconds.
+
+---
+
+## 2. Direct ≠ Rude
+
+Teach:
+
+clear + respectful + specific.
+
+Avoid:
+
+personal attacks.
+
+---
+
+## 3. SBI Feedback
+
+Use uploaded SBI model:
+
+### Situation
+
+When/where did it happen?
+
+### Behavior
+
+What observable behavior occurred?
+
+### Impact
+
+What effect did it have?
+
+Do not infer motives.
+
+---
+
+## 4. SBI Practice
+
+Turn:
+
+“You are unreliable.”
+
+into observable feedback.
+
+---
+
+## 5. Request Change
+
+Add:
+
+### NEXT STEP
+
+“What I'd like us to do next is...”
+
+Keep SBI itself unchanged but allow action request after it.
+
+---
+
+## 6. Receiving Feedback
+
+Teach:
+
+* listen;
+* clarify;
+* acknowledge;
+* respond;
+* agree on next action.
+
+---
+
+## 7. Explain a Mistake
+
+Structure:
+
+* what happened;
+* responsibility;
+* impact;
+* correction;
+* prevention.
+
+Avoid excessive excuses.
+
+---
+
+## 8. Professional Apology
+
+Teach proportional apology.
+
+Do not make every issue dramatic.
+
+---
+
+## 9. Request Help
+
+Teach:
+
+context + specific request + timing/priority.
+
+---
+
+## 10. Disagreement Under Pressure
+
+Recycle Day 8.
+
+Increase realism.
+
+---
+
+## 11. Hostile/Challenging Questions
+
+Use uploaded buffer concept.
+
+AI may challenge:
+
+“I don't think your plan will work.”
+
+Learner:
+
+acknowledge → answer → evidence/alternative.
+
+Do not make AI abusive.
+
+---
+
+## 12. Difficult Conversation Roleplay
+
+Choose:
+
+* missed deadline;
+* poor-quality work;
+* unfair workload;
+* misunderstanding;
+* customer complaint;
+* group-project problem.
+
+---
+
+## 13. Main Challenge
+
+5–7 minute conversation.
+
+Track:
+
+* clarity;
+* respect;
+* specificity;
+* active listening;
+* feedback structure;
+* accountability;
+* solution focus;
+* emotional tone;
+* recovery.
+
+---
+
+## 14. Mission
+
+Use one respectful clarification/request/feedback expression outside the system.
+
+---
+
+# DAY 20 — EMAIL TO SPEAKING, REGISTER AND NEGOTIATION
+
+## Title
+
+**Day 20 — Turn Written Messages into Clear Spoken Action**
+
+## Objective
+
+Connect professional reading/writing with spoken communication.
+
+Use uploaded:
+
+* professional email-to-speaking;
+* Email-to-Voice;
+* register switching;
+* negotiation/difficult communication.
+
+---
+
+## 1. Baseline Message
+
+Display a realistic workplace/student/general message.
+
+Ask:
+
+“What happened, and what action should be taken?”
+
+Learner responds verbally.
+
+---
+
+## 2. Extract Action
+
+Teach:
+
+### CONTEXT
+
+Why are we receiving this?
+
+### KEY MESSAGE
+
+What matters?
+
+### ACTION
+
+What needs to happen?
+
+### OWNER
+
+Who should do it?
+
+### TIMING
+
+When?
+
+---
+
+## 3. Email-to-Speaking
+
+Read formal message.
+
+Explain it naturally to a colleague.
+
+Do not read it word-for-word.
+
+---
+
+## 4. Email-to-Voice
+
+Convert formal email into:
+
+* voicemail;
+* spoken update;
+* quick team explanation.
+
+This trains register switching.
+
+---
+
+## 5. Register Awareness
+
+Show same meaning in:
+
+### Formal written
+
+### Professional spoken
+
+### Casual spoken
+
+Teach appropriateness.
+
+Do not label one version universally better.
+
+---
+
+## 6. Concision
+
+Turn long written paragraph into 30-second spoken summary.
+
+---
+
+## 7. Clarification
+
+If message is ambiguous:
+
+learner should identify missing information rather than invent it.
+
+---
+
+## 8. Negotiation Basics
+
+Teach communication for:
+
+* priorities;
+* deadlines;
+* alternatives;
+* trade-offs;
+* compromise.
+
+Useful structures:
+
+* Would it be possible to...?
+* One option would be...
+* If we move X, we could...
+* What if we...?
+* I could do X, but I'd need...
+* Could we agree on...?
+
+---
+
+## 9. Deadline Negotiation
+
+Professional:
+
+manager requests unrealistic deadline.
+
+Student:
+
+group deadline/resource issue.
+
+General:
+
+planning conflict.
+
+---
+
+## 10. Trade-Off Game
+
+AI provides constraints.
+
+Learner proposes solution.
+
+---
+
+## 11. Agreement Confirmation
+
+At end:
+
+“So we've agreed that...”
+
+Capture:
+
+* action;
+* owner;
+* deadline.
+
+---
+
+## 12. Main Email-to-Negotiation Scenario
+
+Flow:
+
+Receive written message
+
+→ summarize verbally
+
+→ identify issue
+
+→ AI asks questions
+
+→ negotiate solution
+
+→ verbally summarize final agreement.
+
+---
+
+## 13. Score
+
+Track:
+
+* message comprehension;
+* action identification;
+* summary clarity;
+* register adaptation;
+* clarification;
+* negotiation language;
+* trade-offs;
+* final agreement accuracy.
+
+---
+
+## 14. Mission
+
+Take one real non-sensitive written message and explain its required action aloud.
+
+Allow learner to use fictional/platform content instead of uploading private workplace material.
+
+---
+
+# DAY 21 — WEEK 3 PROFESSIONAL COMMUNICATION CHALLENGE
+
+## Title
+
+**Day 21 — Professional Communication Challenge**
+
+This is the third major diagnostic day.
+
+Do not add significant new theory.
+
+## Objective
+
+Measure the learner's ability to transfer communication skills into realistic professional pressure.
+
+---
+
+## 1. Confidence Snapshot
+
+Ask:
+
+“How confident are you communicating in professional or higher-pressure situations?”
+
+1–10.
+
+Compare with Day 15 and Day 1 internally.
+
+---
+
+## 2. Week 3 Recall
+
+Review:
+
+Day 15:
+professional introductions/networking.
+
+Day 16:
+meetings.
+
+Day 17:
+interviews/STAR.
+
+Day 18:
+presentations/data.
+
+Day 19:
+feedback/difficult conversations.
+
+Day 20:
+message-to-speaking/negotiation.
+
+---
+
+## 3. Networking Challenge
+
+2–3 minutes.
+
+Open, develop, close.
+
+---
+
+## 4. Meeting Challenge
+
+Learner gives update, contributes idea and handles disagreement.
+
+---
+
+## 5. Interview Challenge
+
+One general question.
+
+One STAR behavioral question.
+
+One unexpected follow-up.
+
+---
+
+## 6. Data/Explanation Challenge
+
+Describe a small chart, process or structured information set.
+
+---
+
+## 7. Feedback Challenge
+
+Give constructive feedback without personal attack.
+
+---
+
+## 8. Difficult Question
+
+AI challenges learner's recommendation.
+
+Learner responds professionally.
+
+---
+
+## 9. Email-to-Voice Challenge
+
+Read message.
+
+Give 45-second verbal summary/action plan.
+
+---
+
+## 10. Negotiation
+
+AI introduces deadline/resource conflict.
+
+Learner reaches a workable agreement.
+
+---
+
+## 11. Integrated Professional Simulation
+
+Approximately 10 minutes.
+
+Recommended scenario:
+
+### Project Meeting → Problem → Presentation → Questions → Negotiation
+
+Example flow:
+
+Learner joins meeting.
+
+↓
+
+Provides project update.
+
+↓
+
+AI stakeholder raises concern.
+
+↓
+
+Learner explains data/reasoning.
+
+↓
+
+AI challenges recommendation.
+
+↓
+
+Learner responds.
+
+↓
+
+Deadline conflict emerges.
+
+↓
+
+Learner negotiates.
+
+↓
+
+Learner summarizes final actions.
+
+This should feel like one continuous scenario rather than seven disconnected quizzes.
+
+Student equivalent:
+
+group project / presentation / professor questions.
+
+General equivalent:
+
+community/travel/event planning scenario.
+
+---
+
+## 12. Independent Performance
+
+At least one substantial section must run with:
+
+* no framework labels;
+* no suggested phrases;
+* no hints.
+
+Track hint dependency.
+
+---
+
+## 13. Week 3 Communication Score
+
+Dimensions:
+
+* professional clarity;
+* concise explanation;
+* conversation;
+* meeting participation;
+* interview structure;
+* STAR evidence;
+* presentation;
+* data explanation;
+* feedback;
+* negotiation;
+* register adaptation;
+* listening;
+* vocabulary;
+* pronunciation clarity;
+* spontaneous response.
+
+This remains an internal program score, not an official proficiency certification.
+
+---
+
+## 14. Day 15 vs Day 21 Comparison
+
+Compare compatible professional metrics.
+
+Do not manufacture improvement.
+
+Show stable/declining areas honestly.
+
+---
+
+## 15. Day 1 / 7 / 14 / 21 Trend
+
+Where equivalent measurements exist, show progression graph.
+
+Examples:
+
+* confidence;
+* response-start delay;
+* speaking duration;
+* structure;
+* active vocabulary;
+* clarity.
+
+Do not compare incompatible tasks numerically as though they were identical.
+
+---
+
+## 16. Strongest Professional Skill
+
+Show one.
+
+Example:
+
+**Meeting Participation**
+
+Explain using evidence.
+
+---
+
+## 17. Priority for Week 4
+
+Show one primary and optionally one secondary priority.
+
+Week 4 should prepare for:
+
+* nuanced communication;
+* persuasion;
+* leadership;
+* complex ideas;
+* advanced discussion;
+* difficult questions;
+* impromptu speaking;
+* final transformation.
+
+---
+
+## 18. Personal Phrasebook Update
+
+Collect useful chunks learner has genuinely practiced.
+
+Do not automatically add every displayed phrase.
+
+Prefer expressions they:
+
+* produced;
+* reused;
+* successfully retrieved.
+
+---
+
+## 19. Week 3 Real-World Mission
+
+10–15 minute professional-style communication activity.
+
+Allow:
+
+human partner or AI coach.
+
+---
+
+## 20. Week 3 Reflection
+
+Ask:
+
+* Which professional situation feels easier now?
+* Which remains uncomfortable?
+* What communication skill did you actually use outside the platform?
+* What is your Week 4 priority?
+* Confidence now?
+
+---
+
+## 21. Completion
+
+Badge:
+
+**Professional Communicator**
+
+or another adult-appropriate equivalent.
+
+Unlock:
+
+**Week 4 — Advanced Communication**
+
+---
+
+# WEEK 3 DATA MODEL EXTENSIONS
+
+Add structured metrics for:
+
+* professional introduction;
+* elevator pitch;
+* small-talk opening;
+* follow-up relevance;
+* conversation closing;
+* meeting contribution count;
+* update clarity;
+* polite interruption;
+* clarification;
+* action-item summary;
+* interview relevance;
+* STAR completeness;
+* evidence specificity;
+* presentation organization;
+* data-description accuracy;
+* fact/inference distinction;
+* Q&A handling;
+* feedback specificity;
+* SBI components;
+* apology/accountability;
+* request clarity;
+* register adaptation;
+* message summary;
+* action extraction;
+* negotiation alternatives;
+* compromise;
+* agreement summary;
+* professional confidence.
+
+---
+
+# PROFESSIONAL ROLEPLAY ENGINE
+
+Extend the existing AI Conversation Simulator.
+
+Roleplay definition should support structured configuration:
+
+* role;
+* learner track;
+* scenario;
+* objective;
+* hidden AI goals;
+* difficulty;
+* tone;
+* required events;
+* maximum challenge level;
+* success criteria;
+* allowed hints;
+* scoring rubric;
+* follow-up strategy.
+
+Examples:
+
+Manager.
+
+Interviewer.
+
+Client.
+
+Coworker.
+
+Professor.
+
+Classmate.
+
+Customer.
+
+Event participant.
+
+AI must stay in role without becoming antagonistic or unrealistic.
+
+---
+
+# ROLEPLAY DIFFICULTY
+
+Implement levels:
+
+### Level 1 — Supportive
+
+Clear questions.
+
+Extra thinking time.
+
+### Level 2 — Realistic
+
+Natural follow-ups.
+
+Minor ambiguity.
+
+### Level 3 — Challenging
+
+Unexpected question.
+
+Reasonable disagreement.
+
+Time/resource constraint.
+
+Do not implement abusive “stress interview” behavior.
+
+---
+
+# PERSONALIZATION
+
+Week 3 scenarios must use:
+
+* learner track;
+* Week 2 diagnostic;
+* personal vocabulary bank;
+* pronunciation priority;
+* recurring grammar errors;
+* confidence pattern;
+* response-start behavior.
+
+Examples:
+
+Learner struggles with past tense:
+
+Interview STAR exercises emphasize past events.
+
+Learner struggles with vocabulary retrieval:
+
+Meeting simulation recycles previously learned workplace collocations.
+
+Learner struggles with final consonants:
+
+Short pre-meeting clarity drill.
+
+Learner struggles with listening:
+
+Meeting simulation includes targeted comprehension check.
+
+---
+
+# PROFESSIONAL VOCABULARY RECYCLING
+
+Recycle previous expressions such as:
+
+* meet a deadline;
+* manage a workload;
+* raise a concern;
+* provide feedback;
+* reach an agreement;
+* take responsibility;
+* make a recommendation;
+* address an issue;
+* achieve a target;
+* make progress.
+
+Do not teach these once and forget them.
+
+Use vocabulary lifecycle state.
+
+---
+
+# PRIVACY RULE FOR PROFESSIONAL CONTENT
+
+Learners may want to paste:
+
+* workplace emails;
+* internal messages;
+* company data;
+* academic material.
+
+Add visible guidance:
+
+**Do not upload confidential, proprietary or personally sensitive information unless your organization's policies allow it.**
+
+Provide platform-generated fictional scenarios as the default.
+
+Where user content is accepted:
+
+* process securely;
+* minimize retention;
+* follow existing deletion controls;
+* do not place raw content in logs.
+
+---
+
+# WEEK 3 TESTING
+
+Test:
+
+* Day 15 midpoint snapshot;
+* networking roleplay;
+* meeting multi-participant behavior;
+* interruption detection;
+* meeting summary;
+* STAR analysis;
+* adaptive interview follow-ups;
+* presentation timers;
+* accessible data visualization/table alternative;
+* data accuracy checks;
+* challenging-question roleplay;
+* SBI analysis;
+* email-to-voice conversion;
+* register switching;
+* negotiation state;
+* final agreement;
+* Day 21 integrated simulation;
+* Day 15 vs Day 21;
+* Week 4 priority generation;
+* vocabulary recycling;
+* all three learner tracks;
+* Express Mode;
+* microphone failure;
+* AI failure;
+* refresh recovery;
+* authorization;
+* mobile responsiveness;
+* accessibility.
+
+Then run:
+
+lint
+
+typecheck
+
+unit tests
+
+integration tests
+
+E2E tests
+
+production build.
+
+Fix blocking issues before completing Week 3.
+
+---
+
+# WEEK 3 EXPRESS MODE RULE
+
+Every Day 15–20 must have an approximately 10–15 minute version containing:
+
+1. recall;
+2. today's core communication skill;
+3. one guided practice;
+4. one speaking roleplay/challenge;
+5. focused feedback;
+6. reflection.
+
+Day 21 Express Mode:
+
+15–20 minutes.
+
+Must still:
+
+* test major Week 3 skills;
+* generate diagnostic;
+* update learner profile;
+* unlock Week 4.
+
+---
+
+# FINAL WEEK 3 PRODUCT OUTCOME
+
+After Day 21 the learner should be able to say:
+
+“I can introduce myself professionally without sounding memorized.”
+
+“I can contribute during meetings.”
+
+“I can answer interview questions with evidence.”
+
+“I can explain information and data clearly.”
+
+“I can handle disagreement and feedback respectfully.”
+
+“I can explain a mistake without panicking.”
+
+“I can turn written information into a clear spoken summary.”
+
+“I can negotiate basic constraints and confirm an agreement.”
+
+“I can see evidence of my progress.”
+
+“I know what I need to improve during the final week.”
