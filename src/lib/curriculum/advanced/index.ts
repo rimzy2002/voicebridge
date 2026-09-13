@@ -9,9 +9,10 @@ import { advClassC } from './classC';
 import { advClassD } from './classD';
 import { advClassE } from './classE';
 import { advClassF } from './classF';
+import { advClassG } from './classG';
 
 export * from './types';
-export { advClassA, advClassB, advClassC, advClassD, advClassE, advClassF };
+export { advClassA, advClassB, advClassC, advClassD, advClassE, advClassF, advClassG };
 
 export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassA,
@@ -20,20 +21,7 @@ export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassD,
   advClassE,
   advClassF,
-  {
-    id: 'adv-class-g',
-    letter: 'G',
-    moduleNumber: 7,
-    name: 'Adv Class G',
-    title: 'Workplace Relations & Conflict Resolution',
-    theme: 'Interpersonal Nuance & High-Stakes HR',
-    overview:
-      'Navigate delicate professional situations by selecting collocations that de-escalate tension or convey empathy with surgical precision, such as "swelling with pride", "having a row", or supporting an "emotional wreck".',
-    activitiesCount: 10,
-    cefrRange: 'C1–C2',
-    isReady: false,
-    activities: [],
-  },
+  advClassG,
   {
     id: 'adv-class-h',
     letter: 'H',
