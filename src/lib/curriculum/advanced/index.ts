@@ -7,29 +7,17 @@ import { advClassA } from './classA';
 import { advClassB } from './classB';
 import { advClassC } from './classC';
 import { advClassD } from './classD';
+import { advClassE } from './classE';
 
 export * from './types';
-export { advClassA, advClassB, advClassC, advClassD };
+export { advClassA, advClassB, advClassC, advClassD, advClassE };
 
 export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassA,
   advClassB,
   advClassC,
   advClassD,
-  {
-    id: 'adv-class-e',
-    letter: 'E',
-    moduleNumber: 5,
-    name: 'Adv Class E',
-    title: 'Academic Synthesis & Scholarly Critique',
-    theme: 'Objective Distance & Precise Synonyms',
-    overview:
-      'Scholarly discourse demands objective distance and nuanced distinctions—such as "begin" versus "start", "achieving goals", and "gaining recognition". Essential for doctoral research, peer reviews, and academic papers.',
-    activitiesCount: 10,
-    cefrRange: 'C1–C2',
-    isReady: false,
-    activities: [],
-  },
+  advClassE,
   {
     id: 'adv-class-f',
     letter: 'F',
