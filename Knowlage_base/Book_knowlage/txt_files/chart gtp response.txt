@@ -1,0 +1,539 @@
+i ask 
+Read all uploaded books systematically; extract concepts, methods, frameworks, exercises, activity patterns, examples, vocabulary systems, grammar systems, pronunciation methods, speaking techniques, assessment ideas, teaching principles, difficulty levels, and useful progression relationships. Detect duplication across books and connect related concepts.
+
+chart gtp response  
+I completed a systematic source pass over the uploaded material, focusing on **curriculum architecture rather than copying book content**: concepts, systems, teaching methods, exercise patterns, progression, assessment, and the relationships between sources. Where a PDF contains searchable text, I inspected the full text structurally; for scan-only books I inspected their contents, front matter, teaching guidance, and representative activity pages visually.
+
+There is one important source-management issue before we build the syllabus: **the actual upload set is not exactly the book list in your notes**.
+
+## 1. Source audit
+
+| Uploaded source                                             | Actual role / level                                                                                                           | Status                                                                               |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **English Collocations in Use — McCarthy & O'Dell**         | Collocation/naturalness source; the uploaded cover is **not marked Advanced**, so I would not currently tag this source C1/C2 | Full book                                                                            |
+| **English Vocabulary in Use: Advanced — McCarthy & O'Dell** | Explicit C1–C2 lexical system                                                                                                 | Full book                                                                            |
+| **English Vocabulary in Use: Upper-intermediate**           | Bridge vocabulary / learning-strategy source                                                                                  | Upload contains only front matter/contents, not the whole 100-unit book              |
+| **Academic Writing — Stephen Bailey**                       | Academic reasoning, research, synthesis, argument and style                                                                   | Full book                                                                            |
+| **Longman Academic Writing Series 4 — Oshima & Hogue**      | B2 structured writing, model-analysis and practice methodology                                                                | Full scan                                                                            |
+| **Advanced Grammar in Use — Hewings**                       | C1–C2 grammar system                                                                                                          | Full book                                                                            |
+| **Grammar for English Language Teachers — Parrott**         | Teacher/reference grammar, learner-error analysis, meaning/use                                                                | Full book                                                                            |
+| **How English Works — Swan & Walter**                       | Multi-level practical grammar and diagnostic practice                                                                         | Full scan                                                                            |
+| **Oxford Practice Grammar — John Eastwood**                 | **Intermediate**, not Advanced; diagnostic/remedial grammar                                                                   | Full book                                                                            |
+| **Essential Grammar in Use — Murphy**                       | Elementary grammar remediation                                                                                                | Full book + duplicate text version                                                   |
+| **Basic English Grammar — Azar & Hagen**                    | Beginning-level grammar, but excellent activity-design methodology                                                            | Full scan                                                                            |
+| **English Pronunciation in Use: Advanced — Hewings**        | C1–C2 pronunciation/prosody                                                                                                   | The upload is a 13-page excerpt/TOC plus early units, not the complete 60-unit book  |
+| **The Elements of Style — Strunk & White**                  | Concision, organization, editing and stylistic clarity                                                                        | Full text                                                                            |
+
+Your inventory note also names **Oxford Word Skills: Advanced, Practical English Usage, Understanding and Using English Grammar**, and an Advanced edition of Oxford Practice Grammar, but those exact books are not among the files I can actually inspect. The uploaded Azar book is *Basic English Grammar*, and the uploaded Oxford book explicitly describes itself as intermediate. 
+
+That distinction matters. We should build the matrix from **what we actually have**, not from the assumed titles.
+
+---
+
+# 2. The strongest vocabulary system across the books
+
+The vocabulary books together produce a much better system than simply “teach advanced words.”
+
+### Stage A — Learn how vocabulary works
+
+The upper-intermediate *Vocabulary in Use* begins with learning strategy itself: what it means to know a word, organizing a vocabulary notebook, using dictionaries, active versus receptive vocabulary, revision, guessing from context, and explaining unknown words. It then progresses through word formation, connectors, topics, idioms, phrasal verbs and register. 
+
+This should become VoiceBridge's **vocabulary-learning foundation**, rather than another vocabulary lesson.
+
+### Stage B — Learn chunks and collocations
+
+The collocation source makes a critical distinction between ordinary vocabulary knowledge and knowing **which words naturally occur together**. It treats strong/fixed and more open collocations, register, common verbs, confusing synonyms, metaphor, topical collocations and communicative functions such as agreement, belief, decision-making, criticism and cause/effect. 
+
+Its learning method is particularly useful:
+
+**notice → record in context → group → revise → personally use**
+
+It recommends noticing collocations in reading/listening, consulting dictionaries, recording them inside phrases or sentences rather than as isolated items, grouping them by theme or common word, and regularly using them in personally meaningful contexts. 
+
+That is almost exactly the vocabulary engine VoiceBridge should use.
+
+### Stage C — Develop advanced lexical control
+
+*Vocabulary in Use: Advanced* moves beyond “more difficult words.” It explicitly targets connotation, register, style, collocations, compounds and fixed phrases. Its later units include indirect/vague language, word formation, confused words, multiple meanings, fixed/figurative expressions, metaphor, idioms, phrasal verbs, connotation, formality/register and varieties of English. 
+
+A major teaching principle here is **contextualized repetition**. The book recommends revisiting learning after about a month and again later, recording where and how expressions were encountered, and repeatedly meeting vocabulary across contexts. It also mixes controlled exercises with personalized “Over to you” work rather than treating the answer key as the end of learning. 
+
+### The resulting VoiceBridge vocabulary progression should therefore be
+
+**Understand → Notice → Recognize → Retrieve → Collocate → Personalize → Use in speaking → Vary register → Recycle → Independent spontaneous use**
+
+That is stronger than your current simple “basic word → advanced synonym” concept.
+
+---
+
+# 3. Grammar: the books overlap heavily, but at different depths
+
+This is where we must aggressively deduplicate.
+
+### Foundation grammar
+
+*Essential Grammar in Use* contains the expected elementary system: present/past/future forms, perfects, basic passives, modals, questions, infinitive/-ing patterns, pronouns, articles, countability, quantifiers, adjectives/adverbs, prepositions, basic conditionals and relatives. Importantly, Murphy explicitly tells learners **not to study every unit sequentially**; they should select areas they actually need. 
+
+That makes it ideal for **hidden remediation**, not your core syllabus.
+
+If a B2 learner repeatedly says:
+
+> “Yesterday I go…”
+
+we can temporarily route them to targeted past-tense repair.
+
+We should not force them through elementary grammar lessons.
+
+### Basic English Grammar gives us a better teaching method than content
+
+Azar's uploaded book is beginner-level, so its grammar content is too basic for your normal audience. But its teaching architecture is extremely useful.
+
+The preface treats grammar as a **springboard into speaking, listening, reading and writing**, not an isolated subject. It deliberately combines grammar form with meaning, real situations and communicative activities. 
+
+Its recurring activity sequence is effectively:
+
+**example/chart → controlled practice → sentence production → interactive “Let's Talk” → listening → writing/application → cumulative review → error correction**
+
+That controlled-to-communicative progression is worth borrowing for VoiceBridge even when our language target is C1.
+
+### How English Works gives us diagnostic simplicity
+
+Swan and Walter deliberately tell learners not to study the whole book in order. It includes separate “Test yourself” sections spanning basic, intermediate and advanced points and then directs learners toward the sections they need. 
+
+Its grammar map is extremely broad: articles/determiners, countability, pronouns, adjective/adverb systems, comparison, be/do/have, modals, future/present/perfect/past systems, passives, complementation, question structures, emphasis, conjunctions, reported speech, conditionals, relative clauses and prepositions. 
+
+For VoiceBridge, its strongest contribution is therefore:
+
+**quick diagnostic → plain explanation → targeted exercise**
+
+not another full grammar syllabus.
+
+### Oxford Practice Grammar gives us a strong B1–B2 diagnostic layer
+
+The uploaded Eastwood book explicitly says it is for **intermediate learners** and includes a Starting Test plus 25 tests after grammar clusters. Its units emphasize meaning and use in realistic contexts and often contrast structures, such as present perfect vs past simple. 
+
+The author also argues that learners should learn through **examples of English rather than memorizing abstract grammar rules**, and recommends collecting personally relevant examples encountered in real English. 
+
+This is ideal for your B1/B2 repair layer.
+
+### Advanced Grammar in Use becomes the real C1/C2 learner grammar source
+
+Hewings gives us the advanced system:
+
+| Area                  | Advanced features                                     |
+| --------------------- | ----------------------------------------------------- |
+| Tense/aspect          | subtle contrasts and discourse uses                   |
+| Future                | multiple future constructions                         |
+| Modality              | permission, likelihood, obligation, advice            |
+| Passive               | advanced passive structures and reporting             |
+| Complementation       | infinitive/-ing and complex verb patterns             |
+| Reporting             | reports of statements, suggestions, thoughts          |
+| Noun systems          | agreement and complex noun phrases                    |
+| Determiners           | fine distinctions in articles/quantifiers             |
+| Clauses               | relatives and participial clauses                     |
+| Substitution          | ellipsis, `so`, `do so`, omission                     |
+| Adjectives/adverbs    | gradability, focus, degree, viewpoint/comment         |
+| Logical relations     | reason, purpose, result, contrast, condition          |
+| Information structure | `there`, preparatory `it`, clefts/focusing, inversion |
+
+
+
+The book also has a **Study Planner**, Grammar Reminder and additional mixed practice rather than expecting sequential completion. Corpus and learner-corpus data inform the explanations and common-problem areas. 
+
+This should be the main grammar source for **advanced production**, not Murphy or Eastwood.
+
+### Parrott belongs behind the AI coach, not directly in the learner journey
+
+*Grammar for English Language Teachers* is the deepest grammar source in the collection. It explicitly tries to make teachers appreciate complexity and ambiguity rather than believing oversimplified “rules of thumb.” Each chapter includes **Key Considerations**, in-depth treatment, **Typical Difficulties for Learners**, consolidation work using authentic texts/conversation and learner writing, plus research activities. 
+
+It also treats grammar as the relationship between words, structure, meaning and actual usage, including discourse markers, ellipsis/substitution and complex sentences. 
+
+That makes it excellent for:
+
+**error diagnosis → AI explanation → correction selection → teacher/content-author reference**
+
+It should rarely appear as learner-facing content.
+
+---
+
+# 4. Pronunciation gives us a complete progression model
+
+The uploaded *Pronunciation in Use Advanced* excerpt is partial, but its contents provide an unusually clean pronunciation architecture. 
+
+The progression is:
+
+| Stage | Skill                                                                        |
+| ----- | ---------------------------------------------------------------------------- |
+| 1     | Understand accent variation / English as an international language           |
+| 2     | Notice differences between slow and fast speech                              |
+| 3     | Handle consonant clusters                                                    |
+| 4     | Develop word stress                                                          |
+| 5     | Learn stress shifts caused by prefixes/suffixes                              |
+| 6     | Stress compounds and phrasal verbs                                           |
+| 7     | Recognize weak and unstressed forms                                          |
+| 8     | Link words and understand contractions/ellipsis/elision                      |
+| 9     | Break speech into meaningful thought units                                   |
+| 10    | Control prominence—what information receives emphasis                        |
+| 11    | Use rising/falling intonation functionally                                   |
+| 12    | Use intonation for questions, corrections, contrasts, requests and attitudes |
+| 13    | Manage conversation through backchannels and topic movement                  |
+| 14    | Structure prepared/formal speech through chunking and tonal movement         |
+
+The most useful principle is that the book combines **receptive and productive pronunciation**. Learners do not only imitate sounds; they first learn to hear distinctions and then produce them. It also exposes learners to different accents rather than presenting one accent as universally correct. 
+
+That strengthens your existing “clarity, not accent removal” philosophy considerably.
+
+VoiceBridge should therefore move from:
+
+**hear → discriminate → imitate → record → compare → use in spontaneous speech**
+
+rather than simply:
+
+**listen → repeat**.
+
+---
+
+# 5. Academic communication has two complementary systems
+
+Bailey and Longman substantially overlap, but they are useful for different reasons.
+
+## Bailey = academic reasoning architecture
+
+Bailey's five-part structure covers the writing process, elements of writing, language issues, vocabulary for writing and writing models. 
+
+The most valuable transferable skills are:
+
+**source selection → critical reading → fact/opinion distinction → planning → key-point extraction → note-making → summarization → paraphrasing → referencing → combining sources → paragraph organization → introduction/conclusion → rewriting/proofreading**
+
+Then it adds higher-order communication patterns:
+
+**argument/discussion, counterargument, evidence, cause/effect, comparison, definitions, examples, generalization, problems/solutions, visual information, cohesion and cautious language.** 
+
+A particularly important advanced principle is **calibrating claims**. Bailey explicitly teaches replacing unsupported absolutes with cautious language through modals, frequency adverbs and verbs such as tendency expressions. 
+
+That directly connects to VoiceBridge's advanced:
+
+**hedging → diplomacy → evidence → persuasion → debate** progression.
+
+## Longman = instructional activity architecture
+
+Longman's Level 4 book is roughly B2 and repeatedly follows a highly reusable learning design:
+
+**chapter objective → analyze a model → notice vocabulary → explicit organization/language instruction → apply vocabulary → guided practice → assignment → self-assessment → expansion/timed practice**
+
+Its chapter overviews also show **Try It Out**, writing tips, peer review, writer self-check, editing practice and realistic models. 
+
+Its syllabus progresses from:
+
+**paragraph structure → unity/coherence → outside sources → essay architecture → process → cause/effect → comparison/contrast → argument → sentence types → parallelism → noun/adverb/adjective/participial clauses.** 
+
+For VoiceBridge, Longman is less valuable as “writing content” and more valuable as a **lesson-design template**:
+
+**Model → Notice → Understand → Guided practice → Create → Self-check → Retry/expand**
+
+That should influence your activity engine.
+
+---
+
+# 6. The Elements of Style is useful, but should not become a rulebook
+
+Its strongest transferable principles are:
+
+**one clear topic per unit of discourse, strong opening/topic sentences, active voice where appropriate, positive/direct construction, remove unnecessary words, avoid repetitive loose construction, use parallel structure, keep related words together, maintain tense consistency in summaries, and place important information where it receives emphasis.** 
+
+These are highly useful for:
+
+**presentations, explanations, answers, executive summaries and editing learner responses**.
+
+For example, “omit needless words” can become:
+
+> **Say the same idea in 30% fewer words without losing meaning.**
+
+Parallel structure can become:
+
+> **Give three recommendations using the same grammatical pattern.**
+
+But I would not treat every Strunk rule as universal modern English. It is a compact style guide, not a contemporary ESL communication syllabus.
+
+---
+
+# 7. Major exercise/activity patterns extracted across the collection
+
+The books repeatedly converge on a small number of activity families.
+
+| Activity family         | Book pattern                                                          | VoiceBridge adaptation                           |
+| ----------------------- | --------------------------------------------------------------------- | ------------------------------------------------ |
+| **Notice**              | identify target grammar, vocabulary, collocation or stress in context | highlight from transcript/audio                  |
+| **Discriminate**        | choose correct meaning/form/pronunciation                             | listen-and-choose                                |
+| **Match / classify**    | word pairs, functions, categories                                     | drag/drop vocabulary/grammar functions           |
+| **Complete**            | controlled gap filling                                                | spoken completion under time pressure            |
+| **Correct / repair**    | grammar, collocation or sentence errors                               | repair learner's own transcript                  |
+| **Transform**           | active/passive, cautious/direct, sentence combination, paraphrase     | “Say it another way”                             |
+| **Analyze a model**     | Longman/Bailey model analysis                                         | listen to two answers and identify why one works |
+| **Reconstruct**         | summary/paraphrase/source work                                        | listen → keywords → verbal reconstruction        |
+| **Personalize**         | “Over to you”, personal examples                                      | apply language to learner's real situation       |
+| **Produce freely**      | discussion, writing assignment, Let's Talk                            | timed spontaneous speaking                       |
+| **Compare**             | structures, register, accents, argument alternatives                  | A/B comparison                                   |
+| **Review cumulatively** | progress checks/tests/review exercises                                | Days 7/14/21/30 diagnostics                      |
+| **Research/reference**  | dictionary/corpus/source work                                         | learner checks collocation/pronunciation usage   |
+| **Peer/self-assess**    | Longman self-check and review                                         | learner predicts own strongest/weakest element   |
+| **Recycle later**       | vocabulary repetition and grammar review                              | adaptive spaced-repetition engine                |
+
+This is important technically: **we do not need 100 different React activity components**. Most book exercises collapse into roughly 12–15 reusable interaction engines.
+
+---
+
+# 8. Speaking techniques directly or indirectly supported by the books
+
+There isn't a dedicated fluency-speaking book in this upload set, but the sources still give us a strong speaking system.
+
+Azar directly uses interactive pair/group/class speaking (“Let's Talk”) after controlled grammar work. 
+
+The pronunciation source contributes thought-group chunking, prominence, intonation, conversation continuers, topic movement, corrections and formal-speech organization. 
+
+Advanced Vocabulary provides personalized production, indirect/vague expressions, register control, agreement/disagreement and functional language. 
+
+Collocations provides natural language for beliefs, agreement/disagreement, choices, success/failure, cause/effect and praise/criticism. 
+
+Bailey and Longman provide the reasoning structures we can convert from writing to oral communication:
+
+**state → support → exemplify → contrast → qualify → conclude**.
+
+The key distinction is that **PREP, IDEA, STORY, STAR and LARA come from your existing VoiceBridge syllabus**, not from these books. We should combine those communication frameworks with the language systems extracted here instead of pretending the books teach those frameworks.
+
+---
+
+# 9. Assessment ideas worth importing
+
+This is one of the strongest cross-book findings.
+
+| Source                     | Assessment principle                                                     |
+| -------------------------- | ------------------------------------------------------------------------ |
+| *How English Works*        | Basic / intermediate / advanced “Test yourself” before targeted work     |
+| *Oxford Practice Grammar*  | Starting Test + 25 cumulative tests tied back to exact units             |
+| *Advanced Grammar in Use*  | Study Planner identifies weak areas before choosing units                |
+| *Essential Grammar in Use* | Select only the problem units; additional mixed practice afterward       |
+| *Grammar for ELT*          | Diagnose **typical learner difficulties**, not merely right/wrong forms  |
+| Bailey                     | Progress checks after larger skill groups                                |
+| Longman                    | self-assessment + editing + peer/writer review + timed output            |
+| Advanced Vocabulary        | delayed recycling and personalized retrieval                             |
+| Azar                       | cumulative reviews plus error-correction exercises                       |
+
+Combined, these strongly support this VoiceBridge model:
+
+**Diagnostic → targeted intervention → immediate application → retry → delayed retrieval → cumulative checkpoint → reduced scaffolding → independent performance**
+
+That is much stronger than simply assigning a score after every lesson.
+
+---
+
+# 10. Duplication map
+
+Several books cover the same material. We should **merge them, not stack them**.
+
+| Competency                     | Main overlapping sources                                          | Recommended ownership                                             |
+| ------------------------------ | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Basic tense/grammar repair     | Murphy, Azar, Swan/Walter, Eastwood                               | **Adaptive remediation only**                                     |
+| Intermediate grammar contrasts | Eastwood, Swan/Walter                                             | Eastwood as exercise source; Swan/Walter for concise explanations |
+| Advanced grammar               | Hewings, Parrott                                                  | Hewings learner-facing; Parrott behind AI/teacher logic           |
+| Word formation                 | Upper-int Vocab, Advanced Vocab, Longman, grammar books           | One shared morphology engine                                      |
+| Collocation                    | Collocations, Advanced Vocab, Longman                             | Collocations as primary                                           |
+| Register/formality             | Upper/Advanced Vocab, Collocations, Bailey, Elements, Parrott     | One shared register scale                                         |
+| Connectors/cohesion            | Upper Vocab, Bailey, Longman, Parrott, Hewings                    | One functional discourse-marker system                            |
+| Summary/paraphrase             | Bailey, Longman, Elements                                         | Bailey primary; Longman practice design                           |
+| Argument/evidence              | Bailey, Longman, Collocations, Advanced Vocab                     | One argument progression                                          |
+| Hedging/qualification          | Bailey, Advanced Vocab, Hewings grammar, pronunciation intonation | Integrate vocabulary + grammar + prosody                          |
+| Sentence complexity            | Longman, Advanced Grammar, Parrott                                | Hewings grammar + Longman application                             |
+| Concision/parallelism          | Elements, Longman                                                 | Unified editing/clarity activities                                |
+| Pronunciation/prosody          | Pronunciation in Use                                              | Primary pronunciation source                                      |
+| Diagnostic grammar             | How English Works, Oxford, Advanced Grammar                       | Shared diagnostic engine                                          |
+| Personalized recycling         | Advanced Vocab, Collocations, grammar study planners              | Shared adaptive engine                                            |
+
+This means we should **not** create lessons called:
+
+> Present perfect from Murphy
+> Present perfect from Eastwood
+> Present perfect from Swan
+> Present perfect from Hewings
+
+That would be bad syllabus design.
+
+Instead:
+
+> **Learner problem: telling past experience accurately**
+
+Then the engine chooses the appropriate explanation/practice depth based on the learner.
+
+---
+
+# 11. Cross-book concept connections
+
+Some connections are especially valuable.
+
+### Word formation ↔ pronunciation
+
+Advanced Vocabulary and Longman teach prefixes/suffixes and word families; Advanced Pronunciation shows that those same morphological changes can shift **word stress**.
+
+So a word-family activity should eventually teach both:
+
+**meaning/form + stress**.
+
+### Collocation ↔ grammar
+
+Parrott explicitly treats learning a word as partly learning its grammatical behavior, while Collocations teaches which lexical partners naturally combine.  
+
+Therefore a vocabulary item should store:
+
+**meaning + word family + grammar pattern + collocations + register + pronunciation + personal example**
+
+not just `word + definition`.
+
+### Grammar emphasis ↔ pronunciation prominence
+
+Advanced Grammar's cleft/focusing structures such as `it`/`what` constructions connect naturally with the pronunciation book's prominence and speech-unit work.  
+
+This can produce powerful integrated activities:
+
+**Choose what to emphasize → restructure sentence → stress the emphasized information aloud.**
+
+### Hedging ↔ intonation ↔ diplomacy
+
+Bailey supplies cautious claims.
+
+Advanced Vocabulary supplies register and nuanced word choice.
+
+Advanced Grammar supplies modality/comment adverbs.
+
+Pronunciation supplies attitude and reservation tones.
+
+These should become **one advanced communication competency**, not four unrelated lessons.
+
+### Summary ↔ listening ↔ speaking
+
+Bailey and Longman teach selecting main points, paraphrasing and compressing information.  
+
+That maps perfectly to your listening/speaking system:
+
+**Listen → capture keywords → identify main claim → paraphrase → summarize → react.**
+
+---
+
+# 12. Difficulty hierarchy emerging from the sources
+
+I would not assign every book directly to a week. Instead, use this hierarchy.
+
+| Layer                           | Source material                                      | VoiceBridge use                                               |
+| ------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------- |
+| **Foundation repair**           | Essential Grammar, Basic English Grammar             | Hidden A1–A2 remediation when diagnostic evidence requires it |
+| **B1/B2 repair & bridge**       | How English Works, Oxford Practice Grammar           | targeted grammar contrasts and diagnostic work                |
+| **B2 lexical bridge**           | Vocabulary Upper-intermediate, uploaded Collocations | active vocabulary, chunks, register, retrieval                |
+| **B2 academic structure**       | Longman Level 4                                      | organization, cohesion, model-analysis, source use            |
+| **B2→C1 academic reasoning**    | Bailey                                               | synthesis, evidence, cautious argument                        |
+| **C1/C2 lexical control**       | Vocabulary Advanced                                  | connotation, register, functional and figurative control      |
+| **C1/C2 grammatical range**     | Advanced Grammar in Use                              | nuanced grammar and information structure                     |
+| **C1/C2 pronunciation control** | Pronunciation in Use Advanced                        | connected speech, prominence, pragmatics and formal delivery  |
+| **Teacher/AI reference**        | Parrott                                              | high-quality explanations and error reasoning                 |
+| **Style refinement**            | Elements of Style                                    | concision, emphasis, parallelism; selectively applied         |
+
+The target learner should **move between layers vertically** according to their performance.
+
+A C1 learner may still need an A2 article repair activity.
+
+A B2 learner may already handle a C1 vocabulary activity.
+
+That is why book order should not equal syllabus order.
+
+---
+
+# 13. The strongest teaching principles repeated across the collection
+
+Across the sources, a consistent pedagogy emerges:
+
+1. **Diagnose before teaching.** Several grammar sources explicitly reject beginning-to-end study.
+2. **Teach language in context.** Vocabulary, collocation and grammar should appear in actual situations.
+3. **Move from controlled to independent production.** Recognition alone is insufficient.
+4. **Integrate form, meaning and use.** A grammatically correct sentence can still be unnatural or inappropriate.
+5. **Make practice personally relevant.** Personal examples improve retrieval and transfer.
+6. **Recycle language over time.** One exposure does not produce active vocabulary.
+7. **Correct recurring/high-value errors rather than everything.**
+8. **Use models, but then transform them.** Analyze → imitate → adapt → create.
+9. **Include both receptive and productive work.** Especially vocabulary and pronunciation.
+10. **Teach register and audience awareness.** “Correct English” is not always appropriate English.
+11. **Use cumulative review.** Small activities should feed later integrated performance.
+12. **Reduce scaffolding as competence increases.**
+13. **Use self-assessment alongside external feedback.**
+14. **Prioritize clear, natural language over artificial complexity.**
+
+Those principles fit VoiceBridge extremely well.
+
+---
+
+# 14. The master progression relationships I would preserve
+
+The material now suggests six developmental ladders:
+
+**Vocabulary**
+
+`word meaning → word family → phrase/chunk → collocation → connotation → register → figurative/indirect meaning → spontaneous retrieval`
+
+**Grammar**
+
+`basic accuracy → grammar contrasts → functional choice → clause complexity → information structure → discourse control → spontaneous self-repair`
+
+**Pronunciation**
+
+`sound/cluster clarity → word stress → weak forms → linking → thought groups → prominence → intonation → pragmatic tone → prepared/formal delivery`
+
+**Listening**
+
+`word recognition → connected-speech decoding → gist → detail → discourse markers → stance → inference → summary → reaction`
+
+**Reasoning/communication**
+
+`answer → reason → detail → example → comparison → cause/effect → qualification → evidence → counterargument → synthesis`
+
+**Independence**
+
+`model → guided response → constrained production → free production → feedback → retry → delayed retrieval → no-hint performance`
+
+These ladders are more important than the chapter order of any individual book.
+
+---
+
+# 15. What I would *not* do
+
+The source review strongly argues against simply adding “more activities” to every day.
+
+Adding all of these books directly would create an overloaded course containing repeated grammar, repeated vocabulary and too much academic writing.
+
+Instead, we should use the books to construct **one canonical VoiceBridge competency system**.
+
+The correct source hierarchy is roughly:
+
+**Advanced Vocabulary** → lexical depth
+**Collocations** → natural combinations
+**Advanced Grammar** → advanced learner grammar
+**Parrott** → AI/teacher explanation and error reasoning
+**Pronunciation Advanced** → pronunciation/prosody
+**Bailey** → academic reasoning/synthesis
+**Longman** → learning-flow/activity methodology
+**Oxford/How English Works/Murphy/Azar** → diagnostics and remediation
+**Elements of Style** → selective clarity/concision
+
+That eliminates most unnecessary duplication.
+
+---
+
+## Where we are now
+
+We now have enough evidence to build the **Master Competency Matrix** before touching the Day 1–30 syllabus.
+
+The matrix should have, for every competency:
+
+**Domain → Subskill → B1 behavior → B2 behavior → C1 behavior → C2/stretch behavior → prerequisites → source books → activity patterns → measurable outcome → assessment type → remediation source → advanced extension → Student/Professional/General applicability.**
+
+After that, we can overlay your existing Days 1–30 on the competency matrix and see exactly:
+
+**what is already covered, what is duplicated, what is missing, what is too early, what is too late, and which book-derived activities genuinely improve the program.**
+
+That should be the next step before finalizing any daily syllabus.

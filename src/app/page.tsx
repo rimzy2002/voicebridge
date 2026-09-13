@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { ADVANCED_CLASSES } from '@/lib/curriculum/advanced';
 
 export default function HomePage() {
   const router = useRouter();
@@ -147,6 +149,56 @@ export default function HomePage() {
                     <span>🔒</span> Complete previous week to unlock
                   </div>
                 )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced C1-C2 Master Classes (Adv Class A – J) */}
+      <section className="landing__advanced">
+        <div className="container container--content">
+          <div style={{ textAlign: 'center', marginBottom: 'var(--space-8)' }}>
+            <span className="badge badge--accent" style={{ marginBottom: 'var(--space-3)' }}>
+              100 Collocations Master Guide • C1–C2
+            </span>
+            <h2 className="landing__section-title">10 Advanced Master Classes (Adv Class A – J)</h2>
+            <p className="landing__section-subtitle" style={{ maxWidth: '720px', margin: '0 auto' }}>
+              Master performative legal notices, high-impact media shorthand, corporate strategy phrasing, and executive register elevation across 10 specialized modules.
+            </p>
+          </div>
+
+          <div className="landing__adv-grid">
+            {ADVANCED_CLASSES.map((advClass) => (
+              <div
+                key={advClass.id}
+                className={`landing__adv-card glass-card ${
+                  advClass.isReady ? 'landing__adv-card--ready' : 'landing__adv-card--locked'
+                }`}
+              >
+                <div className="landing__adv-card-header">
+                  <span className={`badge ${advClass.isReady ? 'badge--primary' : 'badge--outline'}`}>
+                    {advClass.name}
+                  </span>
+                  <span className="landing__adv-cefr">{advClass.cefrRange}</span>
+                </div>
+
+                <h3 className="landing__adv-card-title">{advClass.title}</h3>
+                <p className="landing__adv-card-theme">{advClass.theme}</p>
+                <p className="landing__adv-card-desc">{advClass.overview}</p>
+
+                <div className="landing__adv-card-footer">
+                  <span className="landing__adv-count">10 Activities</span>
+                  {advClass.isReady ? (
+                    <Link href={`/advanced/${advClass.id}`} className="btn btn--primary btn--sm">
+                      Enter {advClass.name} →
+                    </Link>
+                  ) : (
+                    <span className="badge badge--secondary" style={{ opacity: 0.7 }}>
+                      🔒 Coming Soon
+                    </span>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -350,9 +402,100 @@ export default function HomePage() {
 
         /* Sections */
         .landing__weeks,
+        .landing__advanced,
         .landing__tracks,
         .landing__loop {
           padding: var(--space-16) 0;
+        }
+
+        .landing__advanced {
+          background: linear-gradient(180deg, transparent 0%, rgba(99, 102, 241, 0.04) 50%, transparent 100%);
+        }
+
+        .landing__adv-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: var(--space-5);
+        }
+
+        .landing__adv-card {
+          display: flex;
+          flex-direction: column;
+          padding: var(--space-6);
+          border-radius: var(--radius-xl);
+          transition: transform var(--transition-normal), border-color var(--transition-normal);
+        }
+
+        .landing__adv-card--ready {
+          border-color: rgba(99, 102, 241, 0.35);
+          background: linear-gradient(135deg, rgba(99, 102, 241, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+        }
+
+        .landing__adv-card--ready:hover {
+          transform: translateY(-4px);
+          border-color: var(--color-primary-400);
+          box-shadow: 0 12px 28px rgba(99, 102, 241, 0.15);
+        }
+
+        .landing__adv-card--locked {
+          opacity: 0.65;
+        }
+
+        .landing__adv-card-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: var(--space-3);
+        }
+
+        .landing__adv-cefr {
+          font-size: var(--text-xs);
+          font-weight: 700;
+          color: var(--color-primary-300);
+          background: rgba(99, 102, 241, 0.1);
+          padding: 2px 8px;
+          border-radius: var(--radius-full);
+        }
+
+        .landing__adv-card-title {
+          font-size: var(--text-lg);
+          font-weight: 700;
+          color: var(--text-primary);
+          margin-bottom: var(--space-1);
+          line-height: var(--leading-tight);
+        }
+
+        .landing__adv-card-theme {
+          font-size: var(--text-xs);
+          font-weight: 600;
+          color: var(--color-accent-400);
+          margin-bottom: var(--space-3);
+        }
+
+        .landing__adv-card-desc {
+          font-size: var(--text-xs);
+          color: var(--text-secondary);
+          line-height: var(--leading-relaxed);
+          flex-grow: 1;
+          margin-bottom: var(--space-4);
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .landing__adv-card-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: var(--space-3);
+          border-top: 1px solid var(--border-color);
+        }
+
+        .landing__adv-count {
+          font-size: var(--text-xs);
+          color: var(--text-tertiary);
+          font-weight: 500;
         }
 
         .landing__section-title {
