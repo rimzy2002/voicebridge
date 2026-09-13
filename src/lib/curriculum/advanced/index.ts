@@ -4,26 +4,14 @@
 
 import { AdvancedClass, AdvancedClassId } from './types';
 import { advClassA } from './classA';
+import { advClassB } from './classB';
 
 export * from './types';
-export { advClassA };
+export { advClassA, advClassB };
 
 export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassA,
-  {
-    id: 'adv-class-b',
-    letter: 'B',
-    moduleNumber: 2,
-    name: 'Adv Class B',
-    title: 'De-Lexicalized Verb Precision',
-    theme: 'Make, Do, Get, Take, Have, Pay',
-    overview:
-      'At the C1-C2 level, high-frequency verbs carry little semantic weight alone but become powerful tools of precision when paired with the right nouns. Move beyond "do a mistake" to natural, commanding combinations like "make a contribution" and "pay tribute".',
-    activitiesCount: 10,
-    cefrRange: 'C1–C2',
-    isReady: false,
-    activities: [],
-  },
+  advClassB,
   {
     id: 'adv-class-c',
     letter: 'C',

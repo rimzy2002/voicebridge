@@ -14,7 +14,7 @@ export type AdvancedClassId =
   | 'adv-class-i'
   | 'adv-class-j';
 
-export type AdvancedSkill = 'Writing' | 'Speaking';
+export type AdvancedSkill = 'Writing' | 'Speaking' | 'Research Architecture' | string;
 export type CEFRLevel = 'C1' | 'C2';
 export type DifficultyLevel = 'Advanced' | 'Mastery';
 

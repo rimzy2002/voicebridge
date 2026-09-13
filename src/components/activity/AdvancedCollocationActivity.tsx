@@ -265,22 +265,32 @@ export default function AdvancedCollocationActivity({
         <div className="adv-prompt-box">
           <div className="adv-prompt-box__label">
             <span className="adv-prompt-box__label-icon">💬</span>
-            <span>Casual / Standard Prompt to Elevate:</span>
+            <span>
+              {currentActivity.skill === 'Research Architecture'
+                ? 'Research Prompt / Task to Analyze:'
+                : 'Casual / Standard Prompt to Elevate:'}
+            </span>
           </div>
           <blockquote className="adv-prompt-box__quote">&ldquo;{currentActivity.taskPrompt}&rdquo;</blockquote>
         </div>
 
-        {/* Workspace: Writing or Speaking */}
-        {currentActivity.skill === 'Writing' ? (
+        {/* Workspace: Writing / Research Architecture or Speaking */}
+        {currentActivity.skill !== 'Speaking' ? (
           <div className="adv-workspace adv-workspace--writing">
             <label htmlFor="user-rewrite-input" className="adv-workspace__label">
-              Your Professional C1/C2 Rewrite:
+              {currentActivity.skill === 'Research Architecture'
+                ? 'Your Structural Analysis / Academic Breakdown:'
+                : 'Your Professional C1/C2 Rewrite:'}
             </label>
             <textarea
               id="user-rewrite-input"
               className="adv-workspace__textarea"
-              rows={3}
-              placeholder="Transform the casual phrase into the required formal register..."
+              rows={4}
+              placeholder={
+                currentActivity.skill === 'Research Architecture'
+                  ? 'Enter your categorical analysis, component breakdown, or word allocation plan...'
+                  : 'Transform the casual phrase into the required formal register...'
+              }
               value={currentInput}
               onChange={e =>
                 setUserInputs(prev => ({
@@ -312,7 +322,9 @@ export default function AdvancedCollocationActivity({
                   onClick={handleSubmitRewrite}
                   disabled={!currentInput.trim()}
                 >
-                  Submit Rewrite & Check Collocation →
+                  {currentActivity.skill === 'Research Architecture'
+                    ? 'Submit Analysis & Check Framework →'
+                    : 'Submit Rewrite & Check Collocation →'}
                 </button>
               ) : (
                 <button
@@ -421,22 +433,26 @@ export default function AdvancedCollocationActivity({
             </div>
 
             <div className="adv-comparison-grid">
-              {currentActivity.skill === 'Writing' && (
+              {currentActivity.skill !== 'Speaking' && (
                 <div className="adv-comparison-card adv-comparison-card--user">
-                  <span className="adv-comparison-card__label">Your Rewrite</span>
-                  <p className="adv-comparison-card__text">{currentInput}</p>
+                  <span className="adv-comparison-card__label">
+                    {currentActivity.skill === 'Research Architecture' ? 'Your Analysis / Input' : 'Your Rewrite'}
+                  </span>
+                  <p className="adv-comparison-card__text" style={{ whiteSpace: 'pre-line' }}>{currentInput}</p>
                 </div>
               )}
 
               <div className="adv-comparison-card adv-comparison-card--expected">
                 <span className="adv-comparison-card__label">
-                  Expected C1–C2 Collocation Model
+                  {currentActivity.skill === 'Research Architecture'
+                    ? 'Expected Academic Framework / Model Output'
+                    : 'Expected C1–C2 Collocation Model'}
                 </span>
-                <p className="adv-comparison-card__text">
-                  &ldquo;{currentActivity.expectedAnswer}&rdquo;
+                <p className="adv-comparison-card__text" style={{ whiteSpace: 'pre-line' }}>
+                  {currentActivity.expectedAnswer}
                 </p>
                 <div className="adv-target-collocation">
-                  <strong>Key Target:</strong>{' '}
+                  <strong>Key Structural Focus:</strong>{' '}
                   <span className="collocation-tag">{currentActivity.targetCollocation}</span>
                 </div>
               </div>
