@@ -8,9 +8,10 @@ import { advClassB } from './classB';
 import { advClassC } from './classC';
 import { advClassD } from './classD';
 import { advClassE } from './classE';
+import { advClassF } from './classF';
 
 export * from './types';
-export { advClassA, advClassB, advClassC, advClassD, advClassE };
+export { advClassA, advClassB, advClassC, advClassD, advClassE, advClassF };
 
 export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassA,
@@ -18,20 +19,7 @@ export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassC,
   advClassD,
   advClassE,
-  {
-    id: 'adv-class-f',
-    letter: 'F',
-    moduleNumber: 6,
-    name: 'Adv Class F',
-    title: 'Legal Framing & Public Diplomacy',
-    theme: 'Regulatory Rigor & Statutory Language',
-    overview:
-      'Legal language functions as performative utterances that carry statutory enforceability. Understand the critical distinction between "strictly forbidden" and "strongly discouraged", and master compliance collocations.',
-    activitiesCount: 10,
-    cefrRange: 'C1–C2',
-    isReady: false,
-    activities: [],
-  },
+  advClassF,
   {
     id: 'adv-class-g',
     letter: 'G',
