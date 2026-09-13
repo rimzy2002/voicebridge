@@ -10,9 +10,10 @@ import { advClassD } from './classD';
 import { advClassE } from './classE';
 import { advClassF } from './classF';
 import { advClassG } from './classG';
+import { advClassH } from './classH';
 
 export * from './types';
-export { advClassA, advClassB, advClassC, advClassD, advClassE, advClassF, advClassG };
+export { advClassA, advClassB, advClassC, advClassD, advClassE, advClassF, advClassG, advClassH };
 
 export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassA,
@@ -22,20 +23,7 @@ export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassE,
   advClassF,
   advClassG,
-  {
-    id: 'adv-class-h',
-    letter: 'H',
-    moduleNumber: 8,
-    name: 'Adv Class H',
-    title: 'Investigative Journalism & Media Analysis',
-    theme: 'Media Shorthand & Dramatic Impact',
-    overview:
-      'Journalism relies on concise linguistic shorthand conveying urgency and scale: "freak storms", "driving rain", "axe jobs", and "police quiz suspect". Learn to write with dramatic journalistic economy.',
-    activitiesCount: 10,
-    cefrRange: 'C1–C2',
-    isReady: false,
-    activities: [],
-  },
+  advClassH,
   {
     id: 'adv-class-i',
     letter: 'I',
