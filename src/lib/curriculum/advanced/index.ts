@@ -6,28 +6,16 @@ import { AdvancedClass, AdvancedClassId } from './types';
 import { advClassA } from './classA';
 import { advClassB } from './classB';
 import { advClassC } from './classC';
+import { advClassD } from './classD';
 
 export * from './types';
-export { advClassA, advClassB, advClassC };
+export { advClassA, advClassB, advClassC, advClassD };
 
 export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassA,
   advClassB,
   advClassC,
-  {
-    id: 'adv-class-d',
-    letter: 'D',
-    moduleNumber: 4,
-    name: 'Adv Class D',
-    title: 'Corporate Strategy & Market Dynamics',
-    theme: 'Finance, Partnerships, and Growth',
-    overview:
-      'Linguistic precision signals commercial credibility. Master essential collocations like "submitting a tender", "raising capital", "going into partnership", and announcing products that "make a profit".',
-    activitiesCount: 10,
-    cefrRange: 'C1–C2',
-    isReady: false,
-    activities: [],
-  },
+  advClassD,
   {
     id: 'adv-class-e',
     letter: 'E',
