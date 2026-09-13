@@ -5,27 +5,15 @@
 import { AdvancedClass, AdvancedClassId } from './types';
 import { advClassA } from './classA';
 import { advClassB } from './classB';
+import { advClassC } from './classC';
 
 export * from './types';
-export { advClassA, advClassB };
+export { advClassA, advClassB, advClassC };
 
 export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassA,
   advClassB,
-  {
-    id: 'adv-class-c',
-    letter: 'C',
-    moduleNumber: 3,
-    name: 'Adv Class C',
-    title: 'Metaphorical Framing & Rhetorical Flair',
-    theme: 'Water, Fire, and Light Metaphors',
-    overview:
-      'Metaphors allow complex social and emotional dynamics to be described through physical imagery. Move from literal statements to vivid board-level framing where "ideas flow", "tempers flare", or "cheeks burn with embarrassment".',
-    activitiesCount: 10,
-    cefrRange: 'C1–C2',
-    isReady: false,
-    activities: [],
-  },
+  advClassC,
   {
     id: 'adv-class-d',
     letter: 'D',
