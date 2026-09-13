@@ -11,9 +11,10 @@ import { advClassE } from './classE';
 import { advClassF } from './classF';
 import { advClassG } from './classG';
 import { advClassH } from './classH';
+import { advClassI } from './classI';
 
 export * from './types';
-export { advClassA, advClassB, advClassC, advClassD, advClassE, advClassF, advClassG, advClassH };
+export { advClassA, advClassB, advClassC, advClassD, advClassE, advClassF, advClassG, advClassH, advClassI };
 
 export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassA,
@@ -24,20 +25,7 @@ export const ADVANCED_CLASSES: AdvancedClass[] = [
   advClassF,
   advClassG,
   advClassH,
-  {
-    id: 'adv-class-i',
-    letter: 'I',
-    moduleNumber: 9,
-    name: 'Adv Class I',
-    title: 'Quantitative Dynamics & Trend Analysis',
-    theme: 'Economic Movement & Data Forecasting',
-    overview:
-      'Describe rapid market shifts using evocative, analytical vocabulary. Learn why "prices soar" and "economies boom", while preparing for "biting winds" and "patches of fog" in statistical data.',
-    activitiesCount: 10,
-    cefrRange: 'C1–C2',
-    isReady: false,
-    activities: [],
-  },
+  advClassI,
   {
     id: 'adv-class-j',
     letter: 'J',
