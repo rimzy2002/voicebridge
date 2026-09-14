@@ -15,6 +15,7 @@ export default function RegisterPage() {
   const [track, setTrack] = useState<LearnerTrack>('general');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -129,12 +130,21 @@ export default function RegisterPage() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="password" className="form-label">
-                Create Password <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>(min 6 characters)</span>
-              </label>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-2)' }}>
+                <label htmlFor="password" className="form-label" style={{ marginBottom: 0 }}>
+                  Create Password <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', fontWeight: 'normal' }}>(min 6 characters)</span>
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="show-pw-btn"
+                >
+                  {showPassword ? 'Hide' : 'Show'}
+                </button>
+              </div>
               <input
                 id="password"
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 required
                 minLength={6}
                 value={password}
@@ -332,6 +342,15 @@ export default function RegisterPage() {
           border-color: var(--color-primary-500);
           box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
           background: var(--bg-surface);
+        }
+
+        .show-pw-btn {
+          background: none;
+          border: none;
+          color: var(--color-primary-600);
+          font-size: var(--text-xs);
+          font-weight: 600;
+          cursor: pointer;
         }
 
         .track-grid {
