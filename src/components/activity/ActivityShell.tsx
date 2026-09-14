@@ -79,36 +79,67 @@ export default function ActivityShell({
 
   const isLoadedRef = useRef(false);
 
-  // Load saved progress
+  // Load saved progress from server or localStorage
   useEffect(() => {
     const key = `day-${day.dayNumber}-progress`;
-    try {
-      const saved = localStorage.getItem(key);
-      if (saved) {
-        const data = JSON.parse(saved);
-        if (data.completedIds) {
-          setCompletedIds(new Set(data.completedIds));
+    
+    // First try server sync if authenticated
+    fetch(`/api/progress?day=${day.dayNumber}`)
+      .then(res => (res.ok ? res.json() : null))
+      .then(serverData => {
+        if (serverData && serverData.progress) {
+          const sp = serverData.progress;
+          if (initialActivityIndex > 0) {
+            setCurrentIndex(initialActivityIndex);
+          } else if (sp.currentActivityIndex !== undefined && sp.currentActivityIndex < activities.length) {
+            setCurrentIndex(sp.currentActivityIndex);
+          }
+          if (sp.xpEarned) {
+            setEarnedXp(sp.xpEarned);
+          }
+          return;
         }
-        if (data.responses) {
-          setResponses(data.responses);
+
+        // Fallback to localStorage
+        const saved = localStorage.getItem(key);
+        if (saved) {
+          const data = JSON.parse(saved);
+          if (data.completedIds) {
+            setCompletedIds(new Set(data.completedIds));
+          }
+          if (data.responses) {
+            setResponses(data.responses);
+          }
+          if (initialActivityIndex > 0) {
+            setCurrentIndex(initialActivityIndex);
+          } else if (data.currentIndex !== undefined && data.currentIndex < activities.length) {
+            setCurrentIndex(data.currentIndex);
+          }
+          if (data.earnedXp) {
+            setEarnedXp(data.earnedXp);
+          }
         }
-        if (initialActivityIndex > 0) {
-          setCurrentIndex(initialActivityIndex);
-        } else if (data.currentIndex !== undefined && data.currentIndex < activities.length) {
-          setCurrentIndex(data.currentIndex);
-        }
-        if (data.earnedXp) {
-          setEarnedXp(data.earnedXp);
-        }
-      }
-    } catch {
-      // localStorage not available or corrupted
-    } finally {
-      isLoadedRef.current = true;
-    }
+      })
+      .catch(() => {
+        // Fallback to localStorage on network failure
+        try {
+          const saved = localStorage.getItem(key);
+          if (saved) {
+            const data = JSON.parse(saved);
+            if (data.completedIds) setCompletedIds(new Set(data.completedIds));
+            if (data.responses) setResponses(data.responses);
+            if (initialActivityIndex > 0) setCurrentIndex(initialActivityIndex);
+            else if (data.currentIndex !== undefined && data.currentIndex < activities.length) setCurrentIndex(data.currentIndex);
+            if (data.earnedXp) setEarnedXp(data.earnedXp);
+          }
+        } catch {}
+      })
+      .finally(() => {
+        isLoadedRef.current = true;
+      });
   }, [day.dayNumber, activities.length, initialActivityIndex]);
 
-  // Save progress to localStorage
+  // Save progress to localStorage and sync to database
   useEffect(() => {
     if (!isLoadedRef.current) return;
     const key = `day-${day.dayNumber}-progress`;
@@ -126,7 +157,23 @@ export default function ActivityShell({
     } catch {
       // localStorage not available
     }
-  }, [completedIds, responses, currentIndex, earnedXp, day.dayNumber, mode, track]);
+
+    // Sync to backend database
+    fetch('/api/progress', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        dayNumber: day.dayNumber,
+        currentActivityIndex: currentIndex,
+        totalActivities: activities.length,
+        completedActivities: completedIds.size,
+        status: completedIds.size === activities.length ? 'completed' : 'in_progress',
+        xpEarned: earnedXp,
+      }),
+    }).catch(() => {
+      // Offline / guest mode fallback
+    });
+  }, [completedIds, responses, currentIndex, earnedXp, day.dayNumber, mode, track, activities.length]);
 
   // Handle activity completion
   const handleActivityComplete = useCallback((activityId: string, responseData: Record<string, unknown>) => {

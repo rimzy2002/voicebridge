@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ADVANCED_CLASSES } from '@/lib/curriculum/advanced';
@@ -9,10 +9,38 @@ import ThemeToggle from '@/components/ThemeToggle';
 export default function HomePage() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
+  const [authData, setAuthData] = useState<{
+    authenticated: boolean;
+    user?: any;
+    streak?: { currentStreak: number };
+    xp?: number;
+    latestProgress?: { dayNumber: number; currentActivityIndex: number };
+  } | null>(null);
+
+  useEffect(() => {
+    fetch('/api/auth/me')
+      .then(res => res.json())
+      .then(data => {
+        if (data.authenticated) {
+          setAuthData(data);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const handleLogout = async () => {
+    await fetch('/api/auth/logout', { method: 'POST' });
+    setAuthData(null);
+    router.refresh();
+  };
 
   const handleStart = () => {
     setIsLoading(true);
-    router.push('/day/1');
+    if (authData?.latestProgress) {
+      router.push(`/day/${authData.latestProgress.dayNumber}?activity=${authData.latestProgress.currentActivityIndex}`);
+    } else {
+      router.push('/day/1');
+    }
   };
 
   return (
@@ -27,13 +55,45 @@ export default function HomePage() {
             </span>
             <span className="badge badge--primary" style={{ display: 'inline-flex' }}>30-Day Program</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
             <a href="#curriculum" style={{ fontSize: 'var(--text-sm)', fontWeight: 600, color: 'var(--text-secondary)' }}>
               Curriculum
             </a>
             <a href="#masterclasses" style={{ fontSize: 'var(--text-sm)', fontWeight: 600, color: 'var(--text-secondary)' }}>
               Masterclasses
             </a>
+
+            {authData?.authenticated ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                {authData.user.role === 'admin' && (
+                  <Link href="/admin" className="badge badge--accent" style={{ textDecoration: 'none' }}>
+                    🛡️ Admin Portal
+                  </Link>
+                )}
+                <span style={{ fontSize: 'var(--text-xs)', fontWeight: 600, color: 'var(--text-primary)' }}>
+                  👤 {authData.user.name || authData.user.email}
+                </span>
+                <span className="badge badge--warning" style={{ fontSize: 'var(--text-xs)' }}>
+                  🔥 {authData.streak?.currentStreak || 0}d
+                </span>
+                <span className="badge badge--primary" style={{ fontSize: 'var(--text-xs)' }}>
+                  ⚡ {authData.xp || 0} XP
+                </span>
+                <button onClick={handleLogout} className="btn btn--ghost btn--xs" style={{ fontSize: 'var(--text-xs)' }}>
+                  Sign Out
+                </button>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                <Link href="/login" className="btn btn--ghost btn--sm" style={{ fontSize: 'var(--text-sm)' }}>
+                  Sign In
+                </Link>
+                <Link href="/register" className="btn btn--primary btn--sm" style={{ fontSize: 'var(--text-sm)' }}>
+                  Get Started
+                </Link>
+              </div>
+            )}
+
             <ThemeToggle />
           </div>
         </div>
@@ -83,10 +143,17 @@ export default function HomePage() {
               onClick={handleStart}
               disabled={isLoading}
             >
-              {isLoading ? 'Loading...' : 'Start Day 1 — Free'}
-              {!isLoading && <span aria-hidden="true">→</span>}
+              {isLoading
+                ? 'Loading...'
+                : authData?.latestProgress
+                ? `Resume Day ${authData.latestProgress.dayNumber} (Activity ${authData.latestProgress.currentActivityIndex + 1}) →`
+                : 'Start Day 1 — Free →'}
             </button>
-            <p className="landing__cta-note">No credit card required • Express mode available</p>
+            <p className="landing__cta-note">
+              {authData?.authenticated
+                ? 'Progress synced securely to your account'
+                : 'No credit card required • Express mode available'}
+            </p>
           </div>
 
           {/* Target audience */}
