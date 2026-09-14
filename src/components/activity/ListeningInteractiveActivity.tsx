@@ -184,7 +184,7 @@ export default function ListeningInteractiveActivity({
 
         {showTranscript && (
           <div style={{
-            background: 'rgba(255, 255, 255, 0.03)',
+            background: 'var(--bg-surface-subtle)',
             borderLeft: '3px solid var(--primary)',
             padding: 'var(--space-4)',
             borderRadius: '0 var(--radius-md) var(--radius-md) 0',

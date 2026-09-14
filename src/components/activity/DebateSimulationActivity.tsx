@@ -61,7 +61,7 @@ export default function DebateSimulationActivity({
   return (
     <div className="glass-card glass-card--elevated animate-scale-in" style={{ padding: 'var(--space-8)' }}>
       {/* Header */}
-      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-4)' }}>
+      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-4)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>Day 26 • Debate & Defend Ideas</span>
@@ -75,7 +75,7 @@ export default function DebateSimulationActivity({
       </div>
 
       {/* Tabs */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
+      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
         {[
           { id: 'structure', label: '1. Debate Architecture' },
           { id: 'steelman', label: '2. The Steelman Drill' },
@@ -106,7 +106,7 @@ export default function DebateSimulationActivity({
               { step: 'RESPONSE', title: 'Your Rebuttal', desc: 'Distinguish your premise from the counter.', icon: '⚡' },
               { step: 'CONCLUSION', title: 'Synthesis', desc: 'Overall resolution of the argument.', icon: '🏁' },
             ].map(s => (
-              <div key={s.step} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={s.step} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <div style={{ fontSize: '20px', marginBottom: 'var(--space-1)' }}>{s.icon}</div>
                 <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)' }}>{s.step}</strong>
                 <div style={{ color: 'var(--text-primary)', fontWeight: 600, margin: 'var(--space-1) 0' }}>{s.title}</div>
@@ -129,7 +129,7 @@ export default function DebateSimulationActivity({
             A "strawman" attacks a silly caricature of the opponent. A "steelman" describes the other side so well that they would say: <em>"Yes, that is exactly what I believe."</em>
           </p>
 
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-warning-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               OPPOSING PREMISE
             </strong>
@@ -150,7 +150,7 @@ export default function DebateSimulationActivity({
               style={{
                 width: '100%',
                 background: 'rgba(0,0,0,0.2)',
-                border: '1px solid rgba(255,255,255,0.1)',
+                border: '1px solid var(--border-default)',
                 borderRadius: 'var(--radius-md)',
                 color: 'var(--text-primary)',
                 padding: 'var(--space-3)',
@@ -206,7 +206,7 @@ export default function DebateSimulationActivity({
       {/* Tab 4: Debate Simulation */}
       {activeTab === 'debate_sim' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               DEBATE MOTION
             </strong>

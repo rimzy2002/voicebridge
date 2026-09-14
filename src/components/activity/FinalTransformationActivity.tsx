@@ -144,7 +144,7 @@ export default function FinalTransformationActivity({
       {/* Tabs */}
       <div style={{
         display: 'flex', gap: 'var(--space-1)', marginBottom: 'var(--space-6)',
-        background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)',
+        background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)',
         overflowX: 'auto',
       }}>
         {[
@@ -171,7 +171,7 @@ export default function FinalTransformationActivity({
       {/* Tab 1: Welcome & Philosophy */}
       {activeTab === 'welcome' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <h3 style={{ color: 'var(--text-primary)', margin: '0 0 var(--space-2)' }}>The Core Assessment Principle</h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', lineHeight: 1.6 }}>
               The platform will never make the empty promise: <em>"You are fluent now."</em> Language mastery is a lifelong practice. What we measure today is genuine, verifiable change in:
@@ -203,7 +203,7 @@ export default function FinalTransformationActivity({
       {/* Tab 2: Repeat Day 1 Baseline */}
       {activeTab === 'baseline_repeat' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)', borderLeft: '4px solid var(--color-primary-500)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)', borderLeft: '4px solid var(--color-primary-500)' }}>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>CRITICAL COMPARISON STEP</span>
             <h3 style={{ color: 'var(--text-primary)', margin: '0 0 var(--space-2)' }}>Repeat the Day 1 Baseline Prompt</h3>
             <p style={{ color: 'var(--text-primary)', fontSize: 'var(--text-md)', fontWeight: 600, margin: 'var(--space-2) 0' }}>
@@ -277,7 +277,7 @@ export default function FinalTransformationActivity({
           </div>
 
           {/* Self Assessment Questions */}
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: 'var(--space-2)', fontSize: 'var(--text-sm)' }}>
               Which recording sounds stronger to you?
             </strong>
@@ -457,7 +457,7 @@ export default function FinalTransformationActivity({
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--space-3)', maxHeight: '420px', overflowY: 'auto', marginBottom: 'var(--space-5)', paddingRight: 'var(--space-2)' }}>
             {Object.entries(finalReport.phrasebook.categories).map(([catName, items]) => (
-              <div key={catName} className="glass-card" style={{ padding: 'var(--space-3)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={catName} className="glass-card" style={{ padding: 'var(--space-3)', background: 'var(--bg-surface-subtle)' }}>
                 <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-2)' }}>
                   {catName} ({items.length})
                 </strong>
@@ -548,8 +548,8 @@ export default function FinalTransformationActivity({
       {/* Tab 8: Final Report & Export */}
       {activeTab === 'final_report' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-5)', background: 'rgba(255,255,255,0.03)', marginBottom: 'var(--space-5)' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-4)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-3)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-5)', background: 'var(--bg-surface-subtle)', marginBottom: 'var(--space-5)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-4)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-3)' }}>
               <div>
                 <h3 style={{ color: 'var(--text-primary)', margin: 0 }}>30-Day Communication Report</h3>
                 <span style={{ color: 'var(--text-secondary)', fontSize: '11px' }}>

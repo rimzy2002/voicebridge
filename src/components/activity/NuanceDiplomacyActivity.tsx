@@ -84,7 +84,7 @@ export default function NuanceDiplomacyActivity({
   return (
     <div className="glass-card glass-card--elevated animate-scale-in" style={{ padding: 'var(--space-8)' }}>
       {/* Header */}
-      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-4)' }}>
+      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-4)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>Day 25 • Nuance, Hedging & Diplomacy</span>
@@ -98,7 +98,7 @@ export default function NuanceDiplomacyActivity({
       </div>
 
       {/* Tabs */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
+      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
         {[
           { id: 'certainty', label: '1. Certainty Scale' },
           { id: 'hedging_drill', label: '2. Soften Direct Messages' },
@@ -133,8 +133,8 @@ export default function NuanceDiplomacyActivity({
                 style={{
                   padding: 'var(--space-3)',
                   cursor: 'pointer',
-                  border: certaintyLevel === tier.level ? '2px solid var(--color-primary-500)' : '1px solid rgba(255,255,255,0.06)',
-                  background: certaintyLevel === tier.level ? 'rgba(99, 102, 241, 0.12)' : 'rgba(255,255,255,0.02)',
+                  border: certaintyLevel === tier.level ? '2px solid var(--color-primary-500)' : '1px solid var(--border-subtle)',
+                  background: certaintyLevel === tier.level ? 'rgba(99, 102, 241, 0.12)' : 'var(--bg-surface-subtle)',
                 }}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -162,7 +162,7 @@ export default function NuanceDiplomacyActivity({
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)', marginBottom: 'var(--space-6)' }}>
             {bluntRewrites.map((item, idx) => (
-              <div key={idx} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={idx} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 'var(--space-2)' }}>
                   <span style={{ color: 'var(--color-danger-300)', fontSize: 'var(--text-xs)' }}>Too Blunt / Hostile</span>
                   <button
@@ -222,7 +222,7 @@ export default function NuanceDiplomacyActivity({
       {/* Tab 4: Nuance Roleplay Challenge */}
       {activeTab === 'roleplay' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               ROLEPLAY SCENARIO: DIPLOMATIC PUSHBACK
             </strong>

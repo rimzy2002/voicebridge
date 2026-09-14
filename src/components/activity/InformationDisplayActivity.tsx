@@ -64,7 +64,7 @@ export default function InformationDisplayActivity({
 
       {keyPoints.length > 0 && (
         <div style={{
-          background: 'rgba(255, 255, 255, 0.02)',
+          background: 'var(--bg-surface-subtle)',
           border: '1px solid var(--border-default)',
           borderRadius: 'var(--radius-xl)',
           padding: 'var(--space-5)',

@@ -206,16 +206,16 @@ export default function WeeklyDiagnosticV2Activity({
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 'var(--space-3)', maxWidth: '500px', margin: '0 auto var(--space-6)' }}>
-            <div style={{ padding: 'var(--space-3)', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-xs)' }}>
+            <div style={{ padding: 'var(--space-3)', background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-xs)' }}>
               🤝 Professional Meetings
             </div>
-            <div style={{ padding: 'var(--space-3)', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-xs)' }}>
+            <div style={{ padding: 'var(--space-3)', background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-xs)' }}>
               🎯 STAR Interviews
             </div>
-            <div style={{ padding: 'var(--space-3)', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-xs)' }}>
+            <div style={{ padding: 'var(--space-3)', background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-xs)' }}>
               💼 Real Negotiation
             </div>
-            <div style={{ padding: 'var(--space-3)', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-xs)' }}>
+            <div style={{ padding: 'var(--space-3)', background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-xs)' }}>
               📊 Data Presentations
             </div>
           </div>

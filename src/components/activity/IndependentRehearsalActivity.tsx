@@ -65,7 +65,7 @@ export default function IndependentRehearsalActivity({
   return (
     <div className="glass-card glass-card--elevated animate-scale-in" style={{ padding: 'var(--space-8)' }}>
       {/* Header */}
-      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-4)' }}>
+      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-4)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <span className="badge badge--warning" style={{ marginBottom: 'var(--space-2)' }}>Day 29 • The Final Rehearsal (No Hints)</span>
@@ -97,7 +97,7 @@ export default function IndependentRehearsalActivity({
       </div>
 
       {/* Navigation */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
+      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
         {[
           { id: 'warmup', label: '1. Priority Warm-Up' },
           { id: 'unassisted_challenge', label: '2. Unassisted Speaking' },
@@ -123,7 +123,7 @@ export default function IndependentRehearsalActivity({
             Consuming your 28 days of previous diagnostic telemetry, here is your #1 area of concentration for today's rehearsal:
           </p>
 
-          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)', borderLeft: '4px solid var(--color-primary-500)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)', borderLeft: '4px solid var(--color-primary-500)' }}>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>Priority 1</span>
             <h4 style={{ color: 'var(--text-primary)', margin: '0 0 var(--space-2)' }}>{personalization.priority1.title}</h4>
             <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', margin: '0 0 var(--space-3)' }}>
@@ -134,7 +134,7 @@ export default function IndependentRehearsalActivity({
             </div>
           </div>
 
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-success-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               VALIDATED STRENGTH:
             </strong>
@@ -152,7 +152,7 @@ export default function IndependentRehearsalActivity({
       {/* Tab 2: Unassisted Speaking Challenge */}
       {activeTab === 'unassisted_challenge' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               UNASSISTED SPEAKING CHALLENGE (2–3 MINUTES)
             </strong>
@@ -286,7 +286,7 @@ export default function IndependentRehearsalActivity({
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)', marginBottom: 'var(--space-6)' }}>
-            <div className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+            <div className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
               <div style={{ color: 'var(--color-warning-400)', fontWeight: 600, marginBottom: 'var(--space-1)' }}>Pattern 1: Tense Stability in Past Narratives</div>
               <div style={{ color: 'var(--color-danger-300)', fontSize: 'var(--text-sm)', marginBottom: 'var(--space-1)' }}>
                 ❌ Slipping into present: <em>"Yesterday we go to the client and they say..."</em>
@@ -296,7 +296,7 @@ export default function IndependentRehearsalActivity({
               </div>
             </div>
 
-            <div className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+            <div className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
               <div style={{ color: 'var(--color-warning-400)', fontWeight: 600, marginBottom: 'var(--space-1)' }}>Pattern 2: Replacing Vocal Fillers with Silence</div>
               <div style={{ color: 'var(--color-danger-300)', fontSize: 'var(--text-sm)', marginBottom: 'var(--space-1)' }}>
                 ❌ Vocal cord tension: <em>"The primary reason is um... uh... cost."</em>

@@ -104,8 +104,8 @@ export default function NegotiationActivity({
         <div style={{ display: 'grid', gap: 'var(--space-3)', marginBottom: 'var(--space-6)' }}>
           {NEGOTIATION_LANGUAGE.map((group) => (
             <div key={group.category} style={{
-              background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
-              padding: 'var(--space-3) var(--space-4)', border: '1px solid rgba(255,255,255,0.06)',
+              background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
+              padding: 'var(--space-3) var(--space-4)', border: '1px solid var(--border-subtle)',
             }}>
               <div style={{ fontSize: 'var(--text-xs)', fontWeight: 700, color: 'var(--color-primary)', marginBottom: 'var(--space-2)', textTransform: 'uppercase' }}>
                 {group.category}
@@ -133,9 +133,9 @@ export default function NegotiationActivity({
         <h3 style={{ color: 'var(--text-primary)', marginBottom: 'var(--space-3)' }}>{scenario.title}</h3>
 
         <div style={{
-          background: 'rgba(255,255,255,0.04)', borderRadius: 'var(--radius-lg)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-lg)',
           padding: 'var(--space-4)', marginBottom: 'var(--space-3)',
-          border: '1px solid rgba(255,255,255,0.08)',
+          border: '1px solid var(--border-subtle)',
         }}>
           <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', fontWeight: 600, marginBottom: 'var(--space-2)' }}>📋 Situation</div>
           <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', margin: 0 }}>{scenario.situation}</p>
@@ -209,7 +209,7 @@ export default function NegotiationActivity({
 
       {/* AI response */}
       <div style={{
-        background: 'rgba(255,255,255,0.04)', borderRadius: 'var(--radius-lg)',
+        background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-lg)',
         padding: 'var(--space-4)', marginBottom: 'var(--space-4)',
         borderLeft: '3px solid rgba(99, 102, 241, 0.5)',
       }}>

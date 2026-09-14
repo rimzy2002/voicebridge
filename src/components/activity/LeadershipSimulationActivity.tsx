@@ -62,7 +62,7 @@ export default function LeadershipSimulationActivity({
   return (
     <div className="glass-card glass-card--elevated animate-scale-in" style={{ padding: 'var(--space-8)' }}>
       {/* Header */}
-      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-4)' }}>
+      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-4)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>Day 24 • Leadership Communication</span>
@@ -76,7 +76,7 @@ export default function LeadershipSimulationActivity({
       </div>
 
       {/* Tabs */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
+      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
         {[
           { id: 'framework', label: '1. Leadership Framework' },
           { id: 'delegation', label: '2. Respectful Delegation' },
@@ -107,7 +107,7 @@ export default function LeadershipSimulationActivity({
               { step: 'REASON', title: 'Why this path?', phrase: '"The reason we chose this is..."', icon: '💡' },
               { step: 'CHECK', title: 'Does everyone understand?', phrase: '"What questions or concerns do you have?"', icon: '👂' },
             ].map(f => (
-              <div key={f.step} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={f.step} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <div style={{ fontSize: '20px', marginBottom: 'var(--space-1)' }}>{f.icon}</div>
                 <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)' }}>{f.step}</strong>
                 <div style={{ color: 'var(--text-primary)', fontWeight: 600, margin: 'var(--space-1) 0' }}>{f.title}</div>
@@ -195,7 +195,7 @@ export default function LeadershipSimulationActivity({
       {/* Tab 4: Simulation */}
       {activeTab === 'simulation' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               SIMULATION SCENARIO: PROJECT PIVOT UNDER PRESSURE
             </strong>

@@ -76,7 +76,7 @@ export default function AdvancedListeningActivity({
   return (
     <div className="glass-card glass-card--elevated animate-scale-in" style={{ padding: 'var(--space-8)' }}>
       {/* Header */}
-      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-4)' }}>
+      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-4)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>Day 28 • Advanced Listening & Reactivity</span>
@@ -90,7 +90,7 @@ export default function AdvancedListeningActivity({
       </div>
 
       {/* Tabs */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
+      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
         {[
           { id: 'discourse', label: '1. Discourse Markers' },
           { id: 'prediction', label: '2. Prediction Pause' },
@@ -119,7 +119,7 @@ export default function AdvancedListeningActivity({
               { word: 'In other words / Basically', function: 'Simplification', hint: 'The speaker is about to state the core takeaway.' },
               { word: 'Actually / To be fair', function: 'Nuance / Correction', hint: 'Gentle challenge to an existing assumption.' },
             ].map(m => (
-              <div key={m.word} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={m.word} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <span className="badge badge--secondary" style={{ fontSize: '10px' }}>{m.function}</span>
                 <div style={{ color: 'var(--color-primary-400)', fontWeight: 600, margin: 'var(--space-1) 0' }}>{m.word}</div>
                 <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>{m.hint}</div>
@@ -141,7 +141,7 @@ export default function AdvancedListeningActivity({
             Active listeners predict where the sentence is going before it finishes. Read the buildup and predict:
           </p>
 
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <p style={{ color: 'var(--text-primary)', fontStyle: 'italic', margin: '0 0 var(--space-2)' }}>
               "We examined the initial customer feedback on the redesign. Users were excited about the new color palette and layout. <strong>However, when we tested checkout completion times...</strong>"
             </p>
@@ -164,8 +164,8 @@ export default function AdvancedListeningActivity({
                   padding: 'var(--space-3)',
                   textAlign: 'left',
                   cursor: 'pointer',
-                  border: predictionAnswer === choice.id ? (choice.correct ? '2px solid var(--color-success-500)' : '2px solid var(--color-danger-500)') : '1px solid rgba(255,255,255,0.06)',
-                  background: predictionAnswer === choice.id ? (choice.correct ? 'rgba(34, 197, 94, 0.1)' : 'rgba(239, 68, 68, 0.1)') : 'rgba(255,255,255,0.02)',
+                  border: predictionAnswer === choice.id ? (choice.correct ? '2px solid var(--color-success-500)' : '2px solid var(--color-danger-500)') : '1px solid var(--border-subtle)',
+                  background: predictionAnswer === choice.id ? (choice.correct ? 'rgba(34, 197, 94, 0.1)' : 'rgba(239, 68, 68, 0.1)') : 'var(--bg-surface-subtle)',
                 }}
               >
                 <span style={{ color: 'var(--text-primary)', fontSize: 'var(--text-sm)' }}>{choice.text}</span>
@@ -209,8 +209,8 @@ export default function AdvancedListeningActivity({
                   padding: 'var(--space-3)',
                   cursor: 'pointer',
                   textAlign: 'left',
-                  border: playbackSpeed === s.speed ? '2px solid var(--color-primary-500)' : '1px solid rgba(255,255,255,0.06)',
-                  background: playbackSpeed === s.speed ? 'rgba(99, 102, 241, 0.12)' : 'rgba(255,255,255,0.02)',
+                  border: playbackSpeed === s.speed ? '2px solid var(--color-primary-500)' : '1px solid var(--border-subtle)',
+                  background: playbackSpeed === s.speed ? 'rgba(99, 102, 241, 0.12)' : 'var(--bg-surface-subtle)',
                 }}
               >
                 <strong style={{ color: 'var(--text-primary)', display: 'block' }}>{s.label}</strong>
@@ -229,7 +229,7 @@ export default function AdvancedListeningActivity({
       {activeTab === 'challenge' && (
         <div className="animate-fade-in">
           {/* Conversation Input Box */}
-          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-3)' }}>
               <span className="badge badge--primary">Dialogue Excerpt • Speed: {playbackSpeed}x</span>
               <button
@@ -264,7 +264,7 @@ export default function AdvancedListeningActivity({
           </div>
 
           {/* Spoken Response Prompt */}
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               YOUR TASK (90S SUMMARY + 60S REACTION)
             </strong>

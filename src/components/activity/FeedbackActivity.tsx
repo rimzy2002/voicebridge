@@ -145,7 +145,7 @@ export default function FeedbackActivity({
         </div>
 
         <div style={{
-          background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
           padding: 'var(--space-3) var(--space-4)', marginBottom: 'var(--space-4)',
           fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)',
         }}>
@@ -207,7 +207,7 @@ export default function FeedbackActivity({
         </div>
 
         <div style={{
-          background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
           padding: 'var(--space-3) var(--space-4)', marginBottom: 'var(--space-4)',
           fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)',
         }}>
@@ -233,7 +233,7 @@ export default function FeedbackActivity({
         <h3 style={{ color: 'var(--text-primary)', marginBottom: 'var(--space-2)' }}>Handle a Challenging Question</h3>
 
         <div style={{
-          background: 'rgba(255,255,255,0.04)', borderRadius: 'var(--radius-lg)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-lg)',
           padding: 'var(--space-4)', marginBottom: 'var(--space-4)',
           borderLeft: '3px solid rgba(239, 68, 68, 0.5)',
         }}>
@@ -249,7 +249,7 @@ export default function FeedbackActivity({
 
         {/* Buffer phrases */}
         <div style={{
-          background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
           padding: 'var(--space-3) var(--space-4)', marginBottom: 'var(--space-4)',
         }}>
           <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', fontWeight: 600, marginBottom: 'var(--space-2)' }}>Buffer Phrases:</div>
@@ -288,8 +288,8 @@ export default function FeedbackActivity({
               onClick={() => setSelectedScenario(i)}
               style={{
                 padding: 'var(--space-3) var(--space-4)',
-                background: selectedScenario === i ? 'rgba(99, 102, 241, 0.15)' : 'rgba(255,255,255,0.03)',
-                border: selectedScenario === i ? '2px solid rgba(99, 102, 241, 0.5)' : '1px solid rgba(255,255,255,0.08)',
+                background: selectedScenario === i ? 'rgba(99, 102, 241, 0.15)' : 'var(--bg-surface-subtle)',
+                border: selectedScenario === i ? '2px solid rgba(99, 102, 241, 0.5)' : '1px solid var(--border-subtle)',
                 borderRadius: 'var(--radius-md)', cursor: 'pointer', textAlign: 'left', color: 'var(--text-primary)',
               }}
             >

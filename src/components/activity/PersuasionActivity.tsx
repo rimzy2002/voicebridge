@@ -89,7 +89,7 @@ export default function PersuasionActivity({
   return (
     <div className="glass-card glass-card--elevated animate-scale-in" style={{ padding: 'var(--space-8)' }}>
       {/* Header */}
-      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-4)' }}>
+      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-4)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>Day 23 • Persuasion Without Pressure</span>
@@ -103,7 +103,7 @@ export default function PersuasionActivity({
       </div>
 
       {/* Navigation */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
+      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
         {[
           { id: 'framework', label: '1. Persuasion Structure' },
           { id: 'evidence_drill', label: '2. Evidence vs Opinion' },
@@ -135,7 +135,7 @@ export default function PersuasionActivity({
               { num: '6', title: 'RESPONSE', phrase: '"We could mitigate that by..."', desc: 'Offer a practical counter-measure.' },
               { num: '7', title: 'ACTION', phrase: '"For that reason, I propose we start with..."', desc: 'Specific, low-friction next step.' },
             ].map(step => (
-              <div key={step.num} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={step.num} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <span className="badge badge--secondary" style={{ fontSize: '10px' }}>Step {step.num}</span>
                 <div style={{ color: 'var(--color-primary-400)', fontWeight: 600, margin: 'var(--space-1) 0' }}>{step.title}</div>
                 <div style={{ color: 'var(--text-primary)', fontSize: 'var(--text-xs)', fontStyle: 'italic', marginBottom: 'var(--space-1)' }}>{step.phrase}</div>
@@ -160,7 +160,7 @@ export default function PersuasionActivity({
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)', marginBottom: 'var(--space-6)' }}>
             {drillItems.map((item, idx) => (
-              <div key={idx} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={idx} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <p style={{ color: 'var(--text-primary)', margin: '0 0 var(--space-3)', fontWeight: 500 }}>
                   {item.statement}
                 </p>
@@ -214,8 +214,8 @@ export default function PersuasionActivity({
                   padding: 'var(--space-3)',
                   cursor: 'pointer',
                   textAlign: 'left',
-                  border: pitchTier === tier.sec ? '2px solid var(--color-primary-500)' : '1px solid rgba(255,255,255,0.06)',
-                  background: pitchTier === tier.sec ? 'rgba(99, 102, 241, 0.12)' : 'rgba(255,255,255,0.02)',
+                  border: pitchTier === tier.sec ? '2px solid var(--color-primary-500)' : '1px solid var(--border-subtle)',
+                  background: pitchTier === tier.sec ? 'rgba(99, 102, 241, 0.12)' : 'var(--bg-surface-subtle)',
                 }}
               >
                 <strong style={{ color: 'var(--text-primary)', display: 'block', fontSize: 'var(--text-sm)' }}>{tier.label}</strong>
@@ -224,7 +224,7 @@ export default function PersuasionActivity({
             ))}
           </div>
 
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               CURRENT TARGET DURATION: {pitchTier} SECONDS
             </strong>
@@ -244,7 +244,7 @@ export default function PersuasionActivity({
       {/* Tab 4: Stakeholder Simulation */}
       {activeTab === 'stakeholder_sim' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               PROPOSAL PROMPT
             </strong>

@@ -92,7 +92,7 @@ export default function ComplexExplanationActivity({
   return (
     <div className="glass-card glass-card--elevated animate-scale-in" style={{ padding: 'var(--space-8)' }}>
       {/* Header */}
-      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-4)' }}>
+      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-4)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>Day 22 • Complexity Reduction</span>
@@ -106,7 +106,7 @@ export default function ComplexExplanationActivity({
       </div>
 
       {/* Tabs */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
+      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
         {[
           { id: 'framework', label: '1. What / Why / How' },
           { id: 'jargon', label: '2. Jargon Simplifier' },
@@ -136,7 +136,7 @@ export default function ComplexExplanationActivity({
               { step: 'EXAMPLE', title: 'Concrete Analogy', desc: '"You can think of it like..."', icon: '🔍' },
               { step: 'BOTTOM LINE', title: 'Key Takeaway', desc: 'What single phrase must they remember?', icon: '🏁' },
             ].map(card => (
-              <div key={card.step} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={card.step} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <div style={{ fontSize: '20px', marginBottom: 'var(--space-1)' }}>{card.icon}</div>
                 <strong style={{ color: 'var(--color-primary-400)', display: 'block', fontSize: 'var(--text-xs)' }}>{card.step}</strong>
                 <div style={{ color: 'var(--text-primary)', fontWeight: 600, margin: 'var(--space-1) 0' }}>{card.title}</div>
@@ -161,7 +161,7 @@ export default function ComplexExplanationActivity({
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)', marginBottom: 'var(--space-6)' }}>
             {jargonExamples.map((ex, idx) => (
-              <div key={idx} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={idx} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 'var(--space-2)' }}>
                   <span className="badge badge--secondary" style={{ fontSize: '11px' }}>{ex.context}</span>
                   <button
@@ -250,8 +250,8 @@ export default function ComplexExplanationActivity({
                     padding: 'var(--space-3)',
                     textAlign: 'left',
                     cursor: 'pointer',
-                    border: selectedAudience === aud.id ? '2px solid var(--color-primary-500)' : '1px solid rgba(255,255,255,0.06)',
-                    background: selectedAudience === aud.id ? 'rgba(99, 102, 241, 0.12)' : 'rgba(255,255,255,0.02)',
+                    border: selectedAudience === aud.id ? '2px solid var(--color-primary-500)' : '1px solid var(--border-subtle)',
+                    background: selectedAudience === aud.id ? 'rgba(99, 102, 241, 0.12)' : 'var(--bg-surface-subtle)',
                   }}
                 >
                   <strong style={{ color: 'var(--text-primary)', display: 'block' }}>{aud.title}</strong>
@@ -262,7 +262,7 @@ export default function ComplexExplanationActivity({
           </div>
 
           {/* Prompt card */}
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               SPEAKING PROMPT (2 MINUTES)
             </strong>

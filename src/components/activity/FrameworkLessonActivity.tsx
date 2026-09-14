@@ -138,7 +138,7 @@ export default function FrameworkLessonActivity({
                       <div style={{
                         marginTop: 'var(--space-2)',
                         padding: 'var(--space-2) var(--space-3)',
-                        background: 'rgba(255, 255, 255, 0.03)',
+                        background: 'var(--bg-surface-subtle)',
                         borderRadius: 'var(--radius-md)',
                         fontSize: 'var(--text-xs)',
                         color: 'var(--text-tertiary)',

@@ -150,9 +150,9 @@ export default function EmailToVoiceActivity({
 
         {/* Email display */}
         <div style={{
-          background: 'rgba(255,255,255,0.04)', borderRadius: 'var(--radius-lg)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-lg)',
           padding: 'var(--space-5)', marginBottom: 'var(--space-4)',
-          border: '1px solid rgba(255,255,255,0.08)',
+          border: '1px solid var(--border-subtle)',
         }}>
           <div style={{ marginBottom: 'var(--space-3)' }}>
             <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>From: {email.from}</div>
@@ -230,7 +230,7 @@ export default function EmailToVoiceActivity({
       {/* Register examples for register step */}
       {step === 'register' && (
         <div style={{
-          background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
           padding: 'var(--space-4)', marginBottom: 'var(--space-4)',
         }}>
           <div style={{ fontSize: 'var(--text-xs)', fontWeight: 600, color: 'var(--text-tertiary)', marginBottom: 'var(--space-2)' }}>

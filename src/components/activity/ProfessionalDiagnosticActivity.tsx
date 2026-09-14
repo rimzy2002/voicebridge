@@ -90,7 +90,7 @@ export default function ProfessionalDiagnosticActivity({
       {/* Tab Navigation */}
       <div style={{
         display: 'flex', gap: 'var(--space-1)', marginBottom: 'var(--space-5)',
-        background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)',
+        background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)',
       }}>
         {[
           { id: 'metrics' as const, label: 'Day 15 vs 21' },
@@ -129,7 +129,7 @@ export default function ProfessionalDiagnosticActivity({
                 <div key={dim.name} style={{
                   display: 'grid', gridTemplateColumns: '1fr auto auto auto', gap: 'var(--space-3)', alignItems: 'center',
                   padding: 'var(--space-2) var(--space-3)',
-                  background: 'rgba(255,255,255,0.02)', borderRadius: 'var(--radius-sm)',
+                  background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-sm)',
                   borderLeft: `3px solid ${improved ? 'rgba(16, 185, 129, 0.5)' : 'rgba(239, 68, 68, 0.5)'}`,
                 }}>
                   <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)' }}>{dim.name}</span>
@@ -185,7 +185,7 @@ export default function ProfessionalDiagnosticActivity({
                           height: `${(value / 10) * 100}%`,
                           background: i === TREND_DATA.length - 1
                             ? 'linear-gradient(to top, rgba(99, 102, 241, 0.6), rgba(99, 102, 241, 0.9))'
-                            : 'rgba(255,255,255,0.1)',
+                            : 'var(--border-default)',
                           borderRadius: 'var(--radius-sm) var(--radius-sm) 0 0',
                           transition: 'height 0.5s ease',
                         }} />
@@ -273,7 +273,7 @@ export default function ProfessionalDiagnosticActivity({
           </div>
 
           <div style={{
-            background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)',
+            background: 'var(--bg-surface-subtle)', border: '1px solid var(--border-subtle)',
             borderRadius: 'var(--radius-lg)', padding: 'var(--space-4)', marginBottom: 'var(--space-4)',
           }}>
             <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', fontWeight: 600, marginBottom: 'var(--space-2)' }}>
@@ -288,7 +288,7 @@ export default function ProfessionalDiagnosticActivity({
           </div>
 
           <div style={{
-            background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
+            background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
             padding: 'var(--space-3) var(--space-4)', fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)',
           }}>
             <strong>Week 4 prepares you for:</strong> nuanced communication, persuasion, leadership language, complex ideas, advanced discussion, difficult questions, impromptu speaking, and your final transformation.

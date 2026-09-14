@@ -83,7 +83,7 @@ export default function ToughQuestionsActivity({
   return (
     <div className="glass-card glass-card--elevated animate-scale-in" style={{ padding: 'var(--space-8)' }}>
       {/* Header */}
-      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: 'var(--space-4)' }}>
+      <div style={{ marginBottom: 'var(--space-6)', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 'var(--space-4)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-2)' }}>Day 27 • Tough Questions & Pressure</span>
@@ -97,7 +97,7 @@ export default function ToughQuestionsActivity({
       </div>
 
       {/* Tabs */}
-      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'rgba(255,255,255,0.03)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
+      <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-6)', background: 'var(--bg-surface-subtle)', padding: 'var(--space-1)', borderRadius: 'var(--radius-lg)' }}>
         {[
           { id: 'mindset', label: '1. The 4-Step Sequence' },
           { id: 'techniques', label: '2. Buffer & Clarification' },
@@ -126,7 +126,7 @@ export default function ToughQuestionsActivity({
               { step: '3. STRUCTURE', title: 'Dissect Parts', desc: 'Identify Part 1 and Part 2 before speaking.', icon: '📐' },
               { step: '4. RESPOND', title: 'Answer What You Know', desc: 'Never guess or fabricate. Commit to next steps.', icon: '💬' },
             ].map(s => (
-              <div key={s.step} className="glass-card" style={{ padding: 'var(--space-4)', background: 'rgba(255,255,255,0.02)' }}>
+              <div key={s.step} className="glass-card" style={{ padding: 'var(--space-4)', background: 'var(--bg-surface-subtle)' }}>
                 <div style={{ fontSize: '20px', marginBottom: 'var(--space-1)' }}>{s.icon}</div>
                 <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)' }}>{s.step}</strong>
                 <div style={{ color: 'var(--text-primary)', fontWeight: 600, margin: 'var(--space-1) 0' }}>{s.title}</div>
@@ -184,7 +184,7 @@ export default function ToughQuestionsActivity({
             Practice pausing 3 seconds before responding. Step through each question:
           </p>
 
-          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-5)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-3)' }}>
               <span className="badge badge--warning">Question {rapidIndex + 1} of {rapidQuestions.length}</span>
               <div style={{ display: 'flex', gap: 'var(--space-2)' }}>
@@ -223,7 +223,7 @@ export default function ToughQuestionsActivity({
       {/* Tab 4: High-Pressure Challenge */}
       {activeTab === 'pressure_sim' && (
         <div className="animate-fade-in">
-          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="glass-card" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-5)', background: 'var(--bg-surface-subtle)' }}>
             <strong style={{ color: 'var(--color-primary-400)', fontSize: 'var(--text-xs)', display: 'block', marginBottom: 'var(--space-1)' }}>
               HIGH-PRESSURE SCENARIO: EXECUTIVE CHALLENGE
             </strong>

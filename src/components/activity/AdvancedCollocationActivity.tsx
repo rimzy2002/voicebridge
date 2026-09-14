@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { AdvancedClass, AdvancedActivity } from '@/lib/curriculum/advanced/types';
 import { useAudioRecorder } from '@/hooks/useAudioRecorder';
 import { formatDuration } from '@/hooks/useTimer';
+import ThemeToggle from '@/components/ThemeToggle';
 
 interface AdvancedCollocationActivityProps {
   currentClass: AdvancedClass;
@@ -188,9 +189,12 @@ export default function AdvancedCollocationActivity({
             <h1 className="adv-header__title">{currentClass.title}</h1>
           </div>
 
-          <div className="adv-header__xp-badge">
-            <span className="adv-header__xp-icon">⚡</span>
-            <span className="adv-header__xp-value">{earnedXp} XP Earned</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
+            <div className="adv-header__xp-badge">
+              <span className="adv-header__xp-icon">⚡</span>
+              <span className="adv-header__xp-value">{earnedXp} XP Earned</span>
+            </div>
+            <ThemeToggle />
           </div>
         </div>
 
@@ -629,7 +633,7 @@ export default function AdvancedCollocationActivity({
 
         .adv-stepper__bar {
           height: 6px;
-          background: rgba(255, 255, 255, 0.08);
+          background: var(--bg-tertiary);
           border-radius: var(--radius-full);
           overflow: hidden;
           margin-bottom: var(--space-3);
@@ -657,7 +661,7 @@ export default function AdvancedCollocationActivity({
           justify-content: center;
           gap: 4px;
           border-radius: var(--radius-lg);
-          border: 1px solid var(--border-color);
+          border: 1px solid var(--border-default);
           background: var(--bg-surface);
           color: var(--text-secondary);
           font-size: var(--text-xs);
@@ -667,19 +671,23 @@ export default function AdvancedCollocationActivity({
         }
 
         .adv-stepper__pill:hover {
-          background: var(--bg-hover);
+          background: var(--bg-tertiary);
           border-color: var(--color-primary-400);
         }
 
         .adv-stepper__pill--active {
           background: var(--color-primary-600);
-          border-color: var(--color-primary-400);
+          border-color: var(--color-primary-500);
           color: #ffffff;
-          box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
+          box-shadow: 0 0 12px rgba(99, 102, 241, 0.3);
         }
 
         .adv-stepper__pill--completed {
           border-color: var(--color-success-500);
+          color: var(--color-success-600);
+        }
+
+        :global([data-theme="dark"]) .adv-stepper__pill--completed {
           color: var(--color-success-400);
         }
 
@@ -731,7 +739,7 @@ export default function AdvancedCollocationActivity({
           font-size: var(--text-xs);
           text-transform: uppercase;
           letter-spacing: 0.05em;
-          color: var(--text-muted);
+          color: var(--text-tertiary);
         }
 
         .adv-card__activity-title {
@@ -743,16 +751,21 @@ export default function AdvancedCollocationActivity({
 
         .adv-card__objective {
           font-size: var(--text-sm);
-          color: var(--color-primary-200);
+          color: var(--color-primary-600);
           margin-bottom: var(--space-3);
+          font-weight: 500;
+        }
+
+        :global([data-theme="dark"]) .adv-card__objective {
+          color: var(--color-primary-200);
         }
 
         .adv-card__instructions-box {
           display: flex;
           align-items: flex-start;
           gap: var(--space-2);
-          background: rgba(255, 255, 255, 0.03);
-          border: 1px solid var(--border-color);
+          background: var(--bg-surface-subtle);
+          border: 1px solid var(--border-default);
           border-radius: var(--radius-md);
           padding: var(--space-3) var(--space-4);
           font-size: var(--text-sm);
@@ -761,11 +774,15 @@ export default function AdvancedCollocationActivity({
         }
 
         .adv-prompt-box {
-          background: linear-gradient(135deg, rgba(30, 27, 75, 0.6) 0%, rgba(17, 24, 39, 0.8) 100%);
-          border: 1px solid rgba(99, 102, 241, 0.3);
+          background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(217, 70, 239, 0.04) 100%);
+          border: 1px solid rgba(99, 102, 241, 0.25);
           border-radius: var(--radius-lg);
           padding: var(--space-5);
           margin-bottom: var(--space-6);
+        }
+
+        :global([data-theme="dark"]) .adv-prompt-box {
+          background: linear-gradient(135deg, rgba(30, 27, 75, 0.6) 0%, rgba(17, 24, 39, 0.8) 100%);
         }
 
         .adv-prompt-box__label {
@@ -775,14 +792,18 @@ export default function AdvancedCollocationActivity({
           font-size: var(--text-xs);
           text-transform: uppercase;
           letter-spacing: 0.05em;
-          color: var(--color-primary-300);
+          color: var(--color-primary-600);
           margin-bottom: var(--space-2);
           font-weight: 600;
         }
 
+        :global([data-theme="dark"]) .adv-prompt-box__label {
+          color: var(--color-primary-300);
+        }
+
         .adv-prompt-box__quote {
           font-size: var(--text-lg);
-          color: #ffffff;
+          color: var(--text-primary);
           font-weight: 500;
           font-style: italic;
           margin: 0;
@@ -804,7 +825,7 @@ export default function AdvancedCollocationActivity({
         .adv-workspace__textarea {
           width: 100%;
           background: var(--bg-surface);
-          border: 1px solid var(--border-color);
+          border: 1px solid var(--border-default);
           border-radius: var(--radius-md);
           padding: var(--space-3) var(--space-4);
           color: var(--text-primary);
@@ -819,7 +840,7 @@ export default function AdvancedCollocationActivity({
         .adv-workspace__textarea:focus {
           outline: none;
           border-color: var(--color-primary-500);
-          box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+          box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.18);
         }
 
         .adv-workspace__actions {
@@ -834,15 +855,19 @@ export default function AdvancedCollocationActivity({
           margin-top: var(--space-3);
           padding: var(--space-3) var(--space-4);
           background: rgba(245, 158, 11, 0.1);
-          border: 1px solid rgba(245, 158, 11, 0.3);
+          border: 1px solid rgba(245, 158, 11, 0.25);
           border-radius: var(--radius-md);
           font-size: var(--text-xs);
+          color: var(--color-warning-600);
+        }
+
+        :global([data-theme="dark"]) .adv-hint-box {
           color: var(--color-warning-400);
         }
 
         .adv-speaking-box {
-          background: rgba(255, 255, 255, 0.02);
-          border: 1px dashed rgba(255, 255, 255, 0.15);
+          background: var(--bg-surface-subtle);
+          border: 1px dashed var(--border-default);
           border-radius: var(--radius-lg);
           padding: var(--space-6);
           text-align: center;
@@ -893,7 +918,7 @@ export default function AdvancedCollocationActivity({
 
         .adv-evaluation-box {
           margin-top: var(--space-6);
-          border-top: 1px solid var(--border-color);
+          border-top: 1px solid var(--border-default);
           padding-top: var(--space-6);
         }
 
@@ -905,20 +930,28 @@ export default function AdvancedCollocationActivity({
         }
 
         .adv-evaluation-box__badge {
-          background: rgba(16, 185, 129, 0.15);
-          color: var(--color-success-400);
-          border: 1px solid rgba(16, 185, 129, 0.3);
+          background: rgba(16, 185, 129, 0.12);
+          color: var(--color-success-600);
+          border: 1px solid rgba(16, 185, 129, 0.25);
           border-radius: var(--radius-full);
           padding: var(--space-1) var(--space-3);
           font-size: var(--text-xs);
           font-weight: 600;
         }
 
+        :global([data-theme="dark"]) .adv-evaluation-box__badge {
+          color: var(--color-success-400);
+        }
+
         .adv-evaluation-box__xp {
           font-size: var(--text-xs);
           font-weight: 700;
-          color: var(--color-accent-400);
+          color: var(--color-accent-600);
           margin-left: var(--space-3);
+        }
+
+        :global([data-theme="dark"]) .adv-evaluation-box__xp {
+          color: var(--color-accent-400);
         }
 
         .adv-comparison-grid {
@@ -931,11 +964,11 @@ export default function AdvancedCollocationActivity({
         .adv-comparison-card {
           padding: var(--space-4);
           border-radius: var(--radius-md);
-          border: 1px solid var(--border-color);
+          border: 1px solid var(--border-default);
         }
 
         .adv-comparison-card--user {
-          background: rgba(255, 255, 255, 0.02);
+          background: var(--bg-surface-subtle);
         }
 
         .adv-comparison-card--expected {

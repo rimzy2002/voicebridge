@@ -38,6 +38,7 @@ import AdvancedListeningActivity from '@/components/activity/AdvancedListeningAc
 import IndependentRehearsalActivity from '@/components/activity/IndependentRehearsalActivity';
 import FinalTransformationActivity from '@/components/activity/FinalTransformationActivity';
 import { getPersonalizedFocusBanner } from '@/lib/curriculum/diagnostic';
+import ThemeToggle from '@/components/ThemeToggle';
 
 import type { DayDefinition } from '@/types';
 
@@ -423,6 +424,7 @@ export default function ActivityShell({
           <div className="xp-display">
             <span className="xp-display__value">{earnedXp + totalXp} XP</span>
           </div>
+          <ThemeToggle />
         </div>
       </header>
 

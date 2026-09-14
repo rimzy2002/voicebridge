@@ -132,8 +132,8 @@ export default function DataNarrationActivity({
             <div key={i} style={{
               display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 'var(--space-3)',
               padding: 'var(--space-3) var(--space-4)',
-              background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
-              border: '1px solid rgba(255,255,255,0.06)',
+              background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--border-subtle)',
             }}>
               <span style={{ fontSize: 'var(--text-sm)', color: 'var(--text-primary)', fontWeight: 500 }}>{item.term}</span>
               <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', fontStyle: 'italic' }}>{item.example}</span>
@@ -180,7 +180,7 @@ export default function DataNarrationActivity({
 
           {/* CSS Bar Chart */}
           <div style={{
-            background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-lg)',
+            background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-lg)',
             padding: 'var(--space-4)', marginBottom: 'var(--space-3)',
           }}>
             <div style={{ display: 'flex', alignItems: 'flex-end', gap: 'var(--space-2)', height: '160px' }}>
@@ -218,15 +218,15 @@ export default function DataNarrationActivity({
             <table style={{ width: '100%', fontSize: 'var(--text-xs)', borderCollapse: 'collapse', marginBottom: 'var(--space-3)' }}>
               <thead>
                 <tr>
-                  <th style={{ textAlign: 'left', padding: 'var(--space-2)', borderBottom: '1px solid rgba(255,255,255,0.1)', color: 'var(--text-secondary)' }}>{dataset.xLabel}</th>
-                  <th style={{ textAlign: 'right', padding: 'var(--space-2)', borderBottom: '1px solid rgba(255,255,255,0.1)', color: 'var(--text-secondary)' }}>{dataset.yLabel}</th>
+                  <th style={{ textAlign: 'left', padding: 'var(--space-2)', borderBottom: '1px solid var(--border-default)', color: 'var(--text-secondary)' }}>{dataset.xLabel}</th>
+                  <th style={{ textAlign: 'right', padding: 'var(--space-2)', borderBottom: '1px solid var(--border-default)', color: 'var(--text-secondary)' }}>{dataset.yLabel}</th>
                 </tr>
               </thead>
               <tbody>
                 {dataset.data.map((d, i) => (
                   <tr key={i}>
-                    <td style={{ padding: 'var(--space-2)', color: 'var(--text-secondary)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>{d.label}</td>
-                    <td style={{ padding: 'var(--space-2)', color: 'var(--text-primary)', textAlign: 'right', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>{d.value}{d.unit || ''}</td>
+                    <td style={{ padding: 'var(--space-2)', color: 'var(--text-secondary)', borderBottom: '1px solid var(--border-subtle)' }}>{d.label}</td>
+                    <td style={{ padding: 'var(--space-2)', color: 'var(--text-primary)', textAlign: 'right', borderBottom: '1px solid var(--border-subtle)' }}>{d.value}{d.unit || ''}</td>
                   </tr>
                 ))}
               </tbody>

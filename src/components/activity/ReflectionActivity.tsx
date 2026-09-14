@@ -89,7 +89,7 @@ export default function ReflectionActivity({
       </div>
 
       <div style={{
-        background: 'rgba(255, 255, 255, 0.02)',
+        background: 'var(--bg-surface-subtle)',
         border: '1px solid var(--border-default)',
         borderRadius: 'var(--radius-lg)',
         padding: 'var(--space-4)',

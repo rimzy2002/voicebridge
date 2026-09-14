@@ -110,8 +110,8 @@ export default function NetworkingRoleplayActivity({
             <div key={p.id} style={{
               display: 'flex', justifyContent: 'space-between',
               padding: 'var(--space-3) var(--space-4)',
-              background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
-              border: '1px solid rgba(255,255,255,0.06)',
+              background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--border-subtle)',
             }}>
               <span style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)' }}>{p.label}</span>
               <span style={{ color: phaseResponses[p.id] ? 'var(--color-success)' : 'var(--text-tertiary)', fontSize: 'var(--text-sm)' }}>
@@ -163,7 +163,7 @@ export default function NetworkingRoleplayActivity({
 
       {/* AI partner dialogue */}
       <div style={{
-        background: 'rgba(255,255,255,0.04)', borderRadius: 'var(--radius-lg)',
+        background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-lg)',
         padding: 'var(--space-4)', marginBottom: 'var(--space-4)',
         borderLeft: '3px solid rgba(99, 102, 241, 0.5)',
       }}>

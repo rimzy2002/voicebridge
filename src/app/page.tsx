@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ADVANCED_CLASSES } from '@/lib/curriculum/advanced';
+import ThemeToggle from '@/components/ThemeToggle';
 
 export default function HomePage() {
   const router = useRouter();
@@ -16,6 +17,28 @@ export default function HomePage() {
 
   return (
     <main className="landing">
+      {/* Top Navbar */}
+      <nav className="landing__nav" aria-label="Main navigation">
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
+            <span style={{ fontSize: '24px' }}>🗣️</span>
+            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'var(--text-lg)', letterSpacing: 'var(--tracking-tight)' }}>
+              Voice<span className="text-gradient">Bridge</span>
+            </span>
+            <span className="badge badge--primary" style={{ display: 'inline-flex' }}>30-Day Program</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)' }}>
+            <a href="#curriculum" style={{ fontSize: 'var(--text-sm)', fontWeight: 600, color: 'var(--text-secondary)' }}>
+              Curriculum
+            </a>
+            <a href="#masterclasses" style={{ fontSize: 'var(--text-sm)', fontWeight: 600, color: 'var(--text-secondary)' }}>
+              Masterclasses
+            </a>
+            <ThemeToggle />
+          </div>
+        </div>
+      </nav>
+
       <div className="landing__hero">
         <div className="container container--content">
           {/* Badge */}
@@ -93,7 +116,7 @@ export default function HomePage() {
       </div>
 
       {/* Week overview */}
-      <section className="landing__weeks">
+      <section className="landing__weeks" id="curriculum">
         <div className="container container--content">
           <h2 className="landing__section-title">Your 30-Day Journey</h2>
           <div className="landing__week-grid">
@@ -156,7 +179,7 @@ export default function HomePage() {
       </section>
 
       {/* Advanced C1-C2 Master Classes (Adv Class A – J) */}
-      <section className="landing__advanced">
+      <section className="landing__advanced" id="masterclasses">
         <div className="container container--content">
           <div style={{ textAlign: 'center', marginBottom: 'var(--space-8)' }}>
             <span className="badge badge--accent" style={{ marginBottom: 'var(--space-3)' }}>
@@ -195,7 +218,7 @@ export default function HomePage() {
                     </Link>
                   ) : (
                     <span className="badge badge--secondary" style={{ opacity: 0.7 }}>
-                      🔒 Coming Soon
+                      Available in Pro
                     </span>
                   )}
                 </div>
@@ -205,73 +228,87 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Three tracks */}
+      {/* Tracks */}
       <section className="landing__tracks">
         <div className="container container--content">
-          <h2 className="landing__section-title">Three Personalization Tracks</h2>
-          <p className="landing__section-subtitle">Same curriculum engine. Different prompts, vocabulary, and scenarios.</p>
+          <h2 className="landing__section-title">Personalized Learning Tracks</h2>
+          <p className="landing__section-subtitle">
+            The curriculum dynamically adapts based on your chosen communication track
+          </p>
           <div className="landing__track-grid">
             {[
               {
-                icon: '🎓',
-                title: 'Student',
-                examples: ['Academic discussions', 'Class presentations', 'Assignments', 'Interviews'],
-              },
-              {
                 icon: '💼',
                 title: 'Professional',
-                examples: ['Meetings', 'Client communication', 'Presentations', 'Leadership'],
+                desc: 'Meetings, presentations, upward communication, concise answers, diplomacy.',
+              },
+              {
+                icon: '🎯',
+                title: 'Interview',
+                desc: 'STAR framework, confidence under evaluation, concise storytelling, handling tough questions.',
               },
               {
                 icon: '🗣️',
-                title: 'General English',
-                examples: ['Travel', 'Social conversations', 'Relationships', 'Confidence'],
+                title: 'General Fluency',
+                desc: 'Spontaneous speech, storytelling, everyday confidence, expanding short answers.',
               },
             ].map((track) => (
               <div key={track.title} className="landing__track-card glass-card">
                 <span className="landing__track-icon">{track.icon}</span>
                 <h3 className="landing__track-title">{track.title}</h3>
-                <ul className="landing__track-list">
-                  {track.examples.map((ex) => (
-                    <li key={ex}>{ex}</li>
-                  ))}
-                </ul>
+                <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', lineHeight: 'var(--leading-relaxed)' }}>
+                  {track.desc}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Daily loop */}
+      {/* Daily Loop */}
       <section className="landing__loop">
         <div className="container container--content">
-          <h2 className="landing__section-title">The Learning Loop</h2>
+          <h2 className="landing__section-title">The Daily Habit Loop</h2>
+          <p className="landing__section-subtitle">
+            Every day follows a proven, structured pedagogical flow
+          </p>
           <div className="landing__loop-flow">
-            {['Learn', 'Speak', 'Analyze', 'Feedback', 'Retry', 'Compare', 'Apply', 'Reflect'].map((step, i) => (
-              <div key={step} className="landing__loop-step">
-                <div className="landing__loop-step-number">{i + 1}</div>
-                <span className="landing__loop-step-label">{step}</span>
+            {[
+              { num: 1, label: 'Prime' },
+              { num: 2, label: 'Learn' },
+              { num: 3, label: 'Activate' },
+              { num: 4, label: 'Speak' },
+              { num: 5, label: 'Reflect' },
+            ].map((step, idx) => (
+              <div key={step.num} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                <div className="landing__loop-step">
+                  <span className="landing__loop-step-number">{step.num}</span>
+                  <span className="landing__loop-step-label">{step.label}</span>
+                </div>
+                {idx < 4 && (
+                  <span style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-lg)' }} aria-hidden="true">
+                    →
+                  </span>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Footer CTA */}
+      {/* Final CTA */}
       <section className="landing__footer-cta">
         <div className="container container--content">
-          <h2 className="landing__footer-title">
-            Ready to transform your communication?
-          </h2>
+          <h2 className="landing__footer-title">Ready to Transform Your Communication?</h2>
           <p className="landing__footer-subtitle">
-            Day 1 takes about 35-45 minutes. Express mode is available at 10-15 minutes.
+            Start Day 1 now. No passive videos, no grammar drills — just active, guided speaking.
           </p>
           <button
             className="btn btn--primary btn--lg"
             onClick={handleStart}
             disabled={isLoading}
           >
-            {isLoading ? 'Loading...' : 'Begin Day 1'}
+            {isLoading ? 'Loading...' : 'Start Day 1 Free'}
             {!isLoading && <span aria-hidden="true">→</span>}
           </button>
         </div>
@@ -282,8 +319,19 @@ export default function HomePage() {
           min-height: 100vh;
         }
 
+        .landing__nav {
+          padding: var(--space-4) 0;
+          border-bottom: 1px solid var(--border-subtle);
+          background: var(--bg-surface);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          position: sticky;
+          top: 0;
+          z-index: var(--z-sticky);
+        }
+
         .landing__hero {
-          padding: var(--space-20) 0 var(--space-16);
+          padding: var(--space-16) 0 var(--space-12);
           text-align: center;
         }
 
@@ -300,6 +348,7 @@ export default function HomePage() {
           max-width: 700px;
           margin-left: auto;
           margin-right: auto;
+          color: var(--text-primary);
         }
 
         .landing__subtitle {
@@ -389,11 +438,12 @@ export default function HomePage() {
           align-items: center;
           gap: var(--space-2);
           padding: var(--space-2) var(--space-3);
-          background: var(--bg-glass);
-          border: 1px solid var(--border-subtle);
+          background: var(--bg-surface);
+          border: 1px solid var(--border-default);
           border-radius: var(--radius-full);
           font-size: var(--text-sm);
           color: var(--text-secondary);
+          box-shadow: var(--shadow-sm);
         }
 
         .landing__problem-icon {
@@ -423,18 +473,19 @@ export default function HomePage() {
           flex-direction: column;
           padding: var(--space-6);
           border-radius: var(--radius-xl);
-          transition: transform var(--transition-normal), border-color var(--transition-normal);
+          transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
         }
 
         .landing__adv-card--ready {
-          border-color: rgba(99, 102, 241, 0.35);
-          background: linear-gradient(135deg, rgba(99, 102, 241, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+          border-color: rgba(99, 102, 241, 0.25);
+          background: linear-gradient(135deg, rgba(99, 102, 241, 0.04) 0%, var(--bg-secondary) 100%);
+          box-shadow: var(--shadow-sm);
         }
 
         .landing__adv-card--ready:hover {
           transform: translateY(-4px);
-          border-color: var(--color-primary-400);
-          box-shadow: 0 12px 28px rgba(99, 102, 241, 0.15);
+          border-color: var(--color-primary-500);
+          box-shadow: var(--shadow-lg);
         }
 
         .landing__adv-card--locked {
@@ -451,10 +502,14 @@ export default function HomePage() {
         .landing__adv-cefr {
           font-size: var(--text-xs);
           font-weight: 700;
-          color: var(--color-primary-300);
+          color: var(--color-primary-600);
           background: rgba(99, 102, 241, 0.1);
           padding: 2px 8px;
           border-radius: var(--radius-full);
+        }
+
+        :global([data-theme="dark"]) .landing__adv-cefr {
+          color: var(--color-primary-300);
         }
 
         .landing__adv-card-title {
@@ -468,8 +523,12 @@ export default function HomePage() {
         .landing__adv-card-theme {
           font-size: var(--text-xs);
           font-weight: 600;
-          color: var(--color-accent-400);
+          color: var(--color-accent-600);
           margin-bottom: var(--space-3);
+        }
+
+        :global([data-theme="dark"]) .landing__adv-card-theme {
+          color: var(--color-accent-400);
         }
 
         .landing__adv-card-desc {
@@ -489,7 +548,7 @@ export default function HomePage() {
           justify-content: space-between;
           align-items: center;
           padding-top: var(--space-3);
-          border-top: 1px solid var(--border-color);
+          border-top: 1px solid var(--border-subtle);
         }
 
         .landing__adv-count {
@@ -504,6 +563,7 @@ export default function HomePage() {
           font-weight: 800;
           text-align: center;
           margin-bottom: var(--space-3);
+          color: var(--text-primary);
         }
 
         .landing__section-subtitle {
@@ -521,15 +581,16 @@ export default function HomePage() {
 
         .landing__week-card {
           position: relative;
+          box-shadow: var(--shadow-sm);
         }
 
         .landing__week-card--active {
-          border-color: rgba(99, 102, 241, 0.3);
+          border-color: var(--color-primary-500);
           box-shadow: var(--shadow-glow-primary);
         }
 
         .landing__week-card--locked {
-          opacity: 0.6;
+          opacity: 0.65;
         }
 
         .landing__week-number {
@@ -548,12 +609,18 @@ export default function HomePage() {
           font-size: var(--text-xl);
           font-weight: 700;
           margin-bottom: var(--space-1);
+          color: var(--text-primary);
         }
 
         .landing__week-subtitle {
           font-size: var(--text-sm);
-          color: var(--color-primary-400);
+          color: var(--color-primary-600);
           margin-bottom: var(--space-2);
+          font-weight: 500;
+        }
+
+        :global([data-theme="dark"]) .landing__week-subtitle {
+          color: var(--color-primary-400);
         }
 
         .landing__week-description {
@@ -592,6 +659,7 @@ export default function HomePage() {
           font-size: var(--text-xl);
           font-weight: 700;
           margin-bottom: var(--space-3);
+          color: var(--text-primary);
         }
 
         .landing__track-list {
@@ -617,9 +685,10 @@ export default function HomePage() {
           align-items: center;
           gap: var(--space-2);
           padding: var(--space-3) var(--space-4);
-          background: var(--bg-glass);
-          border: 1px solid var(--border-subtle);
+          background: var(--bg-surface);
+          border: 1px solid var(--border-default);
           border-radius: var(--radius-lg);
+          box-shadow: var(--shadow-sm);
         }
 
         .landing__loop-step-number {
@@ -639,6 +708,7 @@ export default function HomePage() {
         .landing__loop-step-label {
           font-size: var(--text-sm);
           font-weight: 600;
+          color: var(--text-primary);
         }
 
         .landing__footer-cta {
@@ -651,6 +721,7 @@ export default function HomePage() {
         .landing__footer-title {
           font-size: var(--text-3xl);
           margin-bottom: var(--space-3);
+          color: var(--text-primary);
         }
 
         .landing__footer-subtitle {

@@ -141,8 +141,8 @@ export default function InterviewSimulationActivity({
               onClick={() => setDifficulty(key)}
               style={{
                 padding: 'var(--space-4)',
-                background: difficulty === key ? 'rgba(99, 102, 241, 0.15)' : 'rgba(255,255,255,0.03)',
-                border: difficulty === key ? '2px solid rgba(99, 102, 241, 0.5)' : '1px solid rgba(255,255,255,0.08)',
+                background: difficulty === key ? 'rgba(99, 102, 241, 0.15)' : 'var(--bg-surface-subtle)',
+                border: difficulty === key ? '2px solid rgba(99, 102, 241, 0.5)' : '1px solid var(--border-subtle)',
                 borderRadius: 'var(--radius-lg)',
                 cursor: 'pointer', textAlign: 'left', color: 'var(--text-primary)',
               }}
@@ -174,8 +174,8 @@ export default function InterviewSimulationActivity({
             <div key={q.id} style={{
               display: 'flex', justifyContent: 'space-between', alignItems: 'center',
               padding: 'var(--space-3) var(--space-4)',
-              background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
-              border: '1px solid rgba(255,255,255,0.06)',
+              background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--border-subtle)',
             }}>
               <div>
                 <span style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)' }}>
@@ -236,7 +236,7 @@ export default function InterviewSimulationActivity({
 
       {/* Question */}
       <div style={{
-        background: 'rgba(255,255,255,0.04)', borderRadius: 'var(--radius-lg)',
+        background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-lg)',
         padding: 'var(--space-5)', marginBottom: 'var(--space-4)',
         borderLeft: '3px solid rgba(99, 102, 241, 0.5)',
       }}>

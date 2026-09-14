@@ -147,8 +147,8 @@ export default function MeetingSimulationActivity({
             <div key={p.id} style={{
               display: 'flex', justifyContent: 'space-between', alignItems: 'center',
               padding: 'var(--space-3) var(--space-4)',
-              background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
-              border: '1px solid rgba(255,255,255,0.06)',
+              background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--border-subtle)',
             }}>
               <span style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)' }}>{p.label}</span>
               <span style={{ fontSize: 'var(--text-sm)', color: phaseResponses[p.id] ? 'var(--color-success)' : 'var(--text-tertiary)' }}>
@@ -205,7 +205,7 @@ export default function MeetingSimulationActivity({
       {/* Participants */}
       <div style={{
         display: 'flex', gap: 'var(--space-3)', marginBottom: 'var(--space-4)',
-        padding: 'var(--space-3)', background: 'rgba(255,255,255,0.02)', borderRadius: 'var(--radius-md)',
+        padding: 'var(--space-3)', background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
       }}>
         {participants.map(p => (
           <div key={p.name} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', fontSize: 'var(--text-xs)' }}>
@@ -227,7 +227,7 @@ export default function MeetingSimulationActivity({
 
       {/* Meeting Dialogue */}
       <div style={{
-        background: 'rgba(255,255,255,0.04)', borderRadius: 'var(--radius-lg)',
+        background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-lg)',
         padding: 'var(--space-4)', marginBottom: 'var(--space-4)',
         borderLeft: '3px solid rgba(99, 102, 241, 0.5)',
       }}>
@@ -292,7 +292,7 @@ export default function MeetingSimulationActivity({
       {/* Meeting Language Tips */}
       {phase.id === 'update' && (
         <div style={{
-          background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
           padding: 'var(--space-3) var(--space-4)', fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)',
         }}>
           <strong>Update Framework:</strong> STATUS (Where are we?) → PROGRESS (What happened?) → ISSUE (What is blocking?) → NEXT STEP (What happens next?)
@@ -301,7 +301,7 @@ export default function MeetingSimulationActivity({
 
       {phase.id === 'disagree' && (
         <div style={{
-          background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
           padding: 'var(--space-3) var(--space-4)', fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)',
         }}>
           <strong>Useful language:</strong> &quot;I see your point, however...&quot; &quot;Another perspective might be...&quot; &quot;What if we considered...&quot;
@@ -310,7 +310,7 @@ export default function MeetingSimulationActivity({
 
       {phase.id === 'summarize' && (
         <div style={{
-          background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-md)',
+          background: 'var(--bg-surface-subtle)', borderRadius: 'var(--radius-md)',
           padding: 'var(--space-3) var(--space-4)', fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)',
         }}>
           <strong>Summary format:</strong> &quot;So, just to summarize...&quot; → Decision → Owner → Next action → Deadline
