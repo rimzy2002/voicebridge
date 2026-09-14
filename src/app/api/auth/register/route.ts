@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     });
 
     // Migrate guest progress if provided
-    let redirectUrl = '/day/1';
+    let redirectUrl = '/';
     if (guestProgress) {
       const dayNum = parseInt(guestProgress.dayNumber || guestProgress.currentDay || '1', 10) || 1;
       const actIdx = parseInt(guestProgress.currentActivityIndex || guestProgress.activityIndex || '0', 10) || 0;
@@ -54,8 +54,6 @@ export async function POST(request: Request) {
       if (xp > 0) {
         addXp(user.id, xp, 'Migrated Guest Progress', dayNum);
       }
-
-      redirectUrl = `/day/${dayNum}?activity=${actIdx}`;
     }
 
     // Issue session token

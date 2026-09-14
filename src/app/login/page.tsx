@@ -70,8 +70,8 @@ export default function LoginPage() {
             <span className="logo-text">Voice<strong>Bridge</strong></span>
           </Link>
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
-            <Link href="/" className="btn btn--ghost" style={{ fontSize: 'var(--text-sm)' }}>
-              ← Return to Dashboard
+            <Link href="/register" className="btn btn--outline btn--sm" style={{ fontSize: 'var(--text-xs)' }}>
+              Create Account
             </Link>
             <ThemeToggle />
           </div>

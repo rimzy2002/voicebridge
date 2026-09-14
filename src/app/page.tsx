@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { ADVANCED_CLASSES } from '@/lib/curriculum/advanced';
 import ThemeToggle from '@/components/ThemeToggle';
 
-export default function HomePage() {
+export default function DashboardPage() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [authData, setAuthData] = useState<{
@@ -23,15 +23,19 @@ export default function HomePage() {
       .then(data => {
         if (data.authenticated) {
           setAuthData(data);
+        } else {
+          router.replace('/login');
         }
       })
-      .catch(() => {});
-  }, []);
+      .catch(() => {
+        router.replace('/login');
+      });
+  }, [router]);
 
   const handleLogout = async () => {
     await fetch('/api/auth/logout', { method: 'POST' });
     setAuthData(null);
-    router.refresh();
+    router.replace('/login');
   };
 
   const handleStart = () => {
@@ -43,6 +47,30 @@ export default function HomePage() {
     }
   };
 
+  if (!authData) {
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-primary)' }}>
+        <div style={{ fontSize: '40px', marginBottom: 'var(--space-3)' }}>🗣️</div>
+        <div style={{ fontSize: 'var(--text-lg)', fontWeight: 700, color: 'var(--text-primary)', marginBottom: 'var(--space-1)' }}>
+          Voice<strong style={{ color: 'var(--color-primary-600)' }}>Bridge</strong>
+        </div>
+        <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', fontWeight: 500 }}>
+          Loading your dashboard...
+        </p>
+      </div>
+    );
+  }
+
+  const trackLabel =
+    authData.user?.track === 'professional'
+      ? '💼 Professional Track'
+      : authData.user?.track === 'student'
+      ? '🎓 Academic Track'
+      : '🌐 General Fluency Track';
+
+  const currentDay = authData.latestProgress?.dayNumber || 1;
+  const currentActivityIdx = authData.latestProgress?.currentActivityIndex || 0;
+
   return (
     <main className="landing">
       {/* Top Navbar */}
@@ -53,7 +81,7 @@ export default function HomePage() {
             <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'var(--text-lg)', letterSpacing: 'var(--tracking-tight)' }}>
               Voice<span className="text-gradient">Bridge</span>
             </span>
-            <span className="badge badge--primary" style={{ display: 'inline-flex' }}>30-Day Program</span>
+            <span className="badge badge--primary" style={{ display: 'inline-flex' }}>Dashboard</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
             <a href="#curriculum" style={{ fontSize: 'var(--text-sm)', fontWeight: 600, color: 'var(--text-secondary)' }}>
@@ -63,36 +91,28 @@ export default function HomePage() {
               Masterclasses
             </a>
 
-            {authData?.authenticated ? (
-              <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
-                {authData.user.role === 'admin' && (
-                  <Link href="/admin" className="badge badge--accent" style={{ textDecoration: 'none' }}>
-                    🛡️ Admin Portal
-                  </Link>
-                )}
-                <span style={{ fontSize: 'var(--text-xs)', fontWeight: 600, color: 'var(--text-primary)' }}>
-                  👤 {authData.user.name || authData.user.email}
-                </span>
-                <span className="badge badge--warning" style={{ fontSize: 'var(--text-xs)' }}>
-                  🔥 {authData.streak?.currentStreak || 0}d
-                </span>
-                <span className="badge badge--primary" style={{ fontSize: 'var(--text-xs)' }}>
-                  ⚡ {authData.xp || 0} XP
-                </span>
-                <button onClick={handleLogout} className="btn btn--ghost btn--xs" style={{ fontSize: 'var(--text-xs)' }}>
-                  Sign Out
-                </button>
-              </div>
-            ) : (
-              <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
-                <Link href="/login" className="btn btn--ghost btn--sm" style={{ fontSize: 'var(--text-sm)' }}>
-                  Sign In
+            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+              {authData.user?.role === 'admin' && (
+                <Link href="/admin" className="badge badge--accent" style={{ textDecoration: 'none' }}>
+                  🛡️ Admin Portal
                 </Link>
-                <Link href="/register" className="btn btn--primary btn--sm" style={{ fontSize: 'var(--text-sm)' }}>
-                  Get Started
-                </Link>
-              </div>
-            )}
+              )}
+              <span className="badge badge--neutral" style={{ fontSize: 'var(--text-xs)', fontWeight: 600 }}>
+                {trackLabel}
+              </span>
+              <span style={{ fontSize: 'var(--text-xs)', fontWeight: 600, color: 'var(--text-primary)' }}>
+                👤 {authData.user?.name || authData.user?.email}
+              </span>
+              <span className="badge badge--warning" style={{ fontSize: 'var(--text-xs)' }}>
+                🔥 {authData.streak?.currentStreak || 1}d
+              </span>
+              <span className="badge badge--primary" style={{ fontSize: 'var(--text-xs)' }}>
+                ⚡ {authData.xp || 0} XP
+              </span>
+              <button onClick={handleLogout} className="btn btn--ghost btn--xs" style={{ fontSize: 'var(--text-xs)' }}>
+                Sign Out
+              </button>
+            </div>
 
             <ThemeToggle />
           </div>
@@ -103,36 +123,35 @@ export default function HomePage() {
         <div className="container container--content">
           {/* Badge */}
           <div className="landing__badge animate-slide-up">
-            <span className="badge badge--primary">30-Day Program</span>
+            <span className="badge badge--primary">Learner Dashboard • Day {currentDay} of 30</span>
           </div>
 
           {/* Headline */}
           <h1 className="landing__title animate-slide-up" style={{ animationDelay: '50ms' }}>
-            30 Days to More Confident, Fluent, Clear and Professional{' '}
-            <span className="text-gradient">English Communication</span>
+            Welcome back,{' '}
+            <span className="text-gradient">{authData.user?.name || 'Communicator'}</span>!
           </h1>
 
           {/* Subtitle */}
           <p className="landing__subtitle animate-slide-up" style={{ animationDelay: '100ms' }}>
-            Don&apos;t study English for 30 days.{' '}
-            <strong>Use English for 30 days.</strong>
+            You are enrolled in the <strong>{trackLabel}</strong>. Complete today&apos;s speech workout to advance your streak.
           </p>
 
-          {/* Key stats */}
+          {/* Key stats cards */}
           <div className="landing__stats animate-slide-up" style={{ animationDelay: '150ms' }}>
             <div className="landing__stat">
-              <span className="landing__stat-value">20%</span>
-              <span className="landing__stat-label">Instruction</span>
+              <span className="landing__stat-value">Day {currentDay}</span>
+              <span className="landing__stat-label">Current Progress</span>
             </div>
             <div className="landing__stat-divider" />
             <div className="landing__stat">
-              <span className="landing__stat-value">80%</span>
-              <span className="landing__stat-label">Application</span>
+              <span className="landing__stat-value">{authData.streak?.currentStreak || 1} Days</span>
+              <span className="landing__stat-label">Active Streak 🔥</span>
             </div>
             <div className="landing__stat-divider" />
             <div className="landing__stat">
-              <span className="landing__stat-value">35-45</span>
-              <span className="landing__stat-label">Minutes/Day</span>
+              <span className="landing__stat-value">{authData.xp || 0}</span>
+              <span className="landing__stat-label">Total XP Earned ⚡</span>
             </div>
           </div>
 
@@ -144,15 +163,13 @@ export default function HomePage() {
               disabled={isLoading}
             >
               {isLoading
-                ? 'Loading...'
-                : authData?.latestProgress
-                ? `Resume Day ${authData.latestProgress.dayNumber} (Activity ${authData.latestProgress.currentActivityIndex + 1}) →`
-                : 'Start Day 1 — Free →'}
+                ? 'Opening Session...'
+                : authData.latestProgress
+                ? `Resume Day ${currentDay} (Activity ${currentActivityIdx + 1}) →`
+                : `Start Day ${currentDay} Workout →`}
             </button>
             <p className="landing__cta-note">
-              {authData?.authenticated
-                ? 'Progress synced securely to your account'
-                : 'No credit card required • Express mode available'}
+              Speech recordings and drill completions are actively synced to your account.
             </p>
           </div>
 

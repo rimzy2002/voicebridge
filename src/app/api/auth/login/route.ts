@@ -45,11 +45,9 @@ export async function POST(request: Request) {
     let redirectUrl = '/';
     if (user.role === 'admin') {
       redirectUrl = '/admin';
-    } else if (latest) {
-      // Auto-restore returning learner directly to their exact day and activity!
-      redirectUrl = `/day/${latest.dayNumber}?activity=${latest.currentActivityIndex}`;
     } else {
-      redirectUrl = '/day/1';
+      // Learners are routed directly to the Dashboard
+      redirectUrl = '/';
     }
 
     const profile = getLearnerProfile(user.id);
