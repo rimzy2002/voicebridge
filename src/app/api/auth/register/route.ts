@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       name,
       passwordHash,
       role: 'learner',
-      track: track === 'professional' || track === 'student' ? track : 'general',
+      track: track === 'professional' || track === 'interview' || track === 'student' ? track : 'general',
     });
 
     // Migrate guest progress if provided

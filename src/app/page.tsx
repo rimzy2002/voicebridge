@@ -64,6 +64,8 @@ export default function DashboardPage() {
   const trackLabel =
     authData.user?.track === 'professional'
       ? '💼 Professional Track'
+      : authData.user?.track === 'interview'
+      ? '🎯 Interview Track'
       : authData.user?.track === 'student'
       ? '🎓 Academic Track'
       : '🌐 General Fluency Track';
@@ -335,6 +337,11 @@ export default function DashboardPage() {
                 icon: '🗣️',
                 title: 'General Fluency',
                 desc: 'Spontaneous speech, storytelling, everyday confidence, expanding short answers.',
+              },
+              {
+                icon: '🎓',
+                title: 'Academic / Student',
+                desc: 'University seminars, research presentations, thesis defense, structured academic discussions.',
               },
             ].map((track) => (
               <div key={track.title} className="landing__track-card glass-card">

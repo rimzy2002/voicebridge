@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ThemeToggle from '@/components/ThemeToggle';
 
-type LearnerTrack = 'general' | 'professional' | 'student';
+type LearnerTrack = 'general' | 'professional' | 'interview' | 'student';
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -170,6 +170,18 @@ export default function RegisterPage() {
                   <div className="track-text">
                     <strong>Professional</strong>
                     <small>Meetings & Executive Clarity</small>
+                  </div>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setTrack('interview')}
+                  className={`track-pill ${track === 'interview' ? 'track-pill--active' : ''}`}
+                >
+                  <span className="track-icon">🎯</span>
+                  <div className="track-text">
+                    <strong>Interview</strong>
+                    <small>STAR Framework & Tough Questions</small>
                   </div>
                 </button>
 
